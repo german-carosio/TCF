@@ -1,0 +1,29 @@
+/* Footer.module.css */
+
+.footer {
+    background: var(--verde);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    max-width: 1400px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.socialIcons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #ff6f61;
+    /* Cambia el color al pasar el mouse sobre los íconos */
+}

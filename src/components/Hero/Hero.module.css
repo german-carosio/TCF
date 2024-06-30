@@ -1,0 +1,29 @@
+.container {
+    margin-top: 80px;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+}
+
+.lados {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+}
+
+.lados h1 {
+    font-size: 45px;
+}
+
+.frase {
+    color: var(--naranja);
+}
+
+.boton {
+    width: 100%;
+    margin-top: 25px;
+}

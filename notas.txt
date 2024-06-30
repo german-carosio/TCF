@@ -1,0 +1,26 @@
+
+
+Uso de vite-plugin-compression
+El plugin vite-plugin-compression puede ayudarte a mejorar el rendimiento de tu aplicación comprimiendo los archivos estáticos. Aquí tienes cómo configurarlo:
+
+Instalación del Plugin
+
+npm install vite-plugin-compression --save-dev
+
+
+Configuración en vite.config.js:
+
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import compression from 'vite-plugin-compression';
+
+export default defineConfig({
+  plugins: [
+    react(),
+    compression({
+      // Opciones del plugin
+      algorithm: 'gzip', // Puedes usar 'brotliCompress' para Brotli
+      ext: '.gz', // Extensión de los archivos comprimidos
+    }),
+  ],
+});

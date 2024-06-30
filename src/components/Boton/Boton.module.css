@@ -1,0 +1,7 @@
+.btn {
+    padding: 12px 40px;
+    border: none;
+    border-radius: 50px;
+    background: var(--verde);
+    color: #fff;
+}

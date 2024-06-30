@@ -1,0 +1,12 @@
+.pageNotFound {
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.message {
+    font-size: 1.2rem;
+}

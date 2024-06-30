@@ -1,0 +1,39 @@
+/* Navbar.module.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background: var(--fondo2);
+}
+
+a, li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.main {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  border-bottom: none;
+}
+
+/*Portada*/
+.portada {
+  margin-top: 100px;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  
+}

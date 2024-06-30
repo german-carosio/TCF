@@ -1,0 +1,22 @@
+.container {
+    background: var(--verde);
+    height: 100vh;
+    position: relative;
+}
+
+.img {
+    background: var(--fondo2);
+    width: max-content;
+    border-radius: 100%;
+    padding: 15px;
+    position: absolute;
+    top: -300px;
+    right: 150px;
+    width: 400px;
+    z-index: 2;
+}
+
+.img img {
+    width: 100%;
+}
+

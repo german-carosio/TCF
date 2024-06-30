@@ -1,0 +1,90 @@
+/* RecipeDetail.module.css */
+
+.recipeDetail {
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.recipeTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center; /* Center the flex items horizontally */
+    align-items: center;     /* Center the flex items vertically */
+    flex-direction: column;
+}
+
+.imageContainer {
+    flex: 1;                /* Ensure the flex items have the same width */
+    margin-right: 20px;
+    text-align: center;     /* Center the image within this container */
+}
+
+.recipeImage {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.infoContainer {
+    flex: 1;                /* Ensure the flex items have the same width */
+    padding: 20px 20px;
+}
+
+.title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.ingredients h4,
+.steps h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.ingredients ul,
+.steps ol {
+    margin-left: 20px;
+}
+
+.ingredients ul li,
+.steps ol li {
+    list-style-type: disc;
+    margin-bottom: 5px;
+}
+
+/* Estilo del botón para ver todas las recetas */
+.allRecipesButton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.allRecipesButton:hover {
+    background-color: #45a049;
+}
+
+
+@media (min-width: 768px) {
+    .content {
+        flex-direction: row;
+    }
+}
