@@ -48,7 +48,6 @@ const RecipeDetail = () => {
                     </div>
                     {/* Contenedor para la información de la receta */}
                     <div className={styles.infoContainer}>
-                        <p className={styles.description}>{recipe.description}</p> {/* Mostrar la descripción de la receta */}
                         {/* Contenedor para los ingredientes de la receta */}
                         <div className={styles.ingredients}>
                             <h4>Ingredientes:</h4>
@@ -69,6 +68,7 @@ const RecipeDetail = () => {
                                 ))}
                             </ol>
                         </div>
+                        <button> Compartir</button>
                     </div>
                 </div>
                 {/* Enlace para ver todas las recetas */}

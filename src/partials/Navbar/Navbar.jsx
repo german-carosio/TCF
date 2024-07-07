@@ -63,22 +63,11 @@ const Navbar = () => {
                 {/* Lista de elementos de menú */}
                 <ul className={`${styles.menu} ${isOpen ? styles.menuVisible : ''}`}>
                     {/* Elementos de menú */}
-                    <li className={styles.menuItem}><Link to="/" className={styles.menuLink} onClick={closeMenu}>Home</Link></li>
+                    <li className={styles.menuItem}><Link to="/recipes" className={styles.menuLink} onClick={closeMenu}>Recetas</Link></li>
+                    <li className={styles.menuItem}><Link to="/about" className={styles.menuLink} onClick={closeMenu}>Tipos</Link></li>
+                    <li className={styles.menuItem}><Link to="/about" className={styles.menuLink} onClick={closeMenu}>Beneficios</Link></li>
                     <li className={styles.menuItem}><Link to="/about" className={styles.menuLink} onClick={closeMenu}>Nosotros</Link></li>
-                    <li className={styles.menuItem}><Link to="/recipes" className={styles.menuLink} onClick={closeMenu}>Recipes</Link></li>
-                    <li className={styles.menuItem}>
-                        {/* Elemento de menú con submenú */}
-                        <span className={styles.menuLink} onClick={toggleSubMenu}>
-                            Service <i className={`fa-solid ${isSubMenuOpen ? 'fa-caret-up' : 'fa-caret-down'}`}></i>
-                        </span>
-                        {/* Submenú */}
-                        <ul className={`${styles.subMenu} ${isSubMenuOpen ? styles.subMenuVisible : ''}`}>
-                            {/* Elementos del submenú */}
-                            <li className={styles.subMenuItem}><Link to="/service1" className={styles.subMenuLink} onClick={() => { closeMenu(); closeSubMenu(); }}>Subitem 1</Link></li>
-                            <li className={styles.subMenuItem}><Link to="/service2" className={styles.subMenuLink} onClick={() => { closeMenu(); closeSubMenu(); }}>Subitem 2</Link></li>
-                            <li className={styles.subMenuItem}><Link to="/service3" className={styles.subMenuLink} onClick={() => { closeMenu(); closeSubMenu(); }}>Subitem 3</Link></li>
-                        </ul>
-                    </li>
+                    <li className={styles.menuItem}><Link to="/about" className={styles.menuLink} onClick={closeMenu}>Blog</Link></li>
                     <li className={styles.menuItem}><Link to="/contact" className={styles.menuLink} onClick={closeMenu}>Contact</Link></li>
                 </ul>
             </nav>

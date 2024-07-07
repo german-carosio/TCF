@@ -6,15 +6,11 @@ import styles from './RecipeCard.module.css';
 const RecipeCard = ({ recipe }) => {
     return (
         <div className={styles.recipeCard}>
-            {/* Mostrar la imagen de la receta */}
-            <img src={recipe.image} alt={recipe.title} className={styles.recipeImage} />
-            {/* Mostrar la información de la receta */}
-            <div className={styles.recipeInfo}>
-                {/* Mostrar el título de la receta */}
-                <h2 className={styles.recipeTitle}>{recipe.title}</h2>
-                {/* Enlace para ver los detalles de la receta */}
-                <Link to={`/recipes/${recipe.id}`} className={styles.recipeButton}>Ver Receta</Link>
-            </div>
+            <Link to={`/recipes/${recipe.id}`} className={styles.link}>
+                <img src={recipe.image} alt={recipe.title} className={styles.recipeImage} />
+                <div className={styles.capa}></div>
+                <h3 className={styles.title}>{recipe.title}</h3>
+            </Link>
         </div>
     );
 };

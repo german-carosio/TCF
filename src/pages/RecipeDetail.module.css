@@ -2,34 +2,39 @@
 
 .recipeDetail {
     padding: 50px;
-    margin-top: 120px;
+    margin-top: 80px;
 }
 
 .recipeTitle {
     font-size: 24px;
-    margin-bottom: 20px;
+    padding: 40px;
+    background-color: var(--celeste);
+    border-radius: 20px 20px 0 0;
 }
 
 .content {
     display: flex;
     justify-content: center; /* Center the flex items horizontally */
-    align-items: center;     /* Center the flex items vertically */
+       /* Center the flex items vertically */
     flex-direction: column;
+    background-color: var(--celeste);
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
 }
 
 .imageContainer {
     flex: 1;                /* Ensure the flex items have the same width */
-    margin-right: 20px;
+    margin: 0 20px 0 20px;
     text-align: center;     /* Center the image within this container */
 }
 
 .recipeImage {
     display: block;
     width: 100%;
-    max-width: 400px;
     height: auto;
-    border-radius: 5px;
+    border-radius: 20px;
     margin: 0 auto;
+    object-fit: cover;
 }
 
 .infoContainer {
@@ -69,7 +74,7 @@
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #4CAF50;
+    background-color: var(--verde);
     color: white;
     text-decoration: none;
     border: none;
