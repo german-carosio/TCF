@@ -2,19 +2,11 @@
 
 // Array de categorías
 export const categories = [
-    'Plato principal',
-    'Arroz',
-    'Tacos',
-    'Pasta',
-    'Entrante',
-    'Sushi',
-    'Mariscos',
-    'Carnes',
-    'Vegetariano',
-    'Sopa',
-    'Postre',
-    'Dulces',
-    'Gratinados'
+    'Desayunos',
+    'Sopas y guisos',
+    'Dips',
+    'Ensaladas',
+    'Almuerzos y cenas',
 ];
 
 

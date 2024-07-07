@@ -1,41 +1,82 @@
-/* RecipeList.module.css */
-
-/* Estilos generales del contenedor de la lista de recetas */
 .recipeList {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 60px auto 0 auto;
+    max-width: 1400px;
+    margin: 120px auto;
+    padding: 0 20px;
     font-family: Arial, sans-serif;
 }
 
-/* Estilo del título de la lista de recetas */
 .title {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 1.5em;
+    margin-bottom: 60px;
+    color: #FF5733; /* Naranja para el título */
 }
 
-/* Contenedor del filtro de categoría */
 .filter {
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: var(--celeste);
+}
+
+.categoryButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 1em;
+    color: var(--text1);
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.categoryButton:hover, .categoryButton.active {
+    background-color: var(--fondo1); /* Naranja cuando está activo o hover */  
+}
+
+.search {
     margin-bottom: 20px;
+    padding: 10px 0;
+    background: var(--celeste);
 }
 
-.filter label {
-    margin-right: 10px;
-    font-size: 18px;
+.search input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px 0 0 10px;
+    font-size: 1em;
 }
 
-.filter select {
-    padding: 5px;
-    font-size: 16px;
+.search button {
+    padding: 10px;
+    border: none;
+    background: none;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
 }
 
-/* Estilos de la cuadrícula de recetas */
 .recipesGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
 
+@media (min-width: 768px) {
+    .recipeList {
+        padding: 0 50px;
+    }
+
+    .filter {
+        justify-content: space-between;
+        padding: 20px 50px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .search {
+        padding: 20px 50px;
+        border-radius: 0 0 10px 10px;
+    }
+}

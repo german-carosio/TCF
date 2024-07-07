@@ -11,12 +11,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px;
-
+    padding: 80px 80px 20px 80px;
 }
 
 .lados h1 {
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .frase {

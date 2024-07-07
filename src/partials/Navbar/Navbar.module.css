@@ -10,7 +10,7 @@
   align-items: center;
   margin: 0 auto;
   color: var(--verde);
-  background: var(--fondo2);
+  background: #fff;
 }
 
 .nav {
@@ -24,9 +24,7 @@
   height: 60px;
 }
 
-.logo {
-  height: 45px;
-}
+
 
 .menu {
   position: absolute;
@@ -55,6 +53,7 @@
   gap: 5px;
   cursor: pointer;
   color: var(--verde);
+  font-weight: 600;
 }
 
 .menuItem {

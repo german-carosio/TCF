@@ -11,13 +11,14 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  background: var(--fondo2);
+  background: #fff;
 }
 
 a, li {
   text-decoration: none;
   list-style: none;
 }
+
 
 .main {
   width: 100%;

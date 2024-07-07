@@ -1,62 +1,67 @@
-// RecipeList.jsx
-
-import React, { useEffect, useState } from 'react'; // Importamos React, useEffect y useState
-import { getRecipes } from '../../data/recipesData'; // Importamos la función para obtener recetas
-import { getCategories } from '../../data/categoriesData'; // Importamos la función para obtener categorías
-import RecipeCard from '../RecipeCard/RecipeCard'; // Importamos el componente RecipeCard
-import styles from './RecipeList.module.css'; // Importamos los estilos CSS module
+import React, { useEffect, useState } from 'react';
+import { getRecipes } from '../../data/recipesData';
+import { getCategories } from '../../data/categoriesData';
+import RecipeCard from '../RecipeCard/RecipeCard';
+import styles from './RecipeList.module.css';
 
 // Componente que muestra una lista de recetas
 const RecipeList = () => {
-    const [recipes, setRecipes] = useState([]); // Estado para almacenar las recetas obtenidas
-    const [filteredRecipes, setFilteredRecipes] = useState([]); // Estado para almacenar las recetas filtradas
-    const [categories, setCategories] = useState([]); // Estado para almacenar las categorías
-    const [selectedCategory, setSelectedCategory] = useState(''); // Estado para almacenar la categoría seleccionada
+    const [recipes, setRecipes] = useState([]);
+    const [filteredRecipes, setFilteredRecipes] = useState([]);
+    const [categories, setCategories] = useState([]);
+    const [selectedCategory, setSelectedCategory] = useState('');
 
-    // Efecto para obtener las recetas y categorías cuando el componente se monta
     useEffect(() => {
         const fetchRecipesAndCategories = async () => {
             try {
-                const recipeData = await getRecipes(); // Obtener las recetas desde el archivo de datos
-                const categoryData = await getCategories(); // Obtener las categorías desde el archivo de datos
-                setRecipes(recipeData); // Actualizar el estado con las recetas obtenidas
-                setFilteredRecipes(recipeData); // Inicialmente, las recetas filtradas son todas las recetas
-                setCategories(categoryData); // Establecer categorías únicas en el estado
+                const recipeData = await getRecipes();
+                const categoryData = await getCategories();
+                setRecipes(recipeData);
+                setFilteredRecipes(recipeData);
+                setCategories(categoryData);
             } catch (error) {
-                console.error('Error fetching data:', error); // Manejar errores en la obtención de datos
+                console.error('Error fetching data:', error);
             }
         };
-        fetchRecipesAndCategories(); // Llamar a la función para obtener las recetas y categorías
-    }, []); // La dependencia es un arreglo vacío, se ejecutará solo una vez al montar el componente
+        fetchRecipesAndCategories();
+    }, []);
 
-    // Función para manejar el cambio en el filtro de categoría
-    const handleCategoryChange = (event) => {
-        const category = event.target.value;
-        setSelectedCategory(category); // Establecer la categoría seleccionada
+    const handleCategoryChange = (category) => {
+        setSelectedCategory(category);
         if (category === '') {
-            setFilteredRecipes(recipes); // Si no se selecciona ninguna categoría, mostrar todas las recetas
+            setFilteredRecipes(recipes);
         } else {
-            setFilteredRecipes(recipes.filter(recipe => recipe.category.includes(category))); // Filtrar las recetas por la categoría seleccionada
+            setFilteredRecipes(recipes.filter(recipe => recipe.category.includes(category)));
         }
     };
 
     return (
         <div className={styles.recipeList}>
-            {/* Título de la lista de recetas */}
-            <h1 className={styles.title}>Recetas</h1>
+            <h1 className={styles.title}>Incorpora los frijoles de maneras originales y deliciosas</h1>
 
-            {/* Filtro de categorías */}
             <div className={styles.filter}>
-                {/* <label htmlFor="category">Filtrar por categoría: </label> */}
-                <select id="category" value={selectedCategory} onChange={handleCategoryChange}>
-                    <option value="">Todas</option>
-                    {categories.map((category, index) => (
-                        <option key={index} value={category}>{category}</option>
-                    ))}
-                </select>
+                <button
+                    className={`${styles.categoryButton} ${selectedCategory === '' ? styles.active : ''}`}
+                    onClick={() => handleCategoryChange('')}
+                >
+                    Todas
+                </button>
+                {categories.map((category, index) => (
+                    <button
+                        key={index}
+                        className={`${styles.categoryButton} ${selectedCategory === category ? styles.active : ''}`}
+                        onClick={() => handleCategoryChange(category)}
+                    >
+                        {category}
+                    </button>
+                ))}
             </div>
 
-            {/* Mapear cada receta para renderizar un componente RecipeCard */}
+            <div className={styles.search}>
+                <input type="text" placeholder="Buscar recetas por nombre, tipo de frijol o momento del día" />
+                <button>🔍</button>
+            </div>
+
             <div className={styles.recipesGrid}>
                 {filteredRecipes.map(recipe => (
                     <RecipeCard key={recipe.id} recipe={recipe} />
@@ -67,5 +72,9 @@ const RecipeList = () => {
 };
 
 export default RecipeList;
+
+
+
+
 
 

@@ -1,8 +1,8 @@
 .btn {
     padding: 12px 40px;
-    border: none;
+    border: solid 1px #fff;
     border-radius: 50px;
-    background: var(--verde);
+    background: none;
     color: #fff;
     font-size: 18px;
 }
