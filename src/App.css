@@ -23,8 +23,9 @@ a, li {
 .main {
   width: 100%;
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 110px auto 0 auto;
   border-bottom: none;
+  padding: 0 50px;
 }
 
 /*Portada*/

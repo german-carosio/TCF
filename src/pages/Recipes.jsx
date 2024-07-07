@@ -11,10 +11,7 @@ const Home = () => {
             </Helmet>
 
             <div>
-
                 <RecipeList />
-
-
             </div>
         </>
 

@@ -1,7 +1,6 @@
 .recipeList {
     max-width: 1400px;
-    margin: 110px auto;
-    padding: 0 20px;
+    margin: 0 auto 50px auto;
 }
 
 .title {
@@ -68,9 +67,7 @@
 }
 
 @media (min-width: 768px) {
-    .recipeList {
-        padding: 0 50px;
-    }
+   
 
     .filter {
         justify-content: space-between;
