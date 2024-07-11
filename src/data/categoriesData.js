@@ -1,14 +1,13 @@
 // categoriesData.js
 
-// Array de categorías
+// Array de categorías con id y url
 export const categories = [
-    'Desayunos',
-    'Sopas y guisos',
-    'Dips',
-    'Ensaladas',
-    'Almuerzos y cenas',
+    { id: 1, name: 'Desayunos', displayName: 'Desayunos', url: 'desayunos' },
+    { id: 2, name: 'Sopas y guisos', displayName: 'Sopas y guisos', url: 'sopas-y-guisos' },
+    { id: 3, name: 'Dips', displayName: 'Dips', url: 'dips' },
+    { id: 4, name: 'Ensaladas', displayName: 'Ensaladas', url: 'ensaladas' },
+    { id: 5, name: 'Almuerzos y cenas', displayName: 'Almuerzos y cenas', url: 'almuerzos-y-cenas' },
 ];
-
 
 // Función para obtener todas las categorías
 export const getCategories = async () => {
@@ -21,3 +20,5 @@ export const getCategories = async () => {
         return []; // En caso de error, retornamos un array vacío
     }
 };
+
+

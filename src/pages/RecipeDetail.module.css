@@ -1,5 +1,9 @@
 /* RecipeDetail.module.css */
 
+.recipeDetail {
+    margin-bottom: 50px;
+}
+
 .recipeTitle {
     font-size: 24px;
     padding: 40px;
@@ -63,24 +67,7 @@
     margin-bottom: 5px;
 }
 
-/* Estilo del botón para ver todas las recetas */
-.allRecipesButton {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: var(--verde);
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
 
-.allRecipesButton:hover {
-    background-color: #45a049;
-}
 
 
 @media (min-width: 768px) {

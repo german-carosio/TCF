@@ -1,67 +1,61 @@
 import React, { useEffect, useState } from 'react';
-import { getRecipes } from '../../data/recipesData';
-import { getCategories } from '../../data/categoriesData';
+import { useRecipesContext } from '../../context/RecipesContext';
 import RecipeCard from '../RecipeCard/RecipeCard';
+import FilterContainer from '../FilterContainer/FilterContainer';
+import SearchBar from '../SearchBar/SearchBar';
+import { useLocation } from 'react-router-dom';
 import styles from './RecipeList.module.css';
 
-// Componente que muestra una lista de recetas
-const RecipeList = () => {
-    const [recipes, setRecipes] = useState([]);
+const RecipeList = ({ selectedCategory = '' }) => {
+    const { recipes, categories } = useRecipesContext();
     const [filteredRecipes, setFilteredRecipes] = useState([]);
-    const [categories, setCategories] = useState([]);
-    const [selectedCategory, setSelectedCategory] = useState('');
+    const [currentCategory, setCurrentCategory] = useState(selectedCategory);
+    const location = useLocation();
 
     useEffect(() => {
-        const fetchRecipesAndCategories = async () => {
-            try {
-                const recipeData = await getRecipes();
-                const categoryData = await getCategories();
-                setRecipes(recipeData);
-                setFilteredRecipes(recipeData);
-                setCategories(categoryData);
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            }
-        };
-        fetchRecipesAndCategories();
-    }, []);
+        const params = new URLSearchParams(location.search);
+        const search = params.get('search') || '';
+        filterRecipes(search, currentCategory);
+    }, [location.search, recipes, currentCategory]);
 
-    const handleCategoryChange = (category) => {
-        setSelectedCategory(category);
-        if (category === '') {
-            setFilteredRecipes(recipes);
-        } else {
-            setFilteredRecipes(recipes.filter(recipe => recipe.category.includes(category)));
+    const filterRecipes = (searchTerm, categoryName) => {
+        let filtered = recipes;
+
+        if (categoryName !== '') {
+            filtered = filtered.filter(recipe =>
+                recipe.category.some(cat => cat === categories.find(category => category.name === categoryName)?.displayName)
+            );
         }
+
+        if (searchTerm !== '') {
+            filtered = filtered.filter(recipe =>
+                recipe.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                recipe.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                recipe.ingredients.some(ingredient => ingredient.toLowerCase().includes(searchTerm.toLowerCase()))
+            );
+        }
+
+        setFilteredRecipes(filtered);
+    };
+
+    const handleCategoryChange = (categoryName) => {
+        setCurrentCategory(categoryName);
+        const params = new URLSearchParams(location.search);
+        const search = params.get('search') || '';
+        filterRecipes(search, categoryName);
+    };
+
+    const handleSearch = (searchTerm) => {
+        filterRecipes(searchTerm, currentCategory);
     };
 
     return (
         <div className={styles.recipeList}>
-            <h1 className={styles.title}>Incorpora los frijoles de maneras originales y deliciosas</h1>
-
-            <div className={styles.filter}>
-                <button
-                    className={`${styles.categoryButton} ${selectedCategory === '' ? styles.active : ''}`}
-                    onClick={() => handleCategoryChange('')}
-                >
-                    Todas
-                </button>
-                {categories.map((category, index) => (
-                    <button
-                        key={index}
-                        className={`${styles.categoryButton} ${selectedCategory === category ? styles.active : ''}`}
-                        onClick={() => handleCategoryChange(category)}
-                    >
-                        {category}
-                    </button>
-                ))}
-            </div>
-
-            <div className={styles.search}>
-                <input type="text" placeholder="Buscar recetas por nombre, tipo de frijol o momento del día" />
-                <button>🔍</button>
-            </div>
-
+            <FilterContainer
+                selectedCategory={currentCategory}
+                setSelectedCategory={handleCategoryChange}
+            />
+            <SearchBar onSearch={handleSearch} />
             <div className={styles.recipesGrid}>
                 {filteredRecipes.map(recipe => (
                     <RecipeCard key={recipe.id} recipe={recipe} />
@@ -72,6 +66,10 @@ const RecipeList = () => {
 };
 
 export default RecipeList;
+
+
+
+
 
 
 
