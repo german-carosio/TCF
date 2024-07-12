@@ -5,16 +5,16 @@ import Boton from '../Boton/Boton'
 const Hero = () => {
   return (
     <section className={styles.container}>
-        <div className={styles.lados}>
-        <h1 className={styles.frase}>Conoce múltiples maneras de incorporar frijoles a tus comidas</h1>
+        <div className={styles.lado1}>
+        <h1 className={styles.frase}>¡Empieza a <br /> comer frijoles!</h1>
         <div className={styles.boton}>
-          <Boton/>
+        <Boton title="Ir a Recetas" url="/recipes" />
         </div>
         
         </div>
 
-        <div className={styles.lados}>
-            
+        <div className={styles.lado2}>
+            <img src="/img/web/imgHero.svg" alt="" />
         </div>
         
     </section>

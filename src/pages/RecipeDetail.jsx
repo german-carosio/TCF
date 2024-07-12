@@ -10,8 +10,8 @@ import SearchBar from '../components/SearchBar/SearchBar';
 const RecipeDetail = () => {
     const { recipeId } = useParams();
     const [recipe, setRecipe] = useState(null);
-    const { categories } = useRecipesContext();
     const navigate = useNavigate();
+    const { categories } = useRecipesContext();
 
     useEffect(() => {
         const fetchRecipe = async () => {
@@ -26,13 +26,13 @@ const RecipeDetail = () => {
         fetchRecipe();
     }, [recipeId]);
 
+    const handleSearch = (searchTerm) => {
+        navigate(`/recipes?search=${searchTerm}`);
+    };
+
     if (!recipe) {
         return <div>Loading...</div>;
     }
-
-    const handleSearchRedirect = (searchTerm) => {
-        navigate(`/recipes?search=${encodeURIComponent(searchTerm)}`);
-    };
 
     return (
         <>
@@ -43,7 +43,7 @@ const RecipeDetail = () => {
 
             <FilterContainer selectedCategory={''} setSelectedCategory={() => {}} isDetailPage={true} />
 
-            <SearchBar onSearch={handleSearchRedirect} />
+            <SearchBar onSearch={handleSearch} />
 
             <div className={styles.recipeDetail}>
                 <h2 className={styles.recipeTitle}>{recipe.title}</h2>
@@ -77,6 +77,7 @@ const RecipeDetail = () => {
 };
 
 export default RecipeDetail;
+
 
 
 

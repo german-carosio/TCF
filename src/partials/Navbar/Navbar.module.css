@@ -24,7 +24,9 @@
   height: 60px;
 }
 
-
+.logo {
+  height: 50px;
+}
 
 .menu {
   position: absolute;
@@ -46,14 +48,19 @@
 }
 
 .menuLink {
-  padding: 8px 12px;
+  padding: 10px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
   cursor: pointer;
   color: var(--verde);
-  font-weight: 600;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.activeMenuItem .menuLink {
+  background-color: var(--fondo1); 
 }
 
 .menuItem {
@@ -154,6 +161,8 @@
   .subMenuItem {
     width: 100%;
   }
+
+
 }
 
 

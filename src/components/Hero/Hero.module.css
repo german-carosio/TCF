@@ -1,17 +1,16 @@
 .container {
     margin-top: 80px;
     width: 100%;
-    padding: 40px;
+    padding: 0;
     display: flex;
+    flex-direction: column;
 }
 
-.lados {
-    width: 50%;
+.lado1 {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 80px 80px 20px 80px;
 }
 
 .lados h1 {
@@ -25,4 +24,30 @@
 .boton {
     width: 100%;
     margin-top: 25px;
+}
+
+.lado2 {
+    width: 100%;
+}
+
+.lado2 img {
+    width: 80%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .lado1, .lado2 {
+        width: 50%;
+    }
+
+    .lado1 {
+        padding-left: 100px;
+    }
+
+    .lado1 h1 {
+        font-size: 50px;
+    }
 }

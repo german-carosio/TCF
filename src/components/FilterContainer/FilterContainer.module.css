@@ -26,5 +26,5 @@
 }
 
 .categoryButton.active {
-    background-color: var(--fondo1); /* Naranja cuando está activo o hover */  
+    background-color: var(--fondo1); 
 }
