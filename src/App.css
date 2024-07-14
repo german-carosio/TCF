@@ -11,7 +11,9 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  background: #fff;
+  background-image: url('/img/web/Background.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 a, li {
@@ -44,6 +46,6 @@ a, li {
 
 @media (min-width: 768px) {
   .main {
-    padding: 0 50px;
+    padding: 0 126px;
   }
 }

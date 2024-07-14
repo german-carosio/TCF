@@ -1,8 +1,10 @@
 :root {
-    --celeste: #E1F3F2;
-    --fondo1: #b3d7d6;
     --verde: #4C772D;
     --naranja: #EA5431;
     --fondo2: #FEEFE5;
     --text1: #3C3C3B;
+    --celeste: #AFD7D5;
+    --celeste2: rgba(175,215,213,0.5);
+    --fondoHeader: #E1F3F2;
+    --otro: rgba(225,243,242,0.5);
 }

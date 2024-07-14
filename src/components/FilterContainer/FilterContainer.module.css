@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-    background: var(--celeste);
+    background: var(--celeste2);
     border-radius: 20px 20px 0 0;
 }
 
@@ -26,5 +26,5 @@
 }
 
 .categoryButton.active {
-    background-color: var(--fondo1); 
+    background-color: var(--celeste2); 
 }

@@ -10,7 +10,7 @@
   align-items: center;
   margin: 0 auto;
   color: var(--verde);
-  background: #fff;
+  background: linear-gradient(var(--fondoHeader) 80%, transparent);
 }
 
 .nav {
@@ -60,7 +60,7 @@
 }
 
 .activeMenuItem .menuLink {
-  background-color: var(--fondo1); 
+  background-color: var(--celeste2); 
 }
 
 .menuItem {
@@ -134,7 +134,7 @@
 
   .nav {
     height: 100px;
-    padding: 0 50px;
+    padding: 0 126px;
   }
 
   .logo {
