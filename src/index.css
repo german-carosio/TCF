@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed&display=swap');
+
 :root {
     --verde: #4C772D;
     --naranja: #EA5431;
@@ -6,4 +9,7 @@
     --celeste: #AFD7D5;
     --celeste2: rgba(175,215,213,0.5);
     --fondoHeader: #E1F3F2;
+
+    --tipografia1: "Roboto", sans-serif;
+    --tipografia2: "Sofia Sans Condensed", sans-serif;
 }

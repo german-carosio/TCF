@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async'; // Importa Helmet desde react-helme
 import Hero from '../components/Hero/Hero';
 import RecipesHome from '../components/RecipesHome/RecipesHome';
 import TiposHome from '../components/TiposHome/TiposHome';
+import Margin from '../components/Margin/Margin';
 
 const Home = () => {
 
@@ -16,11 +17,13 @@ const Home = () => {
         <meta name="keywords" content="inicio, sitio web, react" />
       </Helmet>
 
-      <Hero/>
-      <RecipesHome />
+      <Margin>
+        <Hero />
+        <RecipesHome />
+      </Margin>
       <TiposHome />
     </>
-    
+
   );
 };
 

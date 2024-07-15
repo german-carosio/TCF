@@ -1,6 +1,7 @@
 // AboutUs.jsx
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import Margin from '../components/Margin/Margin';
 
 const Tipos = () => {
   return (
@@ -10,10 +11,11 @@ const Tipos = () => {
         <meta name="description" content="Tipos de frijoles." />
         <meta name="keywords" content="tipos de frijoles, varaintes de frijoles, tipo de porotos" />
       </Helmet>
-      <div className='portada'>
+
+      <Margin>
         <h1>Tipos</h1>
         <p>Contenido de la página Tipos</p>
-      </div>
+      </Margin>
     </div>
   );
 };

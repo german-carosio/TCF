@@ -2,6 +2,7 @@
 
 import { Helmet } from 'react-helmet-async'; // Importa Helmet desde react-helmet-async
 import RecipeList from '../components/RecipeList/RecipeList';
+import Margin from '../components/Margin/Margin';
 
 const Recipes = () => {
     return (
@@ -13,7 +14,9 @@ const Recipes = () => {
             </Helmet>
 
             <div>
+                <Margin>
                 <RecipeList />
+                </Margin>
             </div>
         </>
 

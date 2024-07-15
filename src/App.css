@@ -1,6 +1,6 @@
 /* Navbar.module.css */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 
 * {
   margin: 0;
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--tipografia1);
   font-size: 16px;
   background-image: url('/img/web/Background.svg');
   background-size: cover;
@@ -36,6 +36,6 @@ a, li {
 
 @media (min-width: 768px) {
   .main {
-    padding: 110px 70px 50px 70px;
+    padding: 110px 0 50px 0;
   }
 }

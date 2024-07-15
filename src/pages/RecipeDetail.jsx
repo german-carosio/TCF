@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet-async';
 import FilterContainer from '../components/FilterContainer/FilterContainer';
 import { useRecipesContext } from '../context/RecipesContext';
 import SearchBar from '../components/SearchBar/SearchBar';
+import Margin from '../components/Margin/Margin';
 
 const RecipeDetail = () => {
     const { recipeId } = useParams();
@@ -40,7 +41,7 @@ const RecipeDetail = () => {
                 <title>{recipe.title} - {recipe.description}</title>
                 <meta name="description" content={recipe.description} />
             </Helmet>
-
+            <Margin>
             <FilterContainer selectedCategory={''} setSelectedCategory={() => {}} isDetailPage={true} />
 
             <SearchBar onSearch={handleSearch} />
@@ -72,6 +73,7 @@ const RecipeDetail = () => {
                     </div>
                 </div>
             </div>
+            </Margin>
         </>
     );
 };
