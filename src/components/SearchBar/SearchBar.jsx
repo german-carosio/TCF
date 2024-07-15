@@ -27,7 +27,7 @@ const SearchBar = ({ onSearch }) => {
                 onChange={handleInputChange}
                 onKeyPress={handleKeyPress}
             />
-            <button onClick={handleSearch}>Buscar</button>
+           {/*  <button onClick={handleSearch}>Buscar</button> */}
         </div>
     );
 };

@@ -15,7 +15,13 @@
     padding: 10px 10px 40px 10px;
 }
 
-.categorie {
+.categories {
+    display: flex;
+    color: var(--text1);
+    gap: 8px;
+}
+
+.categorie a {
     font-size: 14px;
     color: var(--text1);
 }
@@ -23,4 +29,5 @@
 .title {
     font-size: 18px;
     color: var(--naranja);
+    margin-top: 5px;
 }

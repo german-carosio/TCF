@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link} from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import { useNavContext } from '../../context/NavContext'; // Importa el contexto
 
@@ -20,7 +20,7 @@ const Navbar = () => {
                 <Link to="/" onClick={() => handleNavLinkClick('/')}>
                     <img className={styles.logo} src='/img/web/Logo.svg' alt="Logo Todo con frijol" />
                 </Link>
-                
+
                 <div className={styles.btnMenu}>
                     {!isOpen ? (
                         <button aria-label="Open menu" className={styles.openMenu} onClick={toggleMenu}>
@@ -39,8 +39,8 @@ const Navbar = () => {
                             Recetas
                         </Link>
                     </li>
-                    <li className={`${styles.menuItem} ${activeLink === '/about' ? styles.activeMenuItem : ''}`}>
-                        <Link to="/about" className={styles.menuLink} onClick={() => handleNavLinkClick('/about')}>
+                    <li className={`${styles.menuItem} ${activeLink === '/tipos' ? styles.activeMenuItem : ''}`}>
+                        <Link to="/tipos" className={styles.menuLink} onClick={() => handleNavLinkClick('/tipos')}>
                             Tipos
                         </Link>
                     </li>

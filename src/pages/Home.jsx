@@ -3,6 +3,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async'; // Importa Helmet desde react-helmet-async
 import Hero from '../components/Hero/Hero';
 import RecipesHome from '../components/RecipesHome/RecipesHome';
+import TiposHome from '../components/TiposHome/TiposHome';
 
 const Home = () => {
 
@@ -17,6 +18,7 @@ const Home = () => {
 
       <Hero/>
       <RecipesHome />
+      <TiposHome />
     </>
     
   );

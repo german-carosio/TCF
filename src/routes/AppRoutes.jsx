@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Layout from './Layout';
 const RecipeDetail = lazy(() => import('../pages/RecipeDetail')); 
 const Home = lazy(() => import('../pages/Home'));
-const AboutUs = lazy(() => import('../pages/AboutUs'));
+const Tipos = lazy(() => import('../pages/Tipos'));
 const Recipes = lazy(() => import('../pages/Recipes'));
 const Contact = lazy(() => import('../pages/Contact'));
 const PageNotFound = lazy(() => import('../pages/PageNotFound'));
@@ -15,7 +15,7 @@ const AppRoutes = () => {
             <Routes>
                 <Route path="/" element={<Layout/>}>
                     <Route index element={<Home />} />
-                    <Route path="about" element={<AboutUs />} />
+                    <Route path="tipos" element={<Tipos />} />
                     <Route path="recipes" element={<Recipes />} />
                     <Route path="recipes/category/:categoryUrl" element={<RecipeCategory />} />
                     <Route path="contact" element={<Contact />} />
