@@ -1,7 +1,4 @@
 /* src/components/RecipesHome/RecipesHome.module.css */
-.recipesHome {
-    margin-bottom: 50px;
-}
 
 .recipesGrid {
     display: grid;

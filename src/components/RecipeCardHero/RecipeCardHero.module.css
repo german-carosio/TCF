@@ -11,6 +11,16 @@
     border-radius: 30px 30px 40% 0;
 }
 
+.txt {
+    padding: 10px 10px 40px 10px;
+}
+
+.categorie {
+    font-size: 14px;
+    color: var(--text1);
+}
+
 .title {
     font-size: 18px;
+    color: var(--naranja);
 }

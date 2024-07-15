@@ -6,7 +6,7 @@ import styles from './RecipesHome.module.css';
 
 const RecipesHome = () => {
     const { recipes } = useRecipesContext();
-    const latestRecipes = recipes.slice(-4).reverse(); // Obtener las últimas 4 recetas
+    const latestRecipes = recipes.slice(0, 4); // Obtener las primeras 4 recetas
 
     return (
         <div className={styles.recipesHome}>

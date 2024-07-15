@@ -1,6 +1,6 @@
 .container {
-    margin-top: 80px;
     width: 100%;
+    height: 400px;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@
 }
 
 .lados h1 {
-    font-size: 40px;
+    font-size: 70px;
 }
 
 .frase {
@@ -42,8 +42,6 @@
     .lado1, .lado2 {
         width: 50%;
     }
-
-  
 
     .lado1 h1 {
         font-size: 50px;

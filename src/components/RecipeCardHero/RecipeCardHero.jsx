@@ -8,9 +8,11 @@ const RecipeCardHero = ({ recipe }) => {
         <div className={styles.recipeCard}>
             <Link to={`/recipes/${recipe.id}`} className={styles.link}>
                 <img src={recipe.image} alt={recipe.title} className={styles.recipeImage} />
-                <h3 className={styles.title}>{recipe.title}</h3>
-                <br />
-                <br />
+                <div className={styles.txt}>
+                    <p className={styles.categorie}>#Categoría</p>
+                    <h3 className={styles.title}>{recipe.title}</h3>
+                </div>
+
             </Link>
         </div>
     );

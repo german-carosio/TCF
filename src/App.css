@@ -25,27 +25,17 @@ a, li {
 .main {
   width: 100%;
   max-width: 1400px;
-  margin: 110px auto 0 auto;
+  margin: 0 auto;
   border-bottom: none;
-  padding: 0 10px;
+  padding: 110px  10px;
 }
 
 
 
-/*Portada*/
-.portada {
-  margin-top: 100px;
-  height: calc(100vh - 100px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  
-}
+
 
 @media (min-width: 768px) {
   .main {
-    padding: 0 126px;
+    padding: 110px 126px 50px 126px;
   }
 }
