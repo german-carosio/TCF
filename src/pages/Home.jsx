@@ -5,6 +5,7 @@ import Hero from '../components/Hero/Hero';
 import RecipesHome from '../components/RecipesHome/RecipesHome';
 import TiposHome from '../components/TiposHome/TiposHome';
 import Margin from '../components/Margin/Margin';
+import BeneficiosHome from '../components/BeneficiosHome/BeneficiosHome';
 
 const Home = () => {
 
@@ -12,7 +13,7 @@ const Home = () => {
     <>
 
       <Helmet>
-        <title>Inicio - Todo con frijol</title>
+        <title>Home - Todo con frijol</title>
         <meta name="description" content="Bienvenido a Todo con frijol." />
         <meta name="keywords" content="inicio, sitio web, react" />
       </Helmet>
@@ -22,6 +23,7 @@ const Home = () => {
         <RecipesHome />
       </Margin>
       <TiposHome />
+      <BeneficiosHome />
     </>
 
   );

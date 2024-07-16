@@ -18,8 +18,12 @@ export const RecipesProvider = ({ children }) => {
         fetchData();
     }, []);
 
+    const getRecipeById = (id) => {
+        return recipes.find(recipe => recipe.id === id);
+    };
+
     return (
-        <RecipesContext.Provider value={{ recipes, categories }}>
+        <RecipesContext.Provider value={{ recipes, categories, getRecipeById }}>
             {children}
         </RecipesContext.Provider>
     );
@@ -28,4 +32,5 @@ export const RecipesProvider = ({ children }) => {
 export const useRecipesContext = () => {
     return useContext(RecipesContext);
 };
+
 

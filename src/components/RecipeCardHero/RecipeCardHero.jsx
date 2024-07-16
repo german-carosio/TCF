@@ -13,21 +13,23 @@ const RecipeCardHero = ({ recipe }) => {
 
     return (
         <div className={styles.recipeCard}>
-            <Link to={`/recipes/${recipe.id}`} className={styles.link}>
-                <img src={recipe.image} alt={recipe.title} className={styles.recipeImage} />
-                <div className={styles.txt}>
-                    <div className={styles.categories}>
-                        {recipe.category.map((cat, index) => (
-                            <p key={index} className={styles.categorie}>
-                                <Link to={`/recipes/category/${getCategoryUrl(cat)}`} className={styles.categoryLink}>
-                                    #{cat}
-                                </Link>
-                            </p>
-                        ))}
-                    </div>
-                    <h3 className={styles.title}>{recipe.title}</h3>
+
+            <img src={recipe.image} alt={recipe.title} className={styles.recipeImage} />
+            <div className={styles.txt}>
+                <div className={styles.categories}>
+                    {recipe.category.map((cat, index) => (
+                        <p key={index} className={styles.categorie}>
+                            <Link to={`/recipes/category/${getCategoryUrl(cat)}`} className={styles.categoryLink}>
+                                #{cat}
+                            </Link>
+                        </p>
+                    ))}
                 </div>
-            </Link>
+                <Link to={`/recipes/detail/${recipe.id}`} className={styles.link}>
+                    <h3 className={styles.title}>{recipe.title}</h3>
+                </Link>
+            </div>
+
         </div>
     );
 };

@@ -1,0 +1,28 @@
+
+.container {
+    height: 600px;
+    display: flex;
+    
+    color: var(--verde);
+    margin-top: 50px;
+    padding: 0 70px 0 70px;
+}
+
+.container div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container div h2 {
+    font-size: 45px;
+    font-family: var(--tipografia2);
+    line-height: 80px;
+    margin-bottom: 20px; /* Añadir margen inferior para separar del botón */
+}
+
+.container div p {
+    line-height: 45px;
+    font-size: 26px;
+}

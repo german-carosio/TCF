@@ -13,7 +13,7 @@ const Tipos = () => {
       </Helmet>
 
       <Margin>
-        <h1>Tipos</h1>
+        <h1>Conoce la variedad de frijoles y sus nutrientes</h1>
         <p>Contenido de la página Tipos</p>
       </Margin>
     </div>

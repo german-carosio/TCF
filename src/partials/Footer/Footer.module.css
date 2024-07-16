@@ -33,7 +33,7 @@
 }
 
 .icon:hover {
-    color: #ff6f61;
+    color: var(--celeste);
     /* Cambia el color al pasar el mouse sobre los íconos */
 }
 

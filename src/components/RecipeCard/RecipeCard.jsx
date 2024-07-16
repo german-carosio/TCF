@@ -6,7 +6,7 @@ import styles from './RecipeCard.module.css';
 const RecipeCard = ({ recipe }) => {
     return (
         <div className={styles.recipeCard}>
-            <Link to={`/recipes/${recipe.id}`} className={styles.link}>
+            <Link to={`/recipes/detail/${recipe.id}`} className={styles.link}>
                 <img src={recipe.image} alt={recipe.title} className={styles.recipeImage} />
                 <div className={styles.capa}></div>
                 <h3 className={styles.title}>{recipe.title}</h3>
