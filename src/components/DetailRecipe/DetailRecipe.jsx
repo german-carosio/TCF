@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import styles from './DetailRecipe.module.css';
-import { Helmet } from 'react-helmet-async';
-import FilterContainer from '../FilterContainer/FilterContainer';
-import { useRecipesContext } from '../../context/RecipesContext';
-import SearchBar from '../SearchBar/SearchBar';
-import Margin from '../Margin/Margin';
+import { useParams, useNavigate } from 'react-router-dom'; // Hooks para obtener parámetros de la URL y navegar
+import styles from './DetailRecipe.module.css'; // Importa los estilos CSS
+import { Helmet } from 'react-helmet-async'; // Importa Helmet desde react-helmet-async
+import FilterContainer from '../FilterContainer/FilterContainer'; // Importa el componente FilterContainer
+import { useRecipesContext } from '../../context/RecipesContext'; // Hook para obtener el contexto de recetas
+import SearchBar from '../SearchBar/SearchBar'; // Importa el componente SearchBar
+import Margin from '../Margin/Margin'; // Importa el componente Margin
 
 const DetailRecipe = () => {
-    const { recipeId } = useParams();
-    const [recipe, setRecipe] = useState(null);
-    const navigate = useNavigate();
-    const { /* categories, */ getRecipeById } = useRecipesContext();
+    const { recipeId } = useParams(); // Obtiene el parámetro recipeId de la URL
+    const [recipe, setRecipe] = useState(null); // Estado para la receta
+    const navigate = useNavigate(); // Hook para navegar
+    const { getRecipeById } = useRecipesContext(); // Obtiene la función getRecipeById desde el contexto
 
     useEffect(() => {
         const fetchRecipe = () => {
             try {
-                const data = getRecipeById(parseInt(recipeId));
-                setRecipe(data);
+                const data = getRecipeById(parseInt(recipeId)); // Obtiene la receta por ID
+                setRecipe(data); // Establece la receta en el estado
             } catch (error) {
                 console.error('Error fetching recipe:', error);
             }
@@ -27,11 +27,11 @@ const DetailRecipe = () => {
     }, [recipeId, getRecipeById]);
 
     const handleSearch = (searchTerm) => {
-        navigate(`/recipes?search=${searchTerm}`);
+        navigate(`/recipes?search=${searchTerm}`); // Navega a la página de recetas con el término de búsqueda
     };
 
     if (!recipe) {
-        return <div>Loading...</div>;
+        return <div>Loading...</div>; // Muestra un mensaje de carga si la receta no está disponible
     }
 
     return (
@@ -41,8 +41,8 @@ const DetailRecipe = () => {
                 <meta name="description" content={recipe.description} />
             </Helmet>
             <Margin>
-                <FilterContainer selectedCategory={''} setSelectedCategory={() => {}} isDetailPage={true} />
-                <SearchBar onSearch={handleSearch} />
+                <FilterContainer selectedCategory={''} setSelectedCategory={() => {}} isDetailPage={true} /> {/* Renderiza FilterContainer */}
+                <SearchBar onSearch={handleSearch} /> {/* Renderiza SearchBar */}
                 <div className={styles.recipeDetail}>
                     <h2 className={styles.recipeTitle}>{recipe.title}</h2>
                     <div className={styles.content}>
@@ -76,4 +76,6 @@ const DetailRecipe = () => {
 };
 
 export default DetailRecipe;
+
+
 

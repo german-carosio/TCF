@@ -4,11 +4,28 @@ import { Helmet } from 'react-helmet-async';
 import RecipeList from '../components/RecipeList/RecipeList';
 import { useRecipesContext } from '../context/RecipesContext';
 import Margin from '../components/Margin/Margin';
+import FilterContainer from '../components/FilterContainer/FilterContainer';
+import SearchBar from '../components/SearchBar/SearchBar';
+import { useState } from 'react';
+import useFilteredRecipes from '../hooks/useFilteredRecipes';
 
 const RecipeCategory = () => {
     const { categoryUrl } = useParams();
     const { categories } = useRecipesContext();
     const category = categories.find(c => c.url === categoryUrl);
+    const [currentCategory, setCurrentCategory] = useState(category ? category.name : '');
+    const [searchTerm, setSearchTerm] = useState('');
+    const filteredRecipes = useFilteredRecipes(searchTerm, currentCategory);
+
+    const handleCategoryChange = (categoryName) => {
+        setCurrentCategory(categoryName);
+        setSearchTerm('');
+    };
+
+    const handleSearch = (searchTerm) => {
+        setCurrentCategory('');
+        setSearchTerm(searchTerm);
+    };
 
     return (
         <>
@@ -18,12 +35,20 @@ const RecipeCategory = () => {
             </Helmet>
 
             <Margin>
-                <RecipeList selectedCategory={category ? category.name : ''} />
+                <FilterContainer
+                    selectedCategory={currentCategory}
+                    setSelectedCategory={handleCategoryChange}
+                    searchTerm={searchTerm}
+                />
+                <SearchBar onSearch={handleSearch} />
+                <RecipeList data={filteredRecipes} />
             </Margin>
         </>
     );
 };
 
 export default RecipeCategory;
+
+
 
 
