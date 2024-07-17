@@ -1,0 +1,35 @@
+/* Benefits.module.css */
+.title {
+    font-size: 1.5em;
+    margin: 20px 0 60px 0;
+    color: #FF5733; /* Naranja para el título */
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    background-color: #fff;
+  }
+  
+  .card h2 {
+    margin-top: 0;
+  }
+  
+  .card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .card ul li {
+    margin-bottom: 8px;
+  }

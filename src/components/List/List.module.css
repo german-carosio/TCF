@@ -1,8 +1,13 @@
+.title {
+    font-size: 1.5em;
+    margin: 20px 0 60px 0;
+    color: #FF5733; /* Naranja para el título */
+}
+
 .recipeList {
     max-width: 1400px;
     margin: 0 auto 50px auto;
 }
-
 
 .recipesGrid {
     display: grid;

@@ -2,7 +2,7 @@ export const tiposDeFrijoles = [
     {
         id: 1,
         title: 'Frijol Negro',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s',
+        img: '/img/tipos/negro.png',
         nutrientes: {
             calorias: 341, // kcal
             proteina: 21.6, // g
@@ -19,7 +19,7 @@ export const tiposDeFrijoles = [
     {
         id: 2,
         title: 'Frijol Rojo',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s',
+        img: '/img/tipos/rojo.png',
         nutrientes: {
             calorias: 337, // kcal
             proteina: 22.5, // g
@@ -36,7 +36,7 @@ export const tiposDeFrijoles = [
     {
         id: 3,
         title: 'Frijol Pinto',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s',
+        img: '/img/tipos/verde.png',
         nutrientes: {
             calorias: 347, // kcal
             proteina: 21.4, // g
@@ -53,7 +53,7 @@ export const tiposDeFrijoles = [
     {
         id: 4,
         title: 'Garbanzos',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s',
+        img: '/img/tipos/garbanzos.png',
         nutrientes: {
             calorias: 378, // kcal
             proteina: 20.5, // g
@@ -70,7 +70,7 @@ export const tiposDeFrijoles = [
     {
         id: 5,
         title: 'Frijol Blanco',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s',
+        img: '/img/tipos/blanco.png',
         nutrientes: {
             calorias: 335, // kcal
             proteina: 22.3, // g
@@ -87,7 +87,7 @@ export const tiposDeFrijoles = [
     {
         id: 6,
         title: 'Frijol Lima',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s',
+        img: '/img/tipos/lentejas.png',
         nutrientes: {
             calorias: 338, // kcal
             proteina: 21.5, // g
@@ -152,23 +152,7 @@ export const tiposDeFrijoles = [
             zinc: 2.76, // mg
         }
     },
-    {
-        id: 10,
-        title: 'Frijol Adzuki',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s',
-        nutrientes: {
-            calorias: 329, // kcal
-            proteina: 20.0, // g
-            grasa: 0.53, // g
-            carbohidratos: 62.9, // g
-            fibra: 12.7, // g
-            hierro: 4.98, // mg
-            magnesio: 127, // mg
-            fosforo: 386, // mg
-            potasio: 1254, // mg
-            zinc: 3.31, // mg
-        }
-    },
+    
 ];
 
 export const getTiposDeFrijoles = async () => {

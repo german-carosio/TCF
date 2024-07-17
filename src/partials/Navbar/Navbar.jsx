@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
-import { useNavContext } from '../../context/NavContext'; // Importa el contexto
+import { useNavContext } from '../../context/NavContext';
 
 const Navbar = () => {
-    const { activeLink, handleNavLinkClick, isOpen, setIsOpen } = useNavContext(); // Utiliza el contexto
+    const { activeLink, handleNavLinkClick, isOpen, setIsOpen } = useNavContext();
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);

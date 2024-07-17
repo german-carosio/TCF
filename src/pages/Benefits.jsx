@@ -1,7 +1,8 @@
-// AboutUs.jsx
+// pages/Benefits.jsx
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Margin from '../components/Margin/Margin';
+import BeneficiosList from '../components/BeneficiosList/BeneficiosList';
 
 const Benefits = () => {
   return (
@@ -13,13 +14,14 @@ const Benefits = () => {
       </Helmet>
 
       <Margin>
-        <h1>Benefits</h1>
-        <p>Contenido de la página Benefits</p>
+        <BeneficiosList />
       </Margin>
     </div>
   );
 };
 
 export default Benefits;
+
+
 
 

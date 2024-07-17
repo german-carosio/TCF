@@ -30,8 +30,10 @@ const Tipos = () => {
       </Helmet>
 
       <Margin>
-        <h1>Conoce la variedad de frijoles y sus nutrientes</h1>
-        <List data={tiposDeFrijoles}  url={'/tipos/detail/'} />
+
+        <List data={tiposDeFrijoles}  url={'/tipos/detail/'} title={'Conoce la variedad de frijoles y sus nutrientes'} />
+        
+        
       </Margin>
     </div>
   );
