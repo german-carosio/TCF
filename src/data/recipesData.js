@@ -26,7 +26,7 @@ const recipes = [
             'Salpimentar al gusto y servir.'
         ],
         category: ['Almuerzos y cenas'],
-        image: '/img/recipes/IMG_4249.jpg'
+        img: '/img/recipes/IMG_4249.jpg'
     },
     {
         id: 2,
@@ -49,7 +49,7 @@ const recipes = [
             'Salpimentar, revolver y servir.'
         ],
         category: ['Ensaladas', 'Almuerzos y cenas'],
-        image: '/img/recipes/IMG_4268.jpg'
+        img: '/img/recipes/IMG_4268.jpg'
     },
     {
         id: 3,
@@ -69,7 +69,7 @@ const recipes = [
             'Servir con el aderezo por aparte.'
         ],
         category: ['Ensaladas', 'Almuerzos y cenas'],
-        image: '/img/recipes/IMG_4289.jpg'
+        img: '/img/recipes/IMG_4289.jpg'
     },
     {
         id: 4,
@@ -86,7 +86,7 @@ const recipes = [
             'Colocar todos los ingredientes por separado en un plato y servir por separado.'
         ],
         category: ['Ensaladas', 'Almuerzos y cenas'],
-        image: '/img/recipes/IMG_4304.jpg'
+        img: '/img/recipes/IMG_4304.jpg'
     },
     {
         id: 5,
@@ -112,7 +112,7 @@ const recipes = [
             'Salpimentar y servir como acompañamiento.'
         ],
         category: ['Ensaladas', 'Almuerzos y cenas'],
-        image: '/img/recipes/IMG_1547-2.jpg'
+        img: '/img/recipes/IMG_1547-2.jpg'
     },
     {
         id: 6,
@@ -137,7 +137,7 @@ const recipes = [
             'Agregar los huevos duros.'
         ],
         category: ['Sopas y guisos', 'Almuerzos y cenas'],
-        image: '/img/recipes/IMG_6359.jpg'
+        img: '/img/recipes/IMG_6359.jpg'
     },
     {
         id: 7,
@@ -161,7 +161,7 @@ const recipes = [
             'Hornear por 15min a 380°F (190°C).'
         ],
         category: ['Desayunos', 'Almuerzos y cenas'],
-        image: '/img/recipes/IMG_1584.jpg' 
+        img: '/img/recipes/IMG_1584.jpg' 
     },
     {
         id: 8,
@@ -187,7 +187,7 @@ const recipes = [
             'Servir con chips.'
         ],
         category: ['Dips'],
-        image: '/img/recipes/IMG_1579.jpg' ,
+        img: '/img/recipes/IMG_1579.jpg' ,
     }
 ];
 

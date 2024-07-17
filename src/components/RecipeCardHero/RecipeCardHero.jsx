@@ -14,7 +14,7 @@ const RecipeCardHero = ({ recipe }) => {
     return (
         <div className={styles.recipeCard}>
 
-            <img src={recipe.image} alt={recipe.title} className={styles.recipeImage} />
+            <img src={recipe.img} alt={recipe.title} className={styles.recipeImage} />
             <div className={styles.txt}>
                 <div className={styles.categories}>
                     {recipe.category.map((cat, index) => (

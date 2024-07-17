@@ -1,8 +1,8 @@
 export const tiposDeFrijoles = [
     {
         id: 1,
-        nombre: 'Frijol Negro',
-        img: 'https://upload.wikimedia.org/wikipedia/commons/2/20/Black_Beans.jpg',
+        title: 'Frijol Negro',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s',
         nutrientes: {
             calorias: 341, // kcal
             proteina: 21.6, // g
@@ -18,8 +18,8 @@ export const tiposDeFrijoles = [
     },
     {
         id: 2,
-        nombre: 'Frijol Rojo',
-        img: 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Kidney_Beans.jpg',
+        title: 'Frijol Rojo',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s',
         nutrientes: {
             calorias: 337, // kcal
             proteina: 22.5, // g
@@ -35,8 +35,8 @@ export const tiposDeFrijoles = [
     },
     {
         id: 3,
-        nombre: 'Frijol Pinto',
-        img: 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Pinto_Beans.jpg',
+        title: 'Frijol Pinto',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s',
         nutrientes: {
             calorias: 347, // kcal
             proteina: 21.4, // g
@@ -52,8 +52,8 @@ export const tiposDeFrijoles = [
     },
     {
         id: 4,
-        nombre: 'Garbanzos',
-        img: 'https://upload.wikimedia.org/wikipedia/commons/d/d0/Chickpeas.jpg',
+        title: 'Garbanzos',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s',
         nutrientes: {
             calorias: 378, // kcal
             proteina: 20.5, // g
@@ -69,8 +69,8 @@ export const tiposDeFrijoles = [
     },
     {
         id: 5,
-        nombre: 'Frijol Blanco',
-        img: 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Navy_Beans.jpg',
+        title: 'Frijol Blanco',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s',
         nutrientes: {
             calorias: 335, // kcal
             proteina: 22.3, // g
@@ -86,8 +86,8 @@ export const tiposDeFrijoles = [
     },
     {
         id: 6,
-        nombre: 'Frijol Lima',
-        img: 'https://upload.wikimedia.org/wikipedia/commons/2/2e/Lima_Beans.jpg',
+        title: 'Frijol Lima',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s',
         nutrientes: {
             calorias: 338, // kcal
             proteina: 21.5, // g
@@ -103,8 +103,8 @@ export const tiposDeFrijoles = [
     },
     {
         id: 7,
-        nombre: 'Frijol Cañón',
-        img: 'https://upload.wikimedia.org/wikipedia/commons/a/a3/Great_Northern_Beans.jpg',
+        title: 'Frijol Cañón',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s',
         nutrientes: {
             calorias: 339, // kcal
             proteina: 21.9, // g
@@ -120,8 +120,8 @@ export const tiposDeFrijoles = [
     },
     {
         id: 8,
-        nombre: 'Frijol Fava',
-        img: 'https://upload.wikimedia.org/wikipedia/commons/8/85/Fava_beans.jpg',
+        title: 'Frijol Fava',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s',
         nutrientes: {
             calorias: 341, // kcal
             proteina: 26.1, // g
@@ -137,8 +137,8 @@ export const tiposDeFrijoles = [
     },
     {
         id: 9,
-        nombre: 'Lenteja Roja',
-        img: 'https://upload.wikimedia.org/wikipedia/commons/c/c4/Red_Lentils.jpg',
+        title: 'Lenteja Roja',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s',
         nutrientes: {
             calorias: 352, // kcal
             proteina: 24.6, // g
@@ -154,8 +154,8 @@ export const tiposDeFrijoles = [
     },
     {
         id: 10,
-        nombre: 'Frijol Adzuki',
-        img: 'https://upload.wikimedia.org/wikipedia/commons/3/36/Adzuki_Beans.jpg',
+        title: 'Frijol Adzuki',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s',
         nutrientes: {
             calorias: 329, // kcal
             proteina: 20.0, // g
@@ -171,14 +171,16 @@ export const tiposDeFrijoles = [
     },
 ];
 
-// Función para obtener todos los tipos de frijoles
 export const getTiposDeFrijoles = async () => {
-    try {
-        // Simular una pequeña demora en la obtención de los datos (por ejemplo, una solicitud a una API)
-        // await new Promise(resolve => setTimeout(resolve, 1000));
-        return tiposDeFrijoles;
-    } catch (error) {
-        console.error('Error al obtener los tipos de frijoles:', error);
-        return []; // En caso de error, retornamos un array vacío
+    // Simulación de función asíncrona para obtener los tipos de frijoles
+    return tiposDeFrijoles;
+};
+
+export const getTiposById = async (id) => {
+    // Simulación de función asíncrona para obtener un tipo de frijol por su ID
+    const tipo = tiposDeFrijoles.find(tipo => tipo.id === id);
+    if (!tipo) {
+        throw new Error(`Tipo de frijol con ID ${id} no encontrado.`);
     }
+    return tipo;
 };

@@ -47,7 +47,7 @@ const DetailRecipe = () => {
                     <h2 className={styles.recipeTitle}>{recipe.title}</h2>
                     <div className={styles.content}>
                         <div className={styles.imageContainer}>
-                            <img src={recipe.image} alt={recipe.title} className={styles.recipeImage} />
+                            <img src={recipe.img} alt={recipe.title} className={styles.recipeImage} />
                         </div>
                         <div className={styles.infoContainer}>
                             <div className={styles.ingredients}>

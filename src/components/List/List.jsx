@@ -1,20 +1,23 @@
 import React from 'react';
-import RecipeCard from '../RecipeCard/RecipeCard';
-import styles from './RecipeList.module.css';
+import Card from '../Card/Card';
+import styles from './List.module.css';
 
-const RecipeList = ({ data }) => {
+const List = ({ data, url }) => {
+
+
     return (
         <div className={styles.recipeList}>
             <div className={styles.recipesGrid}>
                 {data.map(item => (
-                    <RecipeCard key={item.id} data={item} />
+                    <Card key={item.id} data={item} detailUrl={url} />
                 ))}
             </div>
         </div>
     );
 };
 
-export default RecipeList;
+export default List;
+
 
 
 

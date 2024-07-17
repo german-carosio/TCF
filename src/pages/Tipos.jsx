@@ -1,9 +1,26 @@
-// AboutUs.jsx
-import React from 'react';
+// Tipos.jsx
+import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Margin from '../components/Margin/Margin';
+import List from '../components/List/List';
+import { getTiposDeFrijoles } from '../data/typesOfBeansData';
 
 const Tipos = () => {
+  const [tiposDeFrijoles, setTiposDeFrijoles] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await getTiposDeFrijoles();
+        setTiposDeFrijoles(data);
+      } catch (error) {
+        console.error('Error al obtener tipos de frijoles:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <div>
       <Helmet>
@@ -14,12 +31,13 @@ const Tipos = () => {
 
       <Margin>
         <h1>Conoce la variedad de frijoles y sus nutrientes</h1>
-        <p>Contenido de la página Tipos</p>
+        <List data={tiposDeFrijoles}  url={'/tipos/detail/'} />
       </Margin>
     </div>
   );
 };
 
 export default Tipos;
+
 
 

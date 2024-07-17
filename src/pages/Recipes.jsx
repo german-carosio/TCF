@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import RecipeList from '../components/RecipeList/RecipeList';
+import List from '../components/List/List';
 import Margin from '../components/Margin/Margin';
 import FilterContainer from '../components/FilterContainer/FilterContainer';
 import SearchBar from '../components/SearchBar/SearchBar';
@@ -46,7 +46,7 @@ const Recipes = () => {
                     searchTerm={searchTerm}
                 />
                 <SearchBar onSearch={handleSearch} />
-                <RecipeList data={filteredRecipes} />
+                <List data={filteredRecipes} url={'/recipes/detail/'} />
             </Margin>
         </>
     );

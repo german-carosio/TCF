@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import RecipeList from '../components/RecipeList/RecipeList';
+import List from '../components/List/List';
 import { useRecipesContext } from '../context/RecipesContext';
 import Margin from '../components/Margin/Margin';
 import FilterContainer from '../components/FilterContainer/FilterContainer';
@@ -41,7 +41,7 @@ const RecipeCategory = () => {
                     searchTerm={searchTerm}
                 />
                 <SearchBar onSearch={handleSearch} />
-                <RecipeList data={filteredRecipes} />
+                <List data={filteredRecipes} url={'/recipes/detail/'} />
             </Margin>
         </>
     );
