@@ -4,6 +4,12 @@ import styles from './RecipeCardHero.module.css';
 import { useRecipesContext } from '../../context/RecipesContext';
 
 const RecipeCardHero = ({ recipe }) => {
+
+    // Función para formatear el título
+const formatTitle = (title) => {
+    return title.charAt(0).toUpperCase() + title.slice(1).toLowerCase();
+};
+
     const { categories } = useRecipesContext();
 
     const getCategoryUrl = (categoryName) => {
@@ -26,7 +32,7 @@ const RecipeCardHero = ({ recipe }) => {
                     ))}
                 </div>
                 <Link to={`/recipes/detail/${recipe.id}`} className={styles.link}>
-                    <h3 className={styles.title}>{recipe.title}</h3>
+                    <h3 className={styles.title}>{formatTitle(recipe.title)}</h3>
                 </Link>
             </div>
 

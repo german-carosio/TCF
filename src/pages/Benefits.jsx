@@ -6,7 +6,7 @@ import BeneficiosList from '../components/BeneficiosList/BeneficiosList';
 
 const Benefits = () => {
   return (
-    <div>
+    <>
       <Helmet>
         <title>Beneficios - Todo con frijol</title>
         <meta name="description" content="Beneficios de frijoles." />
@@ -16,7 +16,7 @@ const Benefits = () => {
       <Margin>
         <BeneficiosList />
       </Margin>
-    </div>
+    </>
   );
 };
 

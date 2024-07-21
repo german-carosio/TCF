@@ -8,26 +8,35 @@
 .cardsContainer {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+    max-width: 1400px;
+    height: 500px;
   }
   
   .card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 16px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    background-color: #fff;
+    border-radius: 30px;
+    padding: 30px;
+    width: 320px;
+    height: 400px;
+    background-color: var(--celeste2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
   
   .card h2 {
     margin-top: 0;
+    width: 100%;
   }
   
   .card ul {
     list-style-type: none;
     padding: 0;
+    width: 100%;
   }
   
   .card ul li {

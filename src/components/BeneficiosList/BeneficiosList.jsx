@@ -11,7 +11,7 @@ const BeneficiosList = () => {
     <div className={styles.cardsContainer}>
       {BeneficiosData.map((beneficio) => (
         <div key={beneficio.id} className={styles.card}>
-          <h2>{beneficio.name}</h2>
+          <h2 className={styles.name}>{beneficio.name}</h2>
           <ul>
             {beneficio.beneficios.map((item, index) => (
               <li key={index}>{item.title}</li>

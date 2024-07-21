@@ -7,6 +7,11 @@ import { useRecipesContext } from '../../context/RecipesContext'; // Hook para o
 import SearchBar from '../SearchBar/SearchBar'; // Importa el componente SearchBar
 import Margin from '../Margin/Margin'; // Importa el componente Margin
 
+// Función para formatear el título
+const formatTitle = (title) => {
+    return title.charAt(0).toUpperCase() + title.slice(1).toLowerCase();
+};
+
 const DetailRecipe = () => {
     const { recipeId } = useParams(); // Obtiene el parámetro recipeId de la URL
     const [recipe, setRecipe] = useState(null); // Estado para la receta
@@ -37,14 +42,14 @@ const DetailRecipe = () => {
     return (
         <>
             <Helmet>
-                <title>{recipe.title} - {recipe.description}</title>
+                <title>{formatTitle(recipe.title)} - {recipe.description}</title>
                 <meta name="description" content={recipe.description} />
             </Helmet>
             <Margin>
                 <FilterContainer selectedCategory={''} setSelectedCategory={() => {}} isDetailPage={true} /> {/* Renderiza FilterContainer */}
                 <SearchBar onSearch={handleSearch} /> {/* Renderiza SearchBar */}
                 <div className={styles.recipeDetail}>
-                    <h2 className={styles.recipeTitle}>{recipe.title}</h2>
+                    <h2 className={styles.recipeTitle}>{formatTitle(recipe.title)}</h2>
                     <div className={styles.content}>
                         <div className={styles.imageContainer}>
                             <img src={recipe.img} alt={recipe.title} className={styles.recipeImage} />
@@ -76,6 +81,7 @@ const DetailRecipe = () => {
 };
 
 export default DetailRecipe;
+
 
 
 
