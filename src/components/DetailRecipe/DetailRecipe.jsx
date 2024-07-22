@@ -71,7 +71,6 @@ const DetailRecipe = () => {
                                     ))}
                                 </ol>
                             </div>
-                            <button> Compartir</button>
                         </div>
                     </div>
                 </div>

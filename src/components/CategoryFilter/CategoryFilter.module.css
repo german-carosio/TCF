@@ -1,0 +1,27 @@
+.filter {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    background: var(--celeste);
+    border-radius: 20px 20px 0 0;
+    border: solid red;
+}
+
+.categoryButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 1em;
+    color: var(--text1);
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: solid red;
+}
+
+.categoryButton.active {
+    background-color: var(--fondo1); /* Naranja cuando está activo o hover */  
+}
+

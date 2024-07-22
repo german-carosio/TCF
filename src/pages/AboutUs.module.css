@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--celeste2);
+}
+
+.container img {
+    border-radius: 30px;
+}
+
+.txt {
+    background-color: var(--celeste2);
+    padding: 30px;
+    border-radius: 0 0 30px 30px;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.txt .title {
+    font-size: 1.5em;
+    color: #FF5733; /* Naranja para el título */
+    margin-bottom: 20px;
+  }

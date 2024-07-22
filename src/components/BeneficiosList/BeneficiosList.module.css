@@ -1,44 +1,75 @@
-/* Benefits.module.css */
+/* BeneficiosList.module.css */
 .title {
-    font-size: 1.5em;
-    margin: 20px 0 60px 0;
-    color: #FF5733; /* Naranja para el título */
+  font-size: 1.5em;
+  margin: 20px 0 60px 0;
+  color: #FF5733; /* Naranja para el título */
 }
 
 .cardsContainer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    max-width: 1400px;
-    height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1400px;
+  height: 100%;
+}
+
+.card {
+  border-radius: 30px;
+  padding: 0 10px;
+  width: 320px;
+  height: 450px;
+  background-color: var(--celeste2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.card h2 {
+  margin-top: 0;
+  width: 100%;
+  font-size: 22px;
+}
+
+.card ul {
+  list-style-type: none; /* Elimina los puntos predeterminados */
+  padding: 0;
+  width: 100%;
+}
+
+.card ul li {
+  position: relative;
+  padding-left: 20px; /* Ajusta el espacio para el punto */
+  margin-bottom: 8px;
+}
+
+.card ul li::before {
+  content: '•'; /* Añade el punto */
+  color: #FF5733; /* Color del punto */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2em; /* Ajusta el tamaño del punto */
+}
+
+@media (min-width: 768px) {
+  .cardsContainer {
+      height: 500px;
   }
-  
   .card {
-    border-radius: 30px;
-    padding: 30px;
-    width: 320px;
-    height: 400px;
-    background-color: var(--celeste2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+      width: 370px;
+      padding: 0 30px;
   }
-  
-  .card h2 {
-    margin-top: 0;
-    width: 100%;
-  }
-  
-  .card ul {
-    list-style-type: none;
-    padding: 0;
-    width: 100%;
-  }
-  
-  .card ul li {
-    margin-bottom: 8px;
-  }
+}
+

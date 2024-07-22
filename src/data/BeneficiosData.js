@@ -2,6 +2,7 @@ const BeneficiosData = [
     {
         id: 1,
         name: 'Salud',
+        img: '/img/web/salud.png',
         beneficios: [
             {
                 title: 'Condiciones cardíacas',
@@ -36,6 +37,7 @@ const BeneficiosData = [
     {
         id: 2,
         name: 'Nutrición',
+        img: '/img/web/nutricion.png',
         beneficios: [
             {
                 title: 'Fuente de proteina',
@@ -66,6 +68,7 @@ const BeneficiosData = [
     {
         id: 3,
         name: 'Sostenibilidad',
+        img: '/img/web/sostenibilidad.png',
         beneficios: [
             {
                 title: 'Buenos para las personas y el planeta',

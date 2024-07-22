@@ -21,7 +21,7 @@ const recipes = [
         description: '',
         ingredients: ['2 Tazas de salsa de tomate natural ', '4 Tazas de caldo de vegetales', '1 Taza de frijoles blancos', '1 Pechuga de pollo ', '1 Cucharada de culantro', '1/4 Cebolla morada', '1 Cucharada de aceite', '1 Cucharadita de chile flakes', '1 Cucharada de ajo '],
         steps: ['Saltear en una olla, ajo picado finamente, agregar el caldo de vegetales, frijoles blancos y la salsa de tomate. ', 'Agregar la cucharada de culantro, la pechuga de pollo en cubitos y hervir por 20 min. ', 'Colocar el chile flake.', 'Servir con cebolla morada, pan tostado y chile flakes.'],
-        category: ['sopas y guisos'],
+        category: ['sopas y cremas'],
         type: 'Frijoles blancos',
         img: '/img/recipes/IMG_4432.jpg'
     },
@@ -81,7 +81,7 @@ const recipes = [
         description: '',
         ingredients: ['3 Tazas de frijoles con el agua de cocción', '2 Huevos duros', '½ Aguacate', '½ Cebolla blanca', '1 Tomate', '2 Cucharadas de culantro ', '½ Taza de queso fresco ', '1 Ajo ', 'Sal y pimienta'],
         steps: ['En un sartén sofreír el ajo, cebolla y el tomate. ', 'Agregar los frijoles con el agua, previamente cocinados. ', 'Hervir por 10min a fuego medio ', 'Licuar todos los ingredientes y volver a hervir por 5min', 'Agregar los huevos duros. '],
-        category: ['sopas y guisos', 'almuerzos y cenas'],
+        category: ['sopas y cremas', 'almuerzos y cenas'],
         type: ' Frijoles negros',
         img: '/img/recipes/IMG_6359.jpg'
     },
@@ -151,7 +151,7 @@ const recipes = [
         description: '',
         ingredients: ['4 Tomates', '1 Taza de frijol blanco cocinados', '4 Tazas de caldo de vegetales', '1 Chile seco', '1 Ajo', '½ Cebolla morada', 'Sal y pimienta', '4 Cucharadas de aceite de oliva', '2 Tazas de arroz cocinado', '½ Aguacate', '1 Limón', '½ Taza de queso para derretir'],
         steps: ['Poner a asar los tomates y ¼ de la cebolla.', 'Licuar el tomate y la cebolla, en una olla poner a sofreír el ajo y agregar la mezcla, añadir el caldo de vegetales, cocinar por 10min.', 'Agregar los frijoles blancos ya cocinados y hervir por 5min.', 'Servir la sopa con cebolla morada, arroz blanco, aguacate, queso y limón.'],
-        category: ['sopas y guisos'],
+        category: ['sopas y cremas'],
         type: 'Frijoles blancos',
         img: '/img/recipes/IMG_5216.jpg'
     },
@@ -346,7 +346,7 @@ const recipes = [
         img: '/img/recipes/IMG_9053.jpg'
     },
     {
-        id: '35',
+        id: 35,
         title: 'SOPA DE FRIJOLES Y LEGUMBRES',
         description: '',
         ingredients: ['1 Taza de lentejas cocinadas', '1 Taza de frijoles cocinados', '1 Taza de garbanzos', '1 Taza de arvejas', '¼ de cebolla picada', '½ Taza de salsa de tomate natural', '1 Cucharada de flakes de chile', '6 Tazas de caldo de vegetales', '1 Pechuga de pollo desmenuzada', 'Sal y pimienta'],
@@ -356,7 +356,7 @@ const recipes = [
         img: '/img/recipes/IMG_9203.jpg'
     },
     {
-        id: '36',
+        id: 36,
         title: 'ENSALADA DE FRIJOLES CON KALE Y ESPINACA',
         description: '',
         ingredients: ['1 Taza de frijoles pinto', '½ Taza de frijoles blancos', '½ Taza d lentejas', '2 Tazas de espinacas', '2 Tazas de kale', '1 Ajo picado finamente', '2 Cucharadas de vinagre balsámico', '2 Cucharadas de queso parmesano', '4 Cucharadas de aceite de oliva'],
@@ -366,7 +366,7 @@ const recipes = [
         img: '/img/recipes/IMG_9060.jpg'
     },
     {
-        id: '37',
+        id: 37,
         title: 'ENSALADA DE FRIJOLES CON TOMATES CHERRY Y QUINOA',
         description: '',
         ingredients: ['2 Tazas de tomates cherry', '2 Tazas de frijol pinto (o de su elección)', '1 Tazas de quinoa', '½ cebolla morada', '2 Cucharadas de culantro', '¼ Taza de vinagre de manzana', '3 Cucharadas de aceite de oliva', '1 Ajo picado finamente', 'Chile flakes (Si se desea picante)', 'Sal y pimienta al gusto'],
@@ -376,7 +376,7 @@ const recipes = [
         img: '/img/recipes/IMG_8984.jpg'
     },
     {
-        id: '38',
+        id: 38,
         title: 'ENSALADA VERDE CON FRIJOLES Y ATUN',
         description: '',
         ingredients: ['1 Lechuga cortada finamente en tiras', '2 Tazas de frijoles negros', '1 Lata de Atún', '2 Cucharadas de mayonesa', '1 Cucharada de mostaza', '2 Cucharada de salsa de tomate natural', '½ Cebolla morada picada finamente', '1 Tomate picado finamente', '2 Cucharadas de culantro picado finamente', '1 Cucharada de aceite de oliva', '1 Limón', '2 Cucharadas de vinagre de manzana.', 'Chips si se desea'],
@@ -386,7 +386,7 @@ const recipes = [
         img: '/img/recipes/IMG_8896.jpg'
     },
     {
-        id: '39',
+        id: 39,
         title: 'ENSALADA DE QUINOA, VEGETALES, FRIJOLES Y HUEVO ',
         description: '',
         ingredients: ['2 Tazas de quinoa cocida', '2 Tazas de frijoles', '½ Taza de zucchinni en cuadritos', '1 Taza de brócoli cocidos', '4 Tortillas', '½ Cebolla picada en julianas', '2 Cucharadas de aceite de oliva', '1 Limón', '2 Ajos', '2 Huevos', '2 Tortillas de maíz'],
@@ -396,7 +396,7 @@ const recipes = [
         img: '/img/recipes/IMG_8856.jpg'
     },
     {
-        id: '40',
+        id: 40,
         title: 'WRAP DE FRIJOLES',
         description: '',
         ingredients: ['1 Tortilla de harina grande', '1 Tortilla de harina pequeña', '1 Tostada', '½ Taza de queso mozzarella', '¼ de pechuga de pollo desmenuzada', '¼ Taza de tomate picado', '¼ Taza de cebolla picada', '1 Limón', '3 Cucharadas de culantro picado finamente', '¼ Taza de arroz cocinado', '¼ Taza de frijoles cocinado', '2 Cucharadas de aceite', '2 Cucharadas de crema agria'],
@@ -406,27 +406,27 @@ const recipes = [
         img: '/img/recipes/IMG_8811.jpg'
     },
     {
-        id: '41',
+        id: 41,
         title: 'BOWL DE TORTILLA CON FRIJOLES',
         description: '',
         ingredients: ['4 tortillas de harina', '1/2 taza de queso', '2 tazas de lechuga cortada finamente en tiras', '4 tazas de arroz', '2 tazas de frijoles negros', '1 ajo picado finamente', '1 taza de tomate picado', '1/4 de taza de cebolla picada', '1/2 taza de culantro', 'Pollo desmenuzado', 'Aderezo', '1 taza de aceite', '1 taza de culantro', '1 huevo', '1 cucharada de mostaza', '1 cucharada de miel', '2 cucharadas de vinagre', 'Sal y pimienta'],
         steps: ['Colocar las tortillas en un bowl de metal y hornear por 5min a 350 para crear un bowl de', 'tortilla.', 'Saltear en un sartén ajo y agregar el arroz cocido y frijoles, cocinar por 6min.', 'En un bowl tomate, culantro, cebolla y limón, salpimentar. (Puede sustituirse por salsa)', 'En el Bowl de tortilla colocar, lechuga, frijol y arroz, agregar pollo si se desea.', 'Servir con la combinación de tomate, agregar queso y aderezo', 'PREPARACIÓN ADEREZO', 'En una batidora colocar, culantro, huego, mostaza, miel y vinagre, licuar hasta obtener una', 'mezcla homogénea.', 'Incorporar poco a poco el aceite hasta obtener una consistencia cremosa.'],
         category: ['desayunos'],
         type: ' Frijoles negros',
-        img: '/img/recipes/img_8264.jpg'
+        img: '/img/recipes/IMG_8264.jpg'
     },
     {
-        id: '42',
+        id: 42,
         title: 'BOWL DE DESAYUNO',
         description: '',
         ingredients: ['Frijoles en salsa', '2 Tazas de frijoles negros', '2 Tomates', '½ Cebolla', '1 Ajo', '2 Cucharadas de culantro', '½ Chile dulce', 'Sal y pimienta', '2 Cucharadas de aceite', '', 'Acompañamientos', '4 Tortillas de maíz delgadas', '4 Huevos', '½ tomate picado finamente', '1 Taza de lechuga', '2 Cucharadas de crema'],
         steps: ['Saltear el ajo en un sartén, agregar el tomate picado, cebolla, chile dulce y 1 taza de agua,', 'dejar hervir por 5min y licuar.', 'Colocar en una olla y agregar los frijoles, salpimentar.', 'Preparar los huevos al gusto', 'Tostar las tortillas en triángulos y tostar en el horno.', 'Servir en un plato hondo los frijoles negros, huevo, alrededor colocar los ingredientes al', 'gusto.'],
         category: ['desayunos'],
         type: ' Frijoles negros',
-        img: '/img/recipes/img_8207.jpg'
+        img: '/img/recipes/IMG_8207.jpg'
     },
     {
-        id: '43',
+        id: 43,
         title: 'TOSTADADAS DE ATUN CON FRIJOLES',
         description: '',
         ingredients: ['½ Taza de elotes amarillos', '1 Taza de frijoles negros', '1 Taza de tomate cherry', '1 Lata de atún', '2 Cucharadas de culantro picado finamente', '½ Cebolla morada', '2 Cucharadas de vinagre de manzana', '2 Cucharadas de mayonesa', '1 Cucharada de mostaza', '1 Cucharada de aceite de oliva', '1 Limón', '1 Ajo picado finamente', '4 Rodajas de pan', '1 Taza de queso para derretir'],
@@ -436,7 +436,7 @@ const recipes = [
         img: '/img/recipes/IMG_8073.jpg'
     },
     {
-        id: '44',
+        id: 44,
         title: 'ARROZ ASIATICO CON FRIJOLES Y VEGETALES',
         description: '',
         ingredients: ['2 Tz de frijoles cocinado', '4 Tz de arroz cocinado', '4 Hongos en rodajas', '2 Tazas de brócoli cocinado', '1 Tz de bok choy picado en tiras', '2 Cucharadas de culantro', '1 Tz de zucchinis en cubitos', '2 Cucharadas de ajo picado finamente', '2 Cucharadas de aceite de ajonjolí', '3 Cucharadas de ajonjolí', '2 Cucharadas de salsa de soya', '2 Cucharadas de cebolla picada finamente'],
@@ -446,17 +446,17 @@ const recipes = [
         img: '/img/recipes/IMG_7471.jpg'
     },
     {
-        id: '45',
+        id: 45,
         title: 'SOPA DE FRIJOLES Y VEGETALES',
         description: '',
         ingredients: ['2 Tomates enteros', '1 Ajo', '4 Tazas de caldo de vegetales', '1 Cucharada de culantro picado finamente', '1 Bok Choy en tiras', '1 Zanahoria en rodas', '4 Papas pequeñas y peladas', '4 Hongos', '2 Tazas de frijoles kidney cocidos (puede sustituirse por otros)', '4 Tortillas', '2 Tazas de Arroz'],
         steps: ['Licuar el tomate con la cebolla y el caldo de vegetales.', 'Poner a hervir el caldo licuado con el tomate y la cebolla, agregar la zanahoria, el culantro,', 'las papás y hervir por 15min.', 'Agregar los kidney beans, el bok choy y los hongos, hervir por 5min más.', 'Servir con tortillas tostadas y arroz'],
-        category: ['sopas y guisos'],
+        category: ['sopas y cremas'],
         type: ' Frijoles negros',
         img: '/img/recipes/IMG_7434.jpg'
     },
     {
-        id: '46',
+        id: 46,
         title: 'ENSALADA DE PASTA, ATÚN Y FRIJOLES NEGROS',
         description: '',
         ingredients: ['4 Tazas de pasta cocinada', '1 Taza de frijoles', '1 Taza de atún', '2 Tazas de lechuga', '½ cebolla morada', '1 Tomate', '2 Cucharadas de culantro', '2 Cucharadas de apio picado finamente', '2 cucharadas de aceite de oliva', '½ taza de mayonesa'],
@@ -466,17 +466,17 @@ const recipes = [
         img: '/img/recipes/IMG_7337.jpg'
     },
     {
-        id: '47',
+        id: 47,
         title: 'SOPA DE TACOS CON FRIJOLES ',
         description: '',
         ingredients: ['1 Taza de carne molida', '1 Taza de frijoles', '1 Taza de salsa de tomate natural', '2 Tazas de caldo de carne', '1 Taza de arroz cocido', '1 Ajo picado finamente', '2 Cucharadas de aceite de oliva', '5 tortillas', '', 'Para Servir', '2 Cucharadas de cebolla morada', '½ Aguacate', '½ Taza de tomate picado en cuadritos', '2 Cucharadas de culantro', '½ Taza de queso mozzarella en rodajas'],
         steps: ['Colocar en un sarten el aceite y sofreír con el ajo y la cebolla blanca, agregar la carne', 'molida y cocinar por 5min, agregar los frijoles, la taza de salsa de tomate natural, el caldo', 'de carne y hervir por 10min.', 'Partir las tortillas en tiritas y hornear hasta tostar (opcional se puede hacer fritas)', 'Colocar en un recipiente hondo el arroz y la sopa, servir con cebolla morada, aguacate,', 'tomate picado, culantro y queso mozzarella.', '¡Disfrutar!'],
-        category: ['sopas y guisos', 'almuerzos y cenas'],
+        category: ['sopas y cremas', 'almuerzos y cenas'],
         type: ' Frijoles negros',
         img: '/img/recipes/IMG_7222.jpg'
     },
     {
-        id: '48',
+        id: 48,
         title: 'ENSALADA CON PEPINO Y FRIJOLES BLANCOS',
         description: '',
         ingredients: ['1 Taza de pepino', '½ Taza de frijoles blancos cocidos', '¼ de cebolla morada cortada finamente', '2 cucharadas de limón', '1 Cucharada de vinagre', '2 Cucharadas de aceite de oliva', '1 Cucharada de flakes de chile', 'Sal y pimienta'],
@@ -486,7 +486,7 @@ const recipes = [
         img: '/img/recipes/IMG_7037.jpg'
     },
     {
-        id: '49',
+        id: 49,
         title: 'ENSALADA FRIA DE PASTA Y FRIJOLES NEGROS',
         description: '',
         ingredients: ['1 Taza de frijoles negros cocidos', '1 Taza de frijoles rojos cocidos', '1 Taza de frijoles blancos cocidos', '2 Tazas de pasta coditos cocidos (se puede utilizar otro tipo de', 'pasta)', '3 tomates asados hechos pure', '¼ de cebolla picada finamente', '¼ de culantro picado finamente', '3 ajos picados finamente', '2 Cucharadas de jugo de limón', '1 Cucharada de aceite de oliva', '2 Cucharadas de vinagre', 'Sal y pimienta al gusto'],
@@ -496,7 +496,7 @@ const recipes = [
         img: '/img/recipes/IMG_6832.jpg'
     },
     {
-        id: '50',
+        id: 50,
         title: 'ENSALADA DE FRIJOLES Y CAMOTE',
         description: '',
         ingredients: ['1 Taza de camote en cuadritos', '2 Tazas de frijoles tipo kidney (puede ser cualquier otro tipo)', '2 Cucharadas de salsa de tomate natural', '2 ajos picados finamente', '¼ de cebolla morada', '2 Cucharadas de limón', '1 Taza de garbanzos', '1 Taza de espinacas', 'Sal y pimienta al gusto', '2 Cucharadas de culantro picado finamente'],
@@ -506,7 +506,7 @@ const recipes = [
         img: '/img/recipes/IMG_6776.jpg'
     },
     {
-        id: '51',
+        id: 51,
         title: 'ENSALADA DE FRIJOLES BLANCOS Y ELOTES',
         description: '',
         ingredients: ['1 Taza de tomate picado finamente', '2 Tazas de frijol blanco', '2 Cucharadas de puerro picado en rodajas', '¼ Taza de cebolla morada picada finamente', '2 elotes blancos o amarillos (de su preferencia) cocidos', '2 Cucharadas de culantro', '2 Cucharadas de vinagre de manzana', '4 Cucharadas de aceite de oliva', '2 Ajos picados finamente ', 'Sal y pimienta al gusto'],
@@ -516,7 +516,7 @@ const recipes = [
         img: '/img/recipes/IMG_6744.jpg'
     },
     {
-        id: '52',
+        id: 52,
         title: 'CARACOLES RELLENOS CON FRIJOLES Y POLLO',
         description: '',
         ingredients: ['Caracoles', '8 caracoles de pasta grandes cocidos', '1 Taza de pechuga de pollo de menuzada cocida ', '2 cucharadas de hongos partidos en rodajas', '1 Cucharada de cebolla morada', '½ taza de espinacas partidas en tiras', '1 Ajo picado finamente', '2 Taza de salsa roja', 'Queso parmesano', '2 Cucharadas de aceite', '2 cucharadas de mantequilla', '', '--', '', 'Ensalada y aderezo', '4 Cucharadas de vinagre balsámico', '1 Cucharada de miel ', '1 Cucharada de aceite de oliva', 'Sal y pimienta', '1 Tomate partido en rodajas', 'Lechuga'],
@@ -536,7 +536,7 @@ const recipes = [
         img: '/img/recipes/IMG_5902.jpg'
     },
     {
-        id: '54',
+        id: 54,
         title: 'ENSALADA DE FRIJOLES BLANCOS CON REPOLLO Y COLIFLOR',
         description: '',
         ingredients: ['1 Taza de frijoles blancos cocidos', '1 Taza de coliflor cortada y cocida', '1 Taza de repollo ', '½ cebolla morada picada en julianas', '2 Cucharadas de jugo de limón', '2 Cucharadas de culantro picado finamente', '¼ Taza de zanahoria rallada', '½ Taza de vinagre de manzana', '1 Ajo picado finamente', '1 Jalapeño en rodajas (Omitir si no se desea picante)', 'Sal y pimienta', '3 cucharadas de aceite de oliva'],
@@ -546,7 +546,7 @@ const recipes = [
         img: '/img/recipes/IMG_5388.jpg'
     },
     {
-        id: '55',
+        id: 55,
         title: 'COLIFLOR ASADA Y FRIJOLES NEGROS',
         description: '',
         ingredients: ['1 Coliflor partida en rodajas.', '4 Cucharadas de aceite de oliva', '½ Cebolla morada', '2 Ajo picados finamente', '1 Cucharada de culantro', '1 Cucharada de Perejil', '2 cucharadas de cebollín picado finamente', 'El jugo de 1 limón', '5 Tomates cherr', '1 Taza de frijoles ', 'Sal y pimienta al gusto '],
@@ -556,7 +556,7 @@ const recipes = [
         img: '/img/recipes/IMG_5232.jpg'
     },
     {
-        id: '56',
+        id: 56,
         title: 'CEVICHE DE FRIJOLES',
         description: '',
         ingredients: ['1 Taza de frijoles negros cocidos', '1 Taza de frijoles blancos cocidos', '1 Taza de tomate picado finamente', '1 Cebolla morada partida en rodajas finamente', '¼ Taza de culantro', '1 Taza de palmito picado finamente', 'El jugo de dos limones', '2 Cucharadas vinagre ', '2 Ajos picados finamente', '1 Cucharada de aceite de oliva', '3 Cucharadas de cebollín picado finamente'],
@@ -566,7 +566,7 @@ const recipes = [
         img: '/img/recipes/IMG_5224.jpg'
     },
     {
-        id: '57',
+        id: 57,
         title: 'PAPAS CON FRIJOLES NEGROS',
         description: '',
         ingredients: ['4 Papas partidas en tiras', '1 Taza de frijoles negros', '5 rodajas de jalapeño', '½ Taza de queso mozzarella', '10 Tomates cherry partidos a la mitad ', '1 Limón partido', '4 Cucharadas de crema agria', '2 Cucharadas de culantro', '2 Cucharadas de paprika', '1 Cucharada de ajo picado '],
@@ -576,7 +576,7 @@ const recipes = [
         img: '/img/recipes/IMG_5217.jpg'
     },
     {
-        id: '58',
+        id: 58,
         title: 'SOPA DE FRIJOLES Y LENTEJAS',
         description: '',
         ingredients: ['2 tazas de frijoles blancos cocidos', '½ cebolla morada picada en gajos', '2 Tazas de lentejas rojas cocidas', '6 Tazas de caldo de vegetales', '2 Tazas de arroz', '3 cucharadas de culantro', '1 Ajo picado finamente', 'Sal y pimienta al gusto'],
@@ -586,7 +586,7 @@ const recipes = [
         img: '/img/recipes/IMG_5069.jpg'
     },
     {
-        id: '59',
+        id: 59,
         title: 'MINI ZUCHINNIS RELLENOS CON FRIJOLES NEGROS',
         description: '',
         ingredients: ['4 Zucchinis cortados a la mitad', '1 Taza de frijoles negros', '½ Taza de queso mozzarella', '1 Taza de salsa de tomate ', 'Sal y pimienta', '2 Cucharadas de aceite de oliva', '1 Taza de carne molida', '1 Cucharadita de comino'],
@@ -596,7 +596,7 @@ const recipes = [
         img: '/img/recipes/IMG_5062.jpg'
     },
     {
-        id: '60',
+        id: 60,
         title: 'ROLLITOS DE REPOLLO RELLENOS DE FRIJOLES',
         description: '',
         ingredients: ['6 hojas de repollo', '2 Tazas de carne molida', '1 Cucharada de ajo picado', '¼ Taza de cebolla picada finamente', 'Comino', 'Sal de ajo', '2 Tazas de salsa de tomate', '1 Taza de frijoles negros', '1 Taza de queso mozzarella', 'Aceite de oliva'],
@@ -606,7 +606,7 @@ const recipes = [
         img: '/img/recipes/IMG_5079.jpg'
     },
     {
-        id: '61',
+        id: 61,
         title: 'TOSTADA DE FRIJOLES Y PESTO',
         description: '',
         ingredients: ['2 Rodajas de pan', 'Queso mozzarella fresco (Cualquier tipo de queso funciona)', '1/2 Taza de frijoles blancos', '1/2 Taza de albahaca', ' 8 Tomates mozzarella', ' 1/2 Taza de aceite de oliva', ' 2 Cucharadas de queso parmesano', ' 2 Ajos enteros'],
@@ -616,27 +616,27 @@ const recipes = [
         img: '/img/recipes/IMG_5036.jpg'
     },
     {
-        id: '62',
+        id: 62,
         title: 'CHILES RELLENOS CON FRIJOLES',
         description: '',
         ingredients: ['2 Chiles morron cortados a la mitad', '1/2 Taza de frijoles blancos', '1/2 Taza de salsa roja', '1 Taza de carne molida', '1/2 Taza de queso mozzarella', '1/2 cebolla picada finamente', '1/4 de espinaca picada', 'Sal y pimienta'],
         steps: ['Lavar el chile morron y quitar las semillas. ', 'Saltear en un sartén la cebolla, agregar espinaca y cocinar con la carne molida por 5 min o hasta que esté cocinada la carne. ', 'Agregar los frijoles blancos y la salsa roja, dejar cocinar por 3 min más. ', 'Colocar la mezcla dentro de los chiles, agregar queso y salpimentar', 'Hornear a 300 F por 10 min'],
         category: ['acompañamientos'],
         type: '',
-        img: '/img/recipes/img_4313.jpg'
+        img: '/img/recipes/IMG_4313.jpg'
     },
     {
-        id: '63',
+        id: 63,
         title: 'SOPA DE POLLO CON FRIJOLES BLANCOS',
         description: '',
         ingredients: ['6 Tazas de caldo de pollo', '1 Taza de zanahorias cortadas en cubitos', '2 Tazas de arroz', '1/2 Taza de maíz dulce', '1 Taza de pechuga de pollo desmenuzada (opcional)', '2 Cucharadas de culantro picado finamente ', '4 Tortillas partidas en tiras y tostadas', '2 Limones', '1 Aguacate', 'Sal y pimienta', '1 Ajo picado finamente', '2 Cucharadas de aceite de oliva', '2 Cucharadas de cebolla'],
         steps: ['Colocar en una olla el aceite de oliva, frijol y cebolla, sofreír por 4min.', 'Agregar el caldo de pollo y dejar calentar por 5min', 'Agregar el pollo de menuzado, zanahoria, frijol blanco, maíz dulce, arroz y dejar hervir por 10min', 'Salpimentar', 'Servir con el culantro, las tortillas tostadas y aguacate'],
-        category: ['sopas y guisos'],
+        category: ['sopas y cremas'],
         type: 'Frijoles blancos',
         img: '/img/recipes/IMG_0011.jpg'
     },
     {
-        id: '64',
+        id: 64,
         title: 'CHILE RELLENO CON FRIJOLES Y POLLO',
         description: '',
         ingredients: ['3 Chiles dulce / Chile pimiento', '1 Taza de queso para derretir', '1 Taza de pechuga de pollo cocida', '1/2 Taza de elotitos ', '2 Cucharadas de culantro', '1 Ajo picado finamente', '2 Tazas de salsa verde', 'Sal y pimienta al gusto'],
@@ -646,7 +646,7 @@ const recipes = [
         img: '/img/recipes/IMG_002.jpg'
     },
     {
-        id: '65',
+        id: 65,
         title: 'TACOS DE FRIJOLES VEGETARIANOS',
         description: '',
         ingredients: ['3 Tortillas', '1 Taza frijoles negros', '1 Ajo picado', 'Salsa verde', '4 hojas de lechuga picadas finamente', 'Rodajas de zanahoria', '1 Limón', '1/2 Tz de repollo morado ', '2 Cucharadas de queso', '2 Cucharadas de cebollin', '1 Jalapeño', 'Sal y pimienta '],
@@ -656,7 +656,7 @@ const recipes = [
         img: '/img/recipes/IMG_003.jpg'
     },
     {
-        id: '66',
+        id: 66,
         title: 'TOSTADAS DE FRIJOLES Y VEGETALES',
         description: '',
         ingredients: ['4 Tostadas', '1/2 Taza de frijoles negros molidos', '1 Taza de zuchinni en tiras', '4 Hongos rodajas', '1 Taza de zanahoria', '1/2 Taza de repollo morado ', '4 Cucharadas de culantro', '3 Cucharadas de aceite de oliva', '2 limones', '2 cucharadas de ajonjolí', '1 Ajo Picado finamente', '1 Chile dulce / Chile pimiento en tiras', 'Sal y pimienta '],
@@ -666,17 +666,17 @@ const recipes = [
         img: '/img/recipes/IMG_004.jpg'
     },
     {
-        id: '67',
+        id: 67,
         title: 'CREMA DE BROCOLI Y FRIJOLES',
         description: '',
         ingredients: ['2 Tazas de brócoli cocido', '2 Tazas de caldo de vegetal', '1 Taza de frijoles blancos cocidos', '2 Ajos finamente picados', '1/2 Cebolla blanca picada finamente', '2 Rodajas de Pan', '4 Cucharadas de aceite de oliva', 'Queso cheddar'],
         steps: ['Sofreír el ajo y la cebolla con el aceite de oliva por 3min', '', 'Agregar los frijoles blancos, el brócoli y el caldo de vegetales, dejar hervir por 10min', 'Licuar hasta obtener una textura homogénea', 'Hervir por 5 minutos y sal pimentar', 'Servir con pan tostado, queso cheddar rallado, frijoles blancos enteros ¡DISFRUTAR!', '', 'El frijol blanco aporta nutrientes y le da una textura cremosa.'],
-        category: ['sopas y guisos'],
+        category: ['sopas y cremas'],
         type: 'Frijoles blancos',
         img: '/img/recipes/IMG_3266.jpg'
     },
     {
-        id: '68',
+        id: 68,
         title: 'TORTITAS DE FRIJOLE Y ZUCHINNI',
         description: '',
         ingredients: ['1/4 de harina de arroz (puede ser normal)', '1/2 taza de frijoles negros sin agua', '1 1/2 de zucchini (quitarles la humedad con una toalla de cocina)', '2 cucharadas de culantro picado', '1 cucharada de puerro picado', '1/4 queso mozzarella', '1 huevo', '1 ajo picado finamente', 'Sal y pimienta'],
@@ -686,7 +686,7 @@ const recipes = [
         img: '/img/recipes/IMG_006.jpg'
     },
     {
-        id: '69',
+        id: 69,
         title: 'ENSALADA DE FRIJOLES BLANCOS CON PICANTE',
         description: '',
         ingredients: ['4 Tazas de frijoles blancos cocidos', '2 Cucharadas de flakes de chile seco', '3 ajos', '1 Taza de vinagre de manzana', '1/4 de aceite de oliva', '2 cucharadas de limón', 'Sal y pimienta al gusto', '1 Rábano en rodajas '],
@@ -696,7 +696,7 @@ const recipes = [
         img: '/img/recipes/IMG_3167.jpg'
     },
     {
-        id: '70',
+        id: 70,
         title: 'PIZZA DE FRIJOLES MOLIDOS',
         description: '',
         ingredients: ['1 Flat bread o Masa para pizza', '4 tomates cherry', '2 Tazas de salsa natural de tomate', '1 Taza de frijoles molidos negro', '1/4 De Cebolla Morada', '8 Rodajas de zuchinni'],
@@ -706,7 +706,7 @@ const recipes = [
         img: '/img/recipes/IMG_3033.jpg'
     },
     {
-        id: '71',
+        id: 71,
         title: 'CREMA DE TOMATE',
         description: '',
         ingredients: ['4 tomates', '1 cebolla ', '2 dientes de ajo', '1 taza de frijoles blancos ', '2 tazas de agua (puede ser sustituido por caldo de pollo)', '3 hojas de albahaca', '1 Rodaja de pan (si se desea)', '1 Rodaja de queso (si se desea)', '2 Cucharadas de mantequilla '],
@@ -716,7 +716,7 @@ const recipes = [
         img: '/img/recipes/IMG_2668.jpg'
     },
     {
-        id: '72',
+        id: 72,
         title: 'PASTA CON SALSA Y FRIJOLES BLANCOS',
         description: '',
         ingredients: ['Pasta a su elección', '2 tomates', '2 hojas de albahaca', '2 ajo', '3 cucharadas de culantro ', '6 tomates cherry', '1 taza de frijoles blancos', 'Sal y pimienta', 'Aceite de oliva'],
@@ -726,7 +726,7 @@ const recipes = [
         img: '/img/recipes/IMG_2422.jpg'
     },
     {
-        id: '73',
+        id: 73,
         title: 'ENSALADA DE PALMITO Y FRIJOLES',
         description: '',
         ingredients: ['1 Taza de frijoles blancos', '1 Taza de palmito en tiritas delgadas', '1/2 Taza de garbanzos', '1/4 de taza de culantro picado finamente', '3 limones', '1 ajo', '1/2 Cebolla morada', 'Sal y pimienta al gusto'],
@@ -736,7 +736,7 @@ const recipes = [
         img: '/img/recipes/IMG_2152.jpg'
     },
     {
-        id: '74',
+        id: 74,
         title: 'ENSALADA DE PAPA CON FRIJOLES',
         description: '',
         ingredients: ['2 Papas grandes partidas en cubos y cocidas', '2 cucharadas de culantro', '1/2 taza de kidney beans (pueden ser cualquier tipo de frijoles)', '1 Ajo', '2 Cucharadas de aceite de oliva', '1/4 de cebolla morada picada finamente', '2 cucharadas de maíz', 'dulce desgranado', '1 Huevo duro picado finamente', '2 cucharadas de mayonesa', '3 Pan Bagget', 'Sal y pimienta'],
@@ -746,17 +746,17 @@ const recipes = [
         img: '/img/recipes/IMG_1950.jpg'
     },
     {
-        id: '75',
+        id: 75,
         title: 'SOPA TROPICAL DE FRIJOLES BLANCOS',
         description: '',
         ingredients: ['2 Tazas de frijoles blancos cocidos', '2 tazas de caldo de vegetales', '1 ajo picado finamente', '2 cucharadas de culantro', '4 tomates cherry', '4 cucharadas de elote dulce', '1/4 de cebolla morada picada finamente en julianas', 'Chips de tortillas (de su preferencia)', 'Queso para servir opcional'],
         steps: ['Saltear el ajo.', 'Agregar los frijoles licuados y sofreir por 3 minutos, agregar el caldo de vegetales para crear una mejor consistencia. ', 'Agregar culantro finamente picado (reservar un poco para decorar)', 'Colocar 3 cucharadas de elotes picados. ', 'Hervir por 10minutos', 'Sal pimentar. ', 'Servir y decorar con tomate cherry partidos,  cebolla morada, culantro y chips.'],
-        category: ['almuerzos y cenas', 'sopas y guisos'],
+        category: ['almuerzos y cenas', 'sopas y cremas'],
         type: 'Frijoles blancos',
         img: '/img/recipes/IMG_0279.jpg'
     },
     {
-        id: '76',
+        id: 76,
         title: 'CUPCAKES DE DESAYUNO ',
         description: '',
         ingredients: ['4 huevos ', '1 Cucharadas de cebolla ', '2 Cucharadas de espinaca ', '1 Ajo picado ', '1 Tazas de frijoles negros ', '¼ de queso rallado para derretir '],
@@ -766,7 +766,7 @@ const recipes = [
         img: '/img/recipes/IMG_4152.jpg'
     },
     {
-        id: '77',
+        id: 77,
         title: 'POLLO EN SALADA Y FRIJOLES BLANCOS',
         description: '',
         ingredients: ['1 taza de tomates cocidos sin cáscara', '2 cucharadas de aceite', '2 cucharadas de cebolla', '1 ajo picado finamente', '2 hongos en rodajas', '1/2 taza de crema / natillas', '1 Taza de frijoles blancos', '1 cucharada de albahaca'],
@@ -776,7 +776,7 @@ const recipes = [
         img: '/img/recipes/IMG_0287.jpg'
     },
     {
-        id: '78',
+        id: 78,
         title: 'ENSALADA DE PINTO BEANS, CEBOLLA Y ELOTES',
         description: '',
         ingredients: ['', '2 Cebollas moradas cortadas en juliana', '1 Taza de elotitos amarillos', '1 Taza de pinto beans', '2 Limones el jugo', '1 Cucharada de vinagre de manzana', 'Sal y pimienta', '', 'Para servir', '4 Tomates cherry', '1 Taza de arugula', '', '', ''],
@@ -786,7 +786,7 @@ const recipes = [
         img: '/img/recipes/IMG_1825.jpg'
     },
     {
-        id: '79',
+        id: 79,
         title: 'TOSTADA DE FRIJOLES BLANCOS',
         description: '',
         ingredients: ['1 Rodaja de Pan', '1 Taza de frijoles blancos ', '1 Cucharada de chile pimiento', '2 Cucharadas de cebollin', '1 Cucharada de jugo de limón', '1 Cucharada de aceite de oliva ', 'Sal y pimienta'],
@@ -796,7 +796,7 @@ const recipes = [
         img: '/img/recipes/IMG_1425.jpg'
     },
     {
-        id: '80',
+        id: 80,
         title: 'TOSTADA DE FRIJOLES CON QUESO Y TOMATE',
         description: '',
         ingredients: ['2 Rodajas de pan', '½ Taza de frijoles molidos', '¼ Queso para derretir', '10 Tomates Cherry', '2 Hojas de albahaca', '½ Aguacate', 'Aceite de oliva '],
@@ -806,7 +806,7 @@ const recipes = [
         img: '/img/recipes/IMG_1439.jpg'
     },
     {
-        id: '81',
+        id: 81,
         title: 'TOSTADA DE PINTO CON HUEVO',
         description: '',
         ingredients: ['½ Taza de pinto ', '1 Huevo ', '1 Rodaja de jamón', '¼ Aguacate '],
@@ -816,7 +816,7 @@ const recipes = [
         img: '/img/recipes/IMG_1423.jpg'
     },
     {
-        id: '82',
+        id: 82,
         title: 'TOSTADA DE FRIJOLES CON PESTO Y TOMATE',
         description: '',
         ingredients: ['2 Rodajas de pan ', '2 Rodajas de Tomate', '2 Rodajas de Queso  fresco', '1 Rodaja de queso parmesano', '¼ Taza de pesto ', '1 Taza de frijoles blancos'],
@@ -826,7 +826,7 @@ const recipes = [
         img: '/img/recipes/IMG_6540.jpg'
     },
     {
-        id: '83',
+        id: 83,
         title: 'BOWL DE QUINOA Y ENSALADA DE FRIJOLES',
         description: '',
         ingredients: [' 1 Taza de quinoa', '1 Taza de lechuga', '½ Taza de aderezo (puede ser a su elección)', '½ Taza de tomate picado ', '½ Taza de cebolla', '½ Taza de frijoles negros', '½ Taza de garbanzos', '2 Cucharadas de culantro', '2 Cucharadas de salsa de soya', '1 Cucharada de aceite de oliva '],
@@ -836,7 +836,7 @@ const recipes = [
         img: '/img/recipes/IMG_5954.jpg'
     },
     {
-        id: '84',
+        id: 84,
         title: 'CHIFRIJO',
         description: '',
         ingredients: ['1 Taza de frijol Kidney', '1 Tomate', '½ Cebolla ', '2 Cucharadas de culantro ', '1 Limón ', '1 Taza de chicharrón ', 'Chips para servir '],
@@ -846,7 +846,7 @@ const recipes = [
         img: '/img/recipes/IMG_8138.jpg'
     },
     {
-        id: '85',
+        id: 85,
         title: 'SOPA DE LASAÑA CON FRIJOLES',
         description: '',
         ingredients: ['1 Cucharada de aceite ', '1 Taza de carne molida ', '1 Cucharada de ajo ', '1 Taza de hongos', '2 Tazas de salsa de tomate natural ', '4 Tazas de agua caliente ', '2 Cucharadas de cebolla blanca picada ', 'Pasta de lasagna quebrada', '1 Taza de frijoles blancos ', '1 Cucharada de mantequilla'],
@@ -856,7 +856,7 @@ const recipes = [
         img: '/img/recipes/IMG_1022.jpg'
     },
     {
-        id: '86',
+        id: 86,
         title: 'FRIJOLES BLANCOS EN ESCABECHE',
         description: '',
         ingredients: ['2 Tazas de frijoles blancos ', '3 Tazas de vinagre blanco ', '1 Taza de salsa de tomate ', '½ Taza de aceite de oliva ', '1 Ajo picado finamente ', '1 Taza de cebolla partidas en juliana', '2 Cucharadas de cebollín ', 'Sal y pimienta '],
@@ -866,7 +866,7 @@ const recipes = [
         img: '/img/recipes/IMG_4616.jpg'
     },
     {
-        id: '87',
+        id: 87,
         title: 'ENSALADA DE FRIJOLES ',
         description: '',
         ingredients: ['Ingredientes', '1 ½ Taza frijoles negros cocinados', '1 ½ Taza frijoles blancos cocinados', '1 Chile dulce/pimiento picado', '¼ Taza de cebolla picada', '1 Taza de tomates Cherry picados', '½ Jalapeño picado', '½ Taza de culantro picado', '', 'Aderezo', '3 Cucharadas de aceite de oliva', '¼ Taza de jugo de limón', '1 Cucharada de miel', '1 Cucharada de ajo picado', 'Sal y pimienta al gusto'],
@@ -876,7 +876,7 @@ const recipes = [
         img: '/img/recipes/IMG_0009.jpg'
     },
     {
-        id: '88',
+        id: 88,
         title: 'TOSTADA DE FRIJOLES Y KALE ',
         description: '',
         ingredients: ['Ingredientes frijoles', '- 1 taza de butter beans', '- 1/2 taza de vinagre', '- 2 cucharadas de culantro', '- 1 ajo picado finamente', '', 'Kale', '- 1 taza de kale', '- 2 cucharadas de salsa de soya', '- 1 cucharada de aceite de ajonjolí', '- 1 cucharada de aceite de oliva', '', 'Tostada', '2 rodajas de pan', '2 cucharadas de aceite de oliva', '1/2 aguacate'],
@@ -886,7 +886,7 @@ const recipes = [
         img: '/img/recipes/IMG_4360.jpg'
     },
     {
-        id: '89',
+        id: 89,
         title: 'ROLLOS PRIMAVERA CON FRIJOLES',
         description: '',
         ingredients: ['1/2 taza de frijoles negros', '1 zanahoria', '1/4 de repollo morado', '2 cucharadas de ajonjolí', '1 pepino', '1/2 taza de perejil', '1 Limón', '1/4 de taza de salsa de soya'],
@@ -896,7 +896,7 @@ const recipes = [
         img: '/img/recipes/IMG_7036.jpg'
     },
     {
-        id: '90',
+        id: 90,
         title: 'OMELLETE CON VEGETALES Y FRIJOLES',
         description: '',
         ingredients: ['1/4 de taza de frijol negro', '2 huevos', '1 cucharadita de aceite de oliva', '2 rodajas de tomate', '1/2 taza de tomate cherry', '1/2 taza de espinaca', '2 cucharadas de cebollín', 'Sal y pimienta al gusto'],
@@ -906,7 +906,7 @@ const recipes = [
         img: '/img/recipes/IMG_7145.jpg'
     },
     {
-        id: '91',
+        id: 91,
         title: 'BURRITO DE FRIJOLES',
         description: '',
         ingredients: [' 2 tomates', ' 1/2 taza de queso mozzarella', ' 1/2 cebolla', ' 1 Limón', ' 1/2 jalapeño', ' 2 cucharadas de cilantro', ' 1/2 taza de frijoles', ' 3 tortillas de harina'],
@@ -916,7 +916,7 @@ const recipes = [
         img: '/img/recipes/IMG_6934.jpg'
     },
     {
-        id: '92',
+        id: 92,
         title: 'ENSALADA DE PEPINO, CEBOLLA Y FRIJOLES BLANCOS ',
         description: '',
         ingredients: ['1 pepino', ' 1 taza de palmito', ' 1 Taza de frijoles', ' 1/2 Cebolla morada', ' 2 Cucharadas de culantro', ' 1/2 aguacate', ' 1 Limón'],
@@ -926,7 +926,7 @@ const recipes = [
         img: '/img/recipes/IMG_0232.jpg'
     },
     {
-        id: '93',
+        id: 93,
         title: 'ENSALADA DE FRIJOLES, ALBAHACA Y TOMATE',
         description: '',
         ingredients: [' 1 taza de frijoles blancos (cocidos)', ' 1 taza de tomates cherry partidos a la mitad.', ' 2 ajos picados finamente', ' Jugo de 1 limón', ' Albahaca picada y tomillo al gusto', ' 2 cucharadas de aceite de oliva', ''],
@@ -936,7 +936,7 @@ const recipes = [
         img: '/img/recipes/IMG_007.jpg'
     },
     {
-        id: '94',
+        id: 94,
         title: 'TOSTADA DE FRIJOLES BLANCOS  Y ACEITE DE OLIVA ',
         description: '',
         ingredients: ['1 taza de frijoles blancos', '2 cucharaditas de cilantro finamente picado', '2 dientes de ajo', '3 cucharadas de limón', '2 cucharadas de aceite de oliva', 'Sal y pimienta al gusto', ''],
@@ -946,7 +946,7 @@ const recipes = [
         img: '/img/recipes/IMG_009.jpg'
     },
     {
-        id: '95',
+        id: 95,
         title: 'FRIJOLES BLANCOS, TOSTADAS CON BROCOLI',
         description: '',
         ingredients: ['1cabeza de brocoli', '1 taza de frijoles blancos', ' 2 limones, sal, pimienta', ' 1 ajo', ' 1/2 Limón', ' aceite de oliva'],
@@ -956,7 +956,7 @@ const recipes = [
         img: '/img/recipes/IMG_012.jpg'
     },
     {
-        id: '96',
+        id: 96,
         title: 'SANDWICH DE FRIJOLES CON FRIJOLES ',
         description: '',
         ingredients: ['1 Taza de frijoles negros', ' 2 Rodajas de queso', ' 1 Tomate', ' 1 Lechuga', ' 1/2 Pepino', '', 'Aderezo', ' Aceite de oliva', 'Culantro', ' Limón', ' Ajo', ' Sal y pimienta'],
@@ -966,7 +966,7 @@ const recipes = [
         img: '/img/recipes/IMG_9500.jpg'
     },
     {
-        id: '97',
+        id: 97,
         title: 'CHALUPAS',
         description: '',
         ingredients: ['1 taza de frijol negro molido', '-Lechuga', '-6 tortillas tostadas', '-2 tomates', '-1/2 cebolla', '-2 cucharadas de culantro picado', '-1 limón', '-1 pechuga de pollo cocida', '-1/2 aguacate'],
@@ -976,7 +976,7 @@ const recipes = [
         img: '/img/recipes/IMG_8048.jpg'
     },
     {
-        id: '98',
+        id: 98,
         title: 'TACOS DE FRIJOLES  ',
         description: '',
         ingredients: ['10 tortillas', '2 tazas de frijoles molidos rojos', '½ taza de queso para derretir', '1 Taza de aceite', '2 Tomates', '½ cebolla', 'Culantro', 'Sal y pimienta'],
@@ -986,7 +986,7 @@ const recipes = [
         img: '/img/recipes/IMG_8370.jpg'
     },
     {
-        id: '99',
+        id: 99,
         title: 'MINI PIZZAS DE ZUCCHINIS Y FRIJOLES',
         description: '',
         ingredients: ['1 zucchini', '1/2 taza de frijoles rosados', '1 taza de salsa de tomate natural', '6 hojas de albahaca', '1 taza de queso mozarella', '8 tomates cherry', '1 cucharadita de aceite de oliva', 'Sal y pimienta al gusto'],
@@ -996,17 +996,17 @@ const recipes = [
         img: '/img/recipes/IMG_7176.jpg'
     },
     {
-        id: '100',
+        id: 100,
         title: 'WRAP DE LECHUGA Y FRIJOLES BLANCOS ',
         description: '',
         ingredients: ['1 Taza de frijoles blancos', '2 Cucharadas de vinagre', '1/2 Cebolla morada', '1 Diente de ajo', '2 Cucharadas de culantro picado finamente', '4 Hojas de lechuga', '5 tomates cherry', 'Sal y pimienta al gusto.'],
         steps: [' Picar finamente el cilantro, ajo y la cebolla.', ' Partir a la mitad los tomates cherry.', ' Colocar en un bowl los ingredientes anteriores y agregar vinegar, dejar reposar por 15min.', ' Agregar los frijoles y sal pigmentar.', ' Colocar en las hojas de lechuga.'],
-        category: ['sopas y guisos'],
+        category: ['sopas y cremas'],
         type: 'Frijoles blancos',
         img: '/img/recipes/IMG_7404.jpg'
     },
     {
-        id: '101',
+        id: 101,
         title: 'CAMOTES RELLENOS DE FRIJOLES',
         description: '',
         ingredients: ['1 Camote', ' 2 tomates', ' 1/2 taza de frijoles negros', ' 1 cebolla', ' 1 ajo', ' Culantro', ' Limón', ' 1/2 taza de queso', ' Aceite de oliva', ' Jalapeño', ' Sal y pimienta'],
@@ -1016,17 +1016,17 @@ const recipes = [
         img: '/img/recipes/IMG_7620.jpg'
     },
     {
-        id: '102',
+        id: 102,
         title: 'CREMA DE CALABAZA Y FRIJOLES',
         description: '',
         ingredients: [' 3 Tazas de calabaza', '10 espárragos', ' 2 tazas de frijol blanco', ' 1/2 cebolla morada', ' 1 cucharada de culantro/cilantro', ' 1/4 taza de queso para derretir', ' 2 ajos', ' Sal y pimienta'],
         steps: ['Sofreír el ajo', 'Agregar la calabaza y 3 tazas de agua, hervir hasta que esté cocinada, retirar la cáscara y licuar con 2 tazas del agua donde se cocino.', 'Saltear los espárragos con un poco de aceite durante 5min.', 'Poner a hervir durante 5 min y agregar los frijoles cocinados y el culantro, dejar hervir por 20min.', 'Servir con queso y cebolla.', 'Agregar los espárragos.'],
-        category: ['sopas y guisos'],
+        category: ['sopas y cremas'],
         type: 'Frijoles blancos',
         img: '/img/recipes/IMG_7635.jpg'
     },
     {
-        id: '103',
+        id: 103,
         title: 'TOMATES RELLENOS DE QUESO Y FRIJOLES',
         description: '',
         ingredients: ['2 Tomates', '1/2 taza de frijol negro cocido', '1/2 cebolla morada', '2 dientes de ajo', 'Zanahoria rallada', 'Culantro', '2 Cucharaditas de aceite de oliva', 'Sal y pimienta', '1/4 taza de elotitos'],
@@ -1036,7 +1036,7 @@ const recipes = [
         img: '/img/recipes/IMG_7426.jpg'
     },
     {
-        id: '104',
+        id: 104,
         title: 'SANDWICH DE FRIJOLES CON QUESO DERRETIDO',
         description: '',
         ingredients: [' 2 rodajas de pan de masa madre', '4 cucharadas de frijoles negros molidos', '1/4 taza de queso Mozzarela o alguno que derrita, mantequilla para untar al pan.'],
@@ -1046,7 +1046,7 @@ const recipes = [
         img: '/img/recipes/IMG_3278.jpg'
     },
     {
-        id: '105',
+        id: 105,
         title: 'CURRY DE FRIJOLES',
         description: '',
         ingredients: ['2 tazas de Frijoles Lima cocidos', '3 cucharadas de curry', '1 cucharada de comino', '1/2 cda de cúrcuma', '1 cda de sal', '1/2 cda de jengibre en polvo', '2 tazas de leche de coco', '3 tomates pelados', '3 dientes de ajo', '4 cdas de aceite', '1/2 cebolla morada', 'arroz blanco y cilantro para servir.'],
@@ -1056,7 +1056,7 @@ const recipes = [
         img: '/img/recipes/IMG_3297.jpg'
     },
     {
-        id: '106',
+        id: 106,
         title: 'PASTA CON FRIJOLES Y ZUCCHINI',
         description: '',
         ingredients: ['2 tazas de frijoles rosados cocidos-', '2 dientes de ajo', '2 cditas aceite de oliva', '2 cdas de cilantro', '1 taza de zuchinni en cubitos', '2 cdas de parmesano', '350 g de spaghetti'],
@@ -1066,7 +1066,7 @@ const recipes = [
         img: '/img/recipes/IMG_3317.jpg'
     },
     {
-        id: '107',
+        id: 107,
         title: 'RELLENITOS DE FRIJOLES',
         description: '',
         ingredients: ['2 plátanos maduros', '1 cda de canela', '2cdas de harina', '1/2 de frijoles negros molidos', 'Aceite para freír.', '.'],
@@ -1076,7 +1076,7 @@ const recipes = [
         img: '/img/recipes/IMG_3324.jpg'
     },
     {
-        id: '108',
+        id: 108,
         title: 'PAPAS SALTEADAS CON FRIJOL',
         description: '',
         ingredients: [' 2 tazas de frijoles negros cocidos', ' 1 Cucharada de cebollín', ' 5 papas pequeñas cocidas con cascara y partidas a la mitad', ' 3 cucharadas de aceite de oliva', ' 2 ajos picados finamente', ' 1 limón', ' ½ cebolla picada en julianas', ' 3 rodajas de tocino', ' ½ Taza de culantro picado finamente', 'Sal y pimienta al gusto'],
@@ -1086,7 +1086,7 @@ const recipes = [
         img: '/img/recipes/IMG_5952.jpg'
     },
     {
-        id: '109',
+        id: 109,
         title: 'ENSALADA DE FRIJOLES, QUINOA Y QUESO ',
         description: '',
         ingredients: ['1 taza de quinoa cocida', '1 taza de frijoles light red kidney', '½ taza de tomate cherry partidos a la mitad', '2 cucharadas de albahaca picada finamente', 'Queso mozzarella fresco', '2 ajos picados finamente', '2 limones', '4 rodajas de pepinos', 'Sal y pimienta al gusto'],
@@ -1096,12 +1096,12 @@ const recipes = [
         img: '/img/recipes/IMG_5962.jpg'
     },
     {
-        id: '110',
+        id: 110,
         title: 'SOPA DE FRIJOLES Y CURRY',
         description: '',
         ingredients: ['1 Ajo', '½ Cebolla', '1 Cucharadita de Curry', '1 Cucharadita de Jengibre', '3 Cucharadas de Aceite de oliva', '3 Tomates Cocidos', '½ taza de culantro Culantro', '2 Tazas de leche de Coco', '1 TazaSpaguettis de arroz', '1 Cucharada de Chilli Flakes', '2 Tazas de frijoles blancos'],
         steps: ['Saltear ajo, cebolla con el aceite de oliva.', 'Agregar curry y jengibre en polvo y sofreír por 1minuto.', 'Agregar los 3 tomates cocidos y licuados, sofreír por 3 minutos', 'Agregar la leche de coco y una taza de agua dejar hervir por 15 minutos', 'Agregar los frijoles y hervir por 3minutos', 'Salpimentar', '', '*Servir en un bowl con los spaguettis de arroz (previamente hidratados).', '*Agregar culantro y flakes de chilli.'],
-        category: ['sopas y guisos'],
+        category: ['sopas y cremas'],
         type: 'Frijoles blancos',
         img: '/img/recipes/IMG_6002.jpg'
     }
@@ -1240,7 +1240,7 @@ const recipes = [
             'Licuar todos los ingredientes y volver a hervir por 5min.',
             'Agregar los huevos duros.'
         ],
-        category: ['Sopas y guisos', 'Almuerzos y cenas'],
+        category: ['sopas y cremas', 'Almuerzos y cenas'],
         img: '/img/recipes/IMG_6359.jpg'
     },
     {

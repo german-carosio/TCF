@@ -13,8 +13,7 @@ const Blog = () => {
       </Helmet>
 
       <Margin>
-        <h1>Blog</h1>
-        <p>Contenido de la página Blog</p>
+        <p>En construcción</p>
       </Margin>
     </div>
   );

@@ -1,7 +1,8 @@
 
   .container {
-      height: 600px;
+      height: 100%;
       display: flex;
+      flex-direction: column;
       background: linear-gradient(to bottom, transparent 2%, var(--naranja) 10%, var(--naranja) 90%, transparent 98%);
       color: #fff;
       margin-top: 50px;
@@ -25,5 +26,12 @@
   .container div p {
       line-height: 45px;
       font-size: 26px;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        height: 600px;
+    }
   }
   

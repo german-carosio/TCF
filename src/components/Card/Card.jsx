@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import LazyLoad from 'react-lazyload';
 import styles from './Card.module.css';
 
 // Función para formatear el título
@@ -12,7 +13,9 @@ const Card = ({ data, detailUrl }) => {
     return (
         <div className={styles.recipeCard}>
             <Link to={`${detailUrl}${data.id}`} className={styles.link}>
-                <img src={data.img} alt={data.title} className={styles.recipeImage} />
+                <LazyLoad height={200} offset={100}>
+                    <img src={data.img} alt={data.title} className={styles.recipeImage} />
+                </LazyLoad>
                 <div className={styles.capa}></div>
                 <h3 className={styles.title}>{formatTitle(data.title)}</h3>
             </Link>
@@ -21,5 +24,6 @@ const Card = ({ data, detailUrl }) => {
 };
 
 export default Card;
+
 
 

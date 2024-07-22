@@ -17,31 +17,36 @@ const BeneficiosDetail = () => {
     }
 
     return (
-        <div>
+        <>
             <Helmet>
                 <title>{benefit.name} - Todo con frijol</title>
                 <meta name="description" content={`Detalles de ${benefit.name}.`} />
             </Helmet>
 
             <Margin>
-                <h1>{benefit.name}</h1>
-                <div className={styles.grid}>
-                    {benefit.beneficios.map((item, index) => (
-                        <div key={index} className={styles.card}>
-                            <h2>{item.title}</h2>
-                            <p>{item.content}</p>
-                        </div>
-                    ))}
+                <h1 className={styles.title}>Aprende los beneficios del consumo de frijoles</h1>
+                <div className={styles.container}>
+                    <h2>{benefit.name}</h2>
+                    <div className={styles.grid}>
+                        {benefit.beneficios.map((item, index) => (
+                            <div key={index} className={styles.card}>
+                                <h3>{item.title}</h3>
+                                <p>{item.content}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <div className={styles.btn}>
+                    <Boton2 
+                        title="Volver"
+                        url="#"
+                        onClick={() => navigate(-1)}
+                        textColor="#4C772D"
+                        borderColor="#4C772D"
+                    />
+                    </div>
                 </div>
-                <Boton2
-                    title="Volver"
-                    url="#"
-                    onClick={() => navigate(-1)}
-                    textColor="#4C772D"
-                    borderColor="#4C772D"
-                />
             </Margin>
-        </div>
+        </>
     );
 };
 

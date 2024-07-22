@@ -17,6 +17,9 @@ const FilterContainer = ({ selectedCategory, setSelectedCategory, isDetailPage =
         }
     };
 
+    // Limitar las categorías a las primeras 4
+    const displayedCategories = categories.slice(0, 4);
+
     return (
         <>
             <h1 className={styles.title}>Incorpora los frijoles de maneras originales y deliciosas</h1>
@@ -27,7 +30,7 @@ const FilterContainer = ({ selectedCategory, setSelectedCategory, isDetailPage =
                 >
                     Todas
                 </button>
-                {categories.map((category) => (
+                {displayedCategories.map((category) => (
                     <button
                         key={category.id}
                         className={`${styles.categoryButton} ${!isDetailPage && selectedCategory === category.name && !searchTerm ? styles.active : ''}`}
@@ -42,6 +45,7 @@ const FilterContainer = ({ selectedCategory, setSelectedCategory, isDetailPage =
 };
 
 export default FilterContainer;
+
 
 
 

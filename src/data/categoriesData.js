@@ -3,13 +3,13 @@
 // Array de categorías con id y url
 export const categories = [
     { id: 1, name: 'desayunos', displayName: 'Desayunos', url: 'desayunos' },
-    { id: 2, name: 'sopas y guisos', displayName: 'Sopas y guisos', url: 'sopas-y-guisos' },
-    { id: 3, name: 'dips', displayName: 'Dips', url: 'dips' },
-    { id: 4, name: 'ensaladas', displayName: 'Ensaladas', url: 'ensaladas' },
-    { id: 5, name: 'almuerzos y cenas', displayName: 'Almuerzos y cenas', url: 'almuerzos-y-cenas' },
+    { id: 2, name: 'sopas y cremas', displayName: 'Sopas y cremas', url: 'sopas-y-cremas' },
+    { id: 3, name: 'ensaladas', displayName: 'Ensaladas', url: 'ensaladas' },
+    { id: 4, name: 'almuerzos y cenas', displayName: 'Almuerzos y cenas', url: 'almuerzos-y-cenas' },
+    { id: 5, name: 'dips', displayName: 'Dips', url: 'dips' },
     { id: 6, name: 'snacks', displayName: 'Snacks', url: 'snacks' },
     { id: 7, name: 'postres', displayName: 'Postres', url: 'postres' },
-    { id: 7, name: 'acompañamientos', displayName: 'Acompañamientos', url: 'acompañamientos' },
+    { id: 8, name: 'acompañamientos', displayName: 'Acompañamientos', url: 'acompañamientos' },
 ];
 
 

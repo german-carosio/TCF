@@ -12,8 +12,7 @@ const Contact = () => {
         <meta name="keywords" content="contact, sitio web, react" />
       </Helmet>
       <Margin>
-        <h1>Contact</h1>
-        <p>Contenido de la página Contact</p>
+        <p>En construcción</p>
         </Margin>
     </div>
   );
