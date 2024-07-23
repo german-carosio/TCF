@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import Margin from '../components/Margin/Margin';
 import List from '../components/List/List';
 import { getTiposDeFrijoles } from '../data/typesOfBeansData';
+import styles from './Tipos.module.css'
 
 const Tipos = () => {
   const [tiposDeFrijoles, setTiposDeFrijoles] = useState([]);
@@ -30,9 +31,8 @@ const Tipos = () => {
       </Helmet>
 
       <Margin>
-
-        <List data={tiposDeFrijoles}  url={'/tipos/detail/'} title={'Conoce la variedad de frijoles y sus nutrientes'} />
-        
+        <h1 className={styles.title}>Aprende los beneficios del consumo de frijoles</h1>
+        <List data={tiposDeFrijoles}  url={'/tipos/detail/'} />
         
       </Margin>
     </div>

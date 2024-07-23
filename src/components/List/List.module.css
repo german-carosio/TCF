@@ -1,19 +1,13 @@
-.title {
-    font-size: 1.5em;
-    margin: 20px 0 60px 0;
-    color: #FF5733; /* Naranja para el título */
-}
-
 .recipeList {
     max-width: 1400px;
     margin: 0 auto 50px auto;
     overflow: auto; /* Permite el desplazamiento dentro del contenedor */
+    border-radius: 30px;
 }
 
 .recipesGrid {
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Una columna en pantallas pequeñas */
-    border-radius: 10px 10px 0 0;
     width: 100%;
 }
 

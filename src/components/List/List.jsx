@@ -3,7 +3,7 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 import Card from '../Card/Card';
 import styles from './List.module.css';
 
-const List = ({ data, url, title }) => {
+const List = ({ data, url}) => {
     const [items, setItems] = useState([]);
     const [hasMore, setHasMore] = useState(true);
 
@@ -27,9 +27,7 @@ const List = ({ data, url, title }) => {
 
     return (
         <>
-            <h1 className={styles.title}>{title}</h1>
-            <div className={styles.recipeList}>
-                
+            <div className={styles.recipeList}> 
                     <InfiniteScroll
                         dataLength={items.length}
                         next={fetchMoreData}

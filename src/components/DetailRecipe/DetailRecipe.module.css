@@ -7,7 +7,7 @@
 .recipeTitle {
     font-size: 24px;
     padding: 40px;
-    background-color: var(--celeste);
+    background-color: var(--celeste2);
     border-radius: 20px 20px 0 0;
 }
 
@@ -16,7 +16,7 @@
     justify-content: center; /* Center the flex items horizontally */
        /* Center the flex items vertically */
     flex-direction: column;
-    background-color: var(--celeste);
+    background-color: var(--celeste2);
     padding: 20px;
     border-radius: 0 0 20px 20px;
 }

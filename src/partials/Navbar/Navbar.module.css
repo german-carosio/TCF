@@ -40,7 +40,7 @@
   padding: 100px 0 0 0;
   height: calc(100vh - 60px);
   transition: 0.5s;
-  background-color: var(--celeste);
+  background-color: var(--fondoHeader);
 }
 
 .menuVisible {

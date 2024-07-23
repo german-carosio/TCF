@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useRecipesContext } from '../../context/RecipesContext';
 import styles from './FilterContainer.module.css';
 
-const FilterContainer = ({ selectedCategory, setSelectedCategory, isDetailPage = false, searchTerm }) => {
+const FilterContainer = ({ selectedCategory, setSelectedCategory, searchTerm }) => {
     const { categories } = useRecipesContext();
     const navigate = useNavigate();
 
@@ -17,7 +17,6 @@ const FilterContainer = ({ selectedCategory, setSelectedCategory, isDetailPage =
         }
     };
 
-    // Limitar las categorías a las primeras 4
     const displayedCategories = categories.slice(0, 4);
 
     return (
@@ -25,7 +24,7 @@ const FilterContainer = ({ selectedCategory, setSelectedCategory, isDetailPage =
             <h1 className={styles.title}>Incorpora los frijoles de maneras originales y deliciosas</h1>
             <div className={styles.filter}>
                 <button
-                    className={`${styles.categoryButton} ${!isDetailPage && selectedCategory === '' && !searchTerm ? styles.active : ''}`}
+                    className={`${styles.categoryButton} ${selectedCategory === '' && !searchTerm ? styles.active : ''}`}
                     onClick={() => handleCategoryClick('')}
                 >
                     Todas
@@ -33,7 +32,7 @@ const FilterContainer = ({ selectedCategory, setSelectedCategory, isDetailPage =
                 {displayedCategories.map((category) => (
                     <button
                         key={category.id}
-                        className={`${styles.categoryButton} ${!isDetailPage && selectedCategory === category.name && !searchTerm ? styles.active : ''}`}
+                        className={`${styles.categoryButton} ${selectedCategory === category.name && !searchTerm ? styles.active : ''}`}
                         onClick={() => handleCategoryClick(category.name)}
                     >
                         {category.displayName}
@@ -45,6 +44,7 @@ const FilterContainer = ({ selectedCategory, setSelectedCategory, isDetailPage =
 };
 
 export default FilterContainer;
+
 
 
 

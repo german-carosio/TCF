@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './SearchBar.module.css';
 
 const SearchBar = ({ onSearch }) => {
     const [searchTerm, setSearchTerm] = useState('');
+    const navigate = useNavigate();
 
     const handleInputChange = (e) => {
         setSearchTerm(e.target.value);
     };
 
     const handleSearch = () => {
-        onSearch(searchTerm);
+        if (searchTerm) {
+            onSearch(searchTerm); // Llama a la función onSearch pasada como prop
+            navigate(`/recipes?search=${searchTerm}`);
+        }
     };
 
     const handleKeyPress = (e) => {
@@ -27,12 +32,13 @@ const SearchBar = ({ onSearch }) => {
                 onChange={handleInputChange}
                 onKeyPress={handleKeyPress}
             />
-           {/*  <button onClick={handleSearch}>Buscar</button> */}
         </div>
     );
 };
 
 export default SearchBar;
+
+
 
 
 

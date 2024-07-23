@@ -1,12 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import List from '../components/List/List';
 import Margin from '../components/Margin/Margin';
 import FilterContainer from '../components/FilterContainer/FilterContainer';
 import SearchBar from '../components/SearchBar/SearchBar';
-import { useState } from 'react';
-import useFilteredRecipes from '../hooks/useFilteredRecipes';
-import { useLocation } from 'react-router-dom'; // Importa useLocation
+import useFilteredRecipes from '../hooks/useFilteredRecipes'; // Importa el hook
+import { useLocation } from 'react-router-dom';
 
 const Recipes = () => {
     const [currentCategory, setCurrentCategory] = useState('');
@@ -14,7 +13,6 @@ const Recipes = () => {
     const filteredRecipes = useFilteredRecipes(searchTerm, currentCategory);
     const location = useLocation(); // Obtiene la ubicación actual
 
-    // Actualiza searchTerm cuando la ubicación cambia
     useEffect(() => {
         const params = new URLSearchParams(location.search);
         const search = params.get('search') || '';
@@ -31,6 +29,13 @@ const Recipes = () => {
         setSearchTerm(searchTerm);
     };
 
+    // Mensaje cuando no hay recetas que coincidan
+    const noResultsMessage = (
+        <div className="no-results-message">
+            <p>No se encontraron recetas que coincidan con tu búsqueda.</p>
+        </div>
+    );
+
     return (
         <>
             <Helmet>
@@ -46,13 +51,20 @@ const Recipes = () => {
                     searchTerm={searchTerm}
                 />
                 <SearchBar onSearch={handleSearch} />
-                <List data={filteredRecipes} url={'/recipes/detail/'} />
+                {filteredRecipes.length > 0 ? (
+                    <List data={filteredRecipes} url={'/recipes/detail/'} />
+                ) : (
+                    noResultsMessage
+                )}
             </Margin>
         </>
     );
 };
 
 export default Recipes;
+
+
+
 
 
 

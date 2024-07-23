@@ -13,7 +13,7 @@ const recipes = [
         steps: ['En un sartén saltear el ajo, agregar el cebollino, los hongos y frijoles, saltear por 3min', '- Agregar el tomate y cocinar.', '-Incorporar el vino', '- Agregar la mantequilla y cocinar por 5min más.', '- En un sartén colocar aceite de oliva y cocinar el pan 3 min por casa lado.'],
         category: ['acompañamientos'],
         type: 'Frijoles blancos',
-        img: '/img/recipes/IMG_077.jpg'
+        img: '/img/recipes/IMG_0277.jpg'
     },
     {
         id: 2,
@@ -43,7 +43,7 @@ const recipes = [
         steps: ['En Un bowl colocar la quinoa, el tomate cherry, culantro cebolla morada, ajo y frijoles. ', 'Agregar limón, aceite de oliva y vinagre balsámico y revolver. ', 'Salpimentar, revolver y servir.'],
         category: ['ensaladas'],
         type: 'Frijoles blancos, Frijoles negros',
-        img: '/img/recipes/IMG_4272.jpg'
+        img: '/img/recipes/IMG_4270.jpg'
     },
     {
         id: 5,
@@ -403,7 +403,7 @@ const recipes = [
         steps: ['En un sartén sofreír una cucharada de cebolla, agregar el arroz y el frijol, cocinar por 3 min.', 'Colocar en un bowl tomate, cebolla, culantro y jugo de limón, salpimentar al gusto', 'Colocar la tortilla de harina grande en una superficie plana.', 'Agregar el arroz con frijoles en el medio de la tortilla, colocar el pollo, pico de gallo y crema', 'agria.', 'Colocar la tostada encima y agregar queso.', 'Cerrar con la tortilla de harina pequeña.', 'Calentar en un sartén a fuego bajo, 3 min cada lado.'],
         category: ['snacks'],
         type: ' Frijoles negros',
-        img: '/img/recipes/IMG_8811.jpg'
+        img: '/img/recipes/IMG_8610.jpg'
     },
     {
         id: 41,
@@ -763,7 +763,7 @@ const recipes = [
         steps: ['Colocar todos los ingredientes en un bowl . ', 'Revolver ', 'Colocar aceite en un recipiente para cupcakes ', 'Agregar la mezcla ', 'Hornear a 200 por 10min '],
         category: ['desayunos', 'snacks'],
         type: '  Frijoles Kidney',
-        img: '/img/recipes/IMG_4152.jpg'
+        img: '/img/recipes/IMG_4151.jpg'
     },
     {
         id: 77,
