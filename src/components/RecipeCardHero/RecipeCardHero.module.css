@@ -21,6 +21,9 @@
 
 .txt {
     padding: 10px 10px 40px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .categories {
@@ -37,5 +40,8 @@
 .title {
     font-size: 18px;
     color: var(--naranja);
-    margin-top: 5px;
+}
+
+.types {
+    font-size: 12px;
 }

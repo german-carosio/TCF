@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import List from '../components/List/List';
 import Margin from '../components/Margin/Margin';
@@ -12,6 +12,8 @@ const Recipes = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const filteredRecipes = useFilteredRecipes(searchTerm, currentCategory);
     const location = useLocation(); // Obtiene la ubicación actual
+    const filterRef = useRef(null); // Referencia al contenedor de filtros
+    const [isFixed, setIsFixed] = useState(false);
 
     useEffect(() => {
         const params = new URLSearchParams(location.search);
@@ -28,6 +30,22 @@ const Recipes = () => {
         setCurrentCategory('');
         setSearchTerm(searchTerm);
     };
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const filterTop = filterRef.current?.offsetTop || 0;
+            if (window.scrollY > filterTop) {
+                setIsFixed(true);
+            } else {
+                setIsFixed(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     // Mensaje cuando no hay recetas que coincidan
     const noResultsMessage = (
@@ -50,7 +68,12 @@ const Recipes = () => {
                     setSelectedCategory={handleCategoryChange}
                     searchTerm={searchTerm}
                 />
-                <SearchBar onSearch={handleSearch} />
+                <div
+                    className={`Search-filter ${isFixed ? 'fixed' : ''}`}
+                    ref={filterRef}
+                >
+                    <SearchBar onSearch={handleSearch} />
+                </div>
                 {filteredRecipes.length > 0 ? (
                     <List data={filteredRecipes} url={'/recipes/detail/'} />
                 ) : (
@@ -62,6 +85,7 @@ const Recipes = () => {
 };
 
 export default Recipes;
+
 
 
 

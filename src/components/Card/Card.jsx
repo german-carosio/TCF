@@ -13,7 +13,7 @@ const Card = ({ data, detailUrl }) => {
     return (
         <div className={styles.recipeCard}>
             <Link to={`${detailUrl}${data.id}`} className={styles.link}>
-                <LazyLoad height={200} offset={100}>
+                <LazyLoad height={200} offset={800}>
                     <img src={data.img} alt={data.title} className={styles.recipeImage} />
                 </LazyLoad>
                 <div className={styles.capa}></div>

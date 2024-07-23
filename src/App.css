@@ -35,9 +35,33 @@ a, li {
   height: 500px;
 }
 
+/*Scroll de filtro y busqueda*/
+.Search-filter {
+  transition: top 0.3s;
+}
+
+.Search-filter.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  
+  margin: 60px auto 0 auto;
+  padding: 0 ;
+  max-width: 1400px;
+}
+
+
 
 @media (min-width: 768px) {
   .main {
     padding: 110px 0 50px 0;
+  }
+
+  .Search-filter.fixed {
+    margin: 80px auto 0 auto;
+    padding: 0 70px 0 70px;
+    
   }
 }
