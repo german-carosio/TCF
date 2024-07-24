@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './SearchBar.module.css';
 
@@ -7,7 +7,7 @@ const SearchBar = ({ onSearch, filterRef }) => {
     const [isFixed, setIsFixed] = useState(false);
     const [dimensions, setDimensions] = useState({ width: '100%', height: 'auto' });
     const navigate = useNavigate();
-    const inputRef = useRef(null);
+   
 
     const handleInputChange = (e) => {
         setSearchTerm(e.target.value);
@@ -45,7 +45,7 @@ const SearchBar = ({ onSearch, filterRef }) => {
     }, [filterRef]);
 
     useEffect(() => {
-        inputRef.current.focus();
+        window.scrollTo(0, 0); // Desplazarse al inicio de la página al montar el componente
     }, []);
 
     return (
@@ -62,7 +62,7 @@ const SearchBar = ({ onSearch, filterRef }) => {
                     value={searchTerm}
                     onChange={handleInputChange}
                     onKeyPress={handleKeyPress}
-                    ref={inputRef}
+                    
                 />
             </div>
         </div>

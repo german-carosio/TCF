@@ -33,7 +33,7 @@
 
 .lado2 img {
     width: 80%;
-    border: solid red;
+   /*  border: solid red; */
 }
 
 @media (min-width: 768px) {
