@@ -3,6 +3,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Margin from '../components/Margin/Margin';
 import BeneficiosList from '../components/BeneficiosList/BeneficiosList';
+import Title from '../components/Title/Title';
 
 const Benefits = () => {
   return (
@@ -14,6 +15,7 @@ const Benefits = () => {
       </Helmet>
 
       <Margin>
+        <Title txt={'Aprende los beneficios del consumo de frijoles'}/>
         <BeneficiosList />
       </Margin>
     </>

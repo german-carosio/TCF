@@ -15,7 +15,7 @@
 }
 
 .lado1 h1 {
-    font-size: 40px;
+    font-size: 3em;
 }
 
 .frase {
@@ -33,6 +33,7 @@
 
 .lado2 img {
     width: 80%;
+    border: solid red;
 }
 
 @media (min-width: 768px) {
@@ -45,6 +46,6 @@
     }
 
     .lado1 h1 {
-        font-size: 70px;
+        font-size: 4em;
     }
 }

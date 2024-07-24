@@ -5,6 +5,7 @@ import { useParams, useNavigate } from 'react-router-dom'; // Importa el hook us
 import { Helmet } from 'react-helmet-async'; // Importa Helmet desde react-helmet-async
 import Margin from '../components/Margin/Margin'; // Importa el componente Margin
 import { getTiposById } from '../data/typesOfBeansData'; // Importa la función getTiposById
+import Title from '../components/Title/Title';
 
 const TiposDetail = () => {
     const { tiposId } = useParams(); // Obtiene el parámetro tiposId de la URL usando useParams
@@ -39,7 +40,8 @@ const TiposDetail = () => {
                 <meta name="description" content={tipoDeFrijol.description} />
             </Helmet>
             <Margin>
-                <h1>{tipoDeFrijol.title}</h1>
+                <Title txt={'Conoce la variedad de frijoles y sus nutrientes'} />
+                <h2>{tipoDeFrijol.title}</h2>
                 <div>
                     <img src={tipoDeFrijol.img} alt={tipoDeFrijol.title} style={{ maxWidth: '100%' }} />
                     <p>{tipoDeFrijol.description}</p>

@@ -3,7 +3,6 @@ import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import BeneficiosData from '../../data/BeneficiosData';
-import Margin from '../Margin/Margin';
 import styles from './BeneficiosDetail.module.css';
 import Boton2 from '../Boton2/Boton2';
 
@@ -23,10 +22,10 @@ const BeneficiosDetail = () => {
                 <meta name="description" content={`Detalles de ${benefit.name}.`} />
             </Helmet>
 
-            <Margin>
-                <h1 className={styles.title}>Aprende los beneficios del consumo de frijoles</h1>
+            
+                <h2 className={styles.title}></h2>
                 <div className={styles.container}>
-                    <h2>{benefit.name}</h2>
+                    <h3>{benefit.name}</h3>
                     <div className={styles.grid}>
                         {benefit.beneficios.map((item, index) => (
                             <div key={index} className={styles.card}>
@@ -45,7 +44,7 @@ const BeneficiosDetail = () => {
                     />
                     </div>
                 </div>
-            </Margin>
+           
         </>
     );
 };

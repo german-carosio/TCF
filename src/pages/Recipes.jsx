@@ -4,16 +4,16 @@ import List from '../components/List/List';
 import Margin from '../components/Margin/Margin';
 import FilterContainer from '../components/FilterContainer/FilterContainer';
 import SearchBar from '../components/SearchBar/SearchBar';
-import useFilteredRecipes from '../hooks/useFilteredRecipes'; // Importa el hook
+import useFilteredRecipes from '../hooks/useFilteredRecipes';
 import { useLocation } from 'react-router-dom';
+import Title from '../components/Title/Title';
 
 const Recipes = () => {
     const [currentCategory, setCurrentCategory] = useState('');
     const [searchTerm, setSearchTerm] = useState('');
     const filteredRecipes = useFilteredRecipes(searchTerm, currentCategory);
-    const location = useLocation(); // Obtiene la ubicación actual
-    const filterRef = useRef(null); // Referencia al contenedor de filtros
-    const [isFixed, setIsFixed] = useState(false);
+    const location = useLocation();
+    const filterRef = useRef(null);
 
     useEffect(() => {
         const params = new URLSearchParams(location.search);
@@ -31,23 +31,6 @@ const Recipes = () => {
         setSearchTerm(searchTerm);
     };
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const filterTop = filterRef.current?.offsetTop || 0;
-            if (window.scrollY > filterTop) {
-                setIsFixed(true);
-            } else {
-                setIsFixed(false);
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
-    // Mensaje cuando no hay recetas que coincidan
     const noResultsMessage = (
         <div className="no-results-message">
             <p>No se encontraron recetas que coincidan con tu búsqueda.</p>
@@ -63,17 +46,13 @@ const Recipes = () => {
             </Helmet>
 
             <Margin>
+                <Title txt={'Incorpora los frijoles de maneras originales y deliciosas'} />
                 <FilterContainer
                     selectedCategory={currentCategory}
                     setSelectedCategory={handleCategoryChange}
                     searchTerm={searchTerm}
                 />
-                <div
-                    className={`Search-filter ${isFixed ? 'fixed' : ''}`}
-                    ref={filterRef}
-                >
-                    <SearchBar onSearch={handleSearch} />
-                </div>
+                <SearchBar onSearch={handleSearch} filterRef={filterRef} />
                 {filteredRecipes.length > 0 ? (
                     <List data={filteredRecipes} url={'/recipes/detail/'} />
                 ) : (
@@ -85,6 +64,7 @@ const Recipes = () => {
 };
 
 export default Recipes;
+
 
 
 

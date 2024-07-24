@@ -21,7 +21,6 @@ const FilterContainer = ({ selectedCategory, setSelectedCategory, searchTerm }) 
 
     return (
         <>
-            <h1 className={styles.title}>Incorpora los frijoles de maneras originales y deliciosas</h1>
             <div className={styles.filter}>
                 <button
                     className={`${styles.categoryButton} ${selectedCategory === '' && !searchTerm ? styles.active : ''}`}

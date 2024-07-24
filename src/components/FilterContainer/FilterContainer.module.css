@@ -1,9 +1,3 @@
-.title {
-    font-size: 1.5em;
-    margin: 20px 0 60px 0;
-    color: #FF5733; /* Naranja para el título */
-}
-
 .filter {
     padding: 20px;
     display: flex;

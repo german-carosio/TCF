@@ -7,8 +7,7 @@ import Boton from '../Boton/Boton';
 const BeneficiosList = () => {
   return (
     <>
-      <h1 className={styles.title}>Aprende los beneficios del consumo de frijoles</h1>
-      <div className={styles.cardsContainer}>
+        <div className={styles.cardsContainer}>
         {BeneficiosData.map((beneficio) => (
           <div key={beneficio.id} className={styles.card}>
             <img className={styles.img} src={beneficio.img} alt={beneficio.name} />

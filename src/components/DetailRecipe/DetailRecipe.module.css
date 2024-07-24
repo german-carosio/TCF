@@ -1,12 +1,11 @@
 /* RecipeDetail.module.css */
 
 .recipeDetail {
-    margin-bottom: 50px;
+    margin: 30px 0 50px 0;
 }
 
 .recipeTitle {
-    font-size: 24px;
-    padding: 40px;
+    padding: 30px 0 5px 45px;
     background-color: var(--celeste2);
     border-radius: 20px 20px 0 0;
 }

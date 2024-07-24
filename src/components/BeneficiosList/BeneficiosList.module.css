@@ -1,25 +1,14 @@
-/* BeneficiosList.module.css */
-.title {
-  font-size: 1.5em;
-  margin: 20px 0 60px 0;
-  color: #FF5733; /* Naranja para el título */
-}
-
 .cardsContainer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   max-width: 1400px;
-  height: 100%;
+  color: var(--text1);
 }
 
 .card {
   border-radius: 30px;
   padding: 0 10px;
-  width: 320px;
-  height: 450px;
+  height: 400px;
   background-color: var(--celeste2);
   display: flex;
   flex-direction: column;
@@ -27,6 +16,7 @@
   align-items: center;
   gap: 20px;
   position: relative;
+  margin: 0 auto;
 }
 
 .img {
@@ -36,7 +26,7 @@
 }
 
 .card h2 {
-  margin-top: 0;
+  margin-top: 40px;
   width: 100%;
   font-size: 22px;
 }
@@ -55,7 +45,7 @@
 
 .card ul li::before {
   content: '•'; /* Añade el punto */
-  color: #FF5733; /* Color del punto */
+  color: var(--text1); /* Color del punto */
   position: absolute;
   left: 0;
   top: 50%;
@@ -66,9 +56,10 @@
 @media (min-width: 768px) {
   .cardsContainer {
       height: 500px;
+      grid-template-columns: repeat(3, 1fr);
   }
   .card {
-      width: 370px;
+      width: 320px;
       padding: 0 30px;
   }
 }
