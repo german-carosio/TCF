@@ -23,7 +23,6 @@
     padding: 10px 10px 40px 10px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
 .categories {
@@ -44,4 +43,10 @@
 
 .types {
     font-size: 12px;
+    margin-top: 10px;
+    color: var(--text1);
+    width: max-content;
+    background-color: var(--celeste);
+    padding: 5px 10px;
+    border-radius: 50px;
 }

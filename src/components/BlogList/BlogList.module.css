@@ -1,0 +1,48 @@
+.cabecera{
+    background-color: var(--naranja);
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    border-radius: 30px;
+}
+
+.cardContainer{
+    padding: 10px 10px;
+    background-color: var(--fondo2);
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-bottom: solid var(--naranja) 1px;
+}
+
+.title{
+    color: var(--naranja);
+}
+
+.cardImage {
+    max-width: 1400px;
+}
+
+.cardImage img{
+    width: 100%;
+    display: block;
+}
+
+@media (min-width: 768px) {
+
+    .cardContainer{
+        padding: 20px 70px;
+    }
+
+    .card {
+        padding: 30px;
+    }
+}

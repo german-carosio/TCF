@@ -19,20 +19,20 @@ const RecipeCardHero = ({ recipe }) => {
 
     return (
         <div className={styles.recipeCard}>
+            <Link to={`/recipes/detail/${recipe.id}`} className={styles.link}>
             <img src={recipe.img} alt={recipe.title} className={styles.recipeImage} />
             <div className={styles.txt}>
                 <div className={styles.categories}>
                     {recipe.category.map((cat, index) => (
                         <p key={index} className={styles.categorie}>
-                            <Link to={`/recipes/category/${getCategoryUrl(cat)}`} className={styles.categoryLink}>
+                            
                                 #{cat}
-                            </Link>
+                            
                         </p>
                     ))}
-                </div>
-                <Link to={`/recipes/detail/${recipe.id}`} className={styles.link}>
+                </div>                
                     <h3 className={styles.title}>{formatTitle(recipe.title)}</h3>
-                </Link>
+                
                 <div className={styles.types}>
                     {recipe.type.map((beanType, index) => (
                         <p key={index} className={styles.type}>
@@ -41,6 +41,7 @@ const RecipeCardHero = ({ recipe }) => {
                     ))}
                 </div>
             </div>
+            </Link>
         </div>
     );
 };

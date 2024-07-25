@@ -1,4 +1,4 @@
-const BeneficiosData = [
+const beneficiosData = [
     {
         id: 1,
         name: 'Salud',
@@ -98,4 +98,4 @@ const BeneficiosData = [
     }
 ];
 
-export default BeneficiosData;
+export default beneficiosData;

@@ -1,6 +1,6 @@
 // components/BeneficiosList.jsx
 import React from 'react';
-import BeneficiosData from '../../data/BeneficiosData';
+import beneficiosData from '../../data/beneficiosData';
 import styles from './BeneficiosList.module.css';
 import Boton from '../Boton/Boton';
 
@@ -8,7 +8,7 @@ const BeneficiosList = () => {
   return (
     <>
         <div className={styles.cardsContainer}>
-        {BeneficiosData.map((beneficio) => (
+        {beneficiosData.map((beneficio) => (
           <div key={beneficio.id} className={styles.card}>
             <img className={styles.img} src={beneficio.img} alt={beneficio.name} />
             <h2 className={styles.name}>{beneficio.name}</h2>

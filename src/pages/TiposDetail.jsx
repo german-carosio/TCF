@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet-async'; // Importa Helmet desde react-helme
 import Margin from '../components/Margin/Margin'; // Importa el componente Margin
 import { getTiposById } from '../data/typesOfBeansData'; // Importa la función getTiposById
 import Title from '../components/Title/Title';
+import Boton2 from '../components/Boton2/Boton2';
 
 const TiposDetail = () => {
     const { tiposId } = useParams(); // Obtiene el parámetro tiposId de la URL usando useParams
@@ -25,10 +26,7 @@ const TiposDetail = () => {
         fetchTipoDeFrijol();
     }, [tiposId]);
 
-    const goBack = () => {
-        navigate(-1); // Navega a la página anterior en el historial
-    };
-
+    
     if (!tipoDeFrijol) {
         return <div>Loading...</div>; // Muestra un mensaje de carga si el tipo de frijol no está disponible
     }
@@ -36,7 +34,7 @@ const TiposDetail = () => {
     return (
         <>
             <Helmet>
-                <title>{tipoDeFrijol.title}</title>
+                <title>{tipoDeFrijol.title} - Todo con frijol</title>
                 <meta name="description" content={tipoDeFrijol.description} />
             </Helmet>
             <Margin>
@@ -58,7 +56,13 @@ const TiposDetail = () => {
                         <li>Potasio: {tipoDeFrijol.nutrientes.potasio} mg</li>
                         <li>Zinc: {tipoDeFrijol.nutrientes.zinc} mg</li>
                     </ul>
-                    <button onClick={goBack}>Volver</button> {/* Botón para volver a la página anterior */}
+                    <Boton2 
+                        title="Volver"
+                        url="#"
+                        onClick={() => navigate(-1)}
+                        textColor="#4C772D"
+                        borderColor="#4C772D"
+                    />
                 </div>
             </Margin>
         </>

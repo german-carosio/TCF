@@ -1,15 +1,13 @@
-// components/BeneficiosDetail.jsx
-import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import BeneficiosData from '../../data/BeneficiosData';
+import beneficiosData from '../../data/beneficiosData';
 import styles from './BeneficiosDetail.module.css';
 import Boton2 from '../Boton2/Boton2';
 
 const BeneficiosDetail = () => {
     const { benefitId } = useParams();
     const navigate = useNavigate();
-    const benefit = BeneficiosData.find(b => b.id === parseInt(benefitId, 10));
+    const benefit = beneficiosData.find(b => b.id === parseInt(benefitId, 10));
 
     if (!benefit) {
         return <div>Beneficio no encontrado</div>;

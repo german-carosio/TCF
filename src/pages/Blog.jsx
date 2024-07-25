@@ -1,24 +1,25 @@
-// AboutUs.jsx
-import React from 'react';
+// src/pages/Blog.jsx
 import { Helmet } from 'react-helmet-async';
 import Margin from '../components/Margin/Margin';
+import BlogList from '../components/BlogList/BlogList';
 
 const Blog = () => {
   return (
     <div>
       <Helmet>
         <title>Blog - Todo con frijol</title>
-        <meta name="description" content="Beneficios de frijoles." />
-        <meta name="keywords" content="Beneficios de frijoles, Beneficios de porotos" />
+        <meta name="description" content="Blog, Sigue las noticias de Todo con frijol" />
+        <meta name="keywords" content="blog, blog Todo con frijol, noticias Todo con frijol" />
       </Helmet>
 
       <Margin>
-        <p>En construcción</p>
+        <BlogList />
       </Margin>
     </div>
   );
 };
 
 export default Blog;
+
 
 
