@@ -3,10 +3,11 @@ import React, { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './Layout';
 import blogRoutes from '../data/blogRoutes';
+import ScrollToTop from '../components/ScrollToTop/ScrollToTop';
 
 const Home = lazy(() => import('../pages/Home'));
 const Recipes = lazy(() => import('../pages/Recipes'));
-const RecipeDetail = lazy(() => import('../pages/RecipeDetail')); 
+const RecipeDetail = lazy(() => import('../pages/RecipeDetail'));
 const RecipeCategory = lazy(() => import('../pages/RecipeCategory'));
 const Tipos = lazy(() => import('../pages/Tipos'));
 const TiposDetail = lazy(() => import('../pages/TiposDetail'));
@@ -20,14 +21,15 @@ const PageNotFound = lazy(() => import('../pages/PageNotFound'));
 const AppRoutes = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
+      <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Layout/>}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="recipes" element={<Recipes />} />
           <Route path="recipes/category/:categoryUrl" element={<RecipeCategory />} />
-          <Route path="recipes/detail/:recipeId" element={<RecipeDetail />} /> 
+          <Route path="recipes/detail/:recipeId" element={<RecipeDetail />} />
           <Route path="tipos" element={<Tipos />} />
-          <Route path="tipos/detail/:tiposId" element={<TiposDetail />} /> 
+          <Route path="tipos/detail/:tiposId" element={<TiposDetail />} />
           <Route path="benefits" element={<Benefits />} />
           <Route path="benefits/detail/:benefitId" element={<BenefitDetail />} />
           <Route path="about-us" element={<AboutUs />} />
@@ -44,6 +46,8 @@ const AppRoutes = () => {
 };
 
 export default AppRoutes;
+
+
 
 
 

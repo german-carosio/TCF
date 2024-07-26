@@ -1,46 +1,80 @@
 /* Footer.module.css */
 
-.footer {
+.container {
     background: var(--verde);
     color: #fff;
-    text-align: center;
     width: 100%;
     max-width: 1400px;
-    height: 200px;
-    padding: 20px;
+    padding: 50px 10px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 40px;
+    color: var(--footer);
 }
 
-.footer img{
+.container img {
     width: 200px;
 }
 
+.txt {
+    font-size: 0.85em
+}
+
 .socialIcons {
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.socialIcons div {
+    display: flex;
+    gap: 15px;
+}
+
+.iconContainer {
+    background-image: url('/img/web/redes.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 52px;
+    height: 52px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .icon {
-    font-size: 24px;
+    font-size: 1.5em;
     margin: 0 10px;
-    color: #fff;
     transition: color 0.3s ease;
+    color: var(--verde);
 }
 
 .icon:hover {
-    color: var(--celeste);
+    color: var(--naranja);
     /* Cambia el color al pasar el mouse sobre los íconos */
 }
 
 @media (min-width: 768px) {
 
-    .footer {
+    .container {
+        flex-direction: row;
+        padding: 50px 0;
+        justify-content: space-around;
+        gap: 0;
+    }
+
+    .txt {
+        font-size: 1em
+    }
+
+    .socialIcons {
         flex-direction: row;
     }
-    
+
 }

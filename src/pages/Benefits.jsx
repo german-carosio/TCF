@@ -1,15 +1,9 @@
-// pages/Benefits.jsx
-import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Margin from '../components/Margin/Margin';
 import BeneficiosList from '../components/BeneficiosList/BeneficiosList';
 import Title from '../components/Title/Title';
 
 const Benefits = () => {
-
-  useEffect(() => {
-    window.scrollTo(0, 0); // Desplazarse al inicio de la página al montar el componente
-  }, []);
 
   return (
     <>

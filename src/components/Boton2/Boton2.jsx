@@ -10,6 +10,8 @@ const Boton2 = ({ title, url, onClick, textColor = '#000', borderColor = '#000' 
         if (onClick) {
             e.preventDefault();
             onClick();
+            // Asegúrate de hacer scroll hacia arriba después de navegar hacia atrás
+            window.scrollTo(0, 0);
         }
         handleNavLinkClick(url);
     };
@@ -24,4 +26,5 @@ const Boton2 = ({ title, url, onClick, textColor = '#000', borderColor = '#000' 
 };
 
 export default Boton2;
+
 

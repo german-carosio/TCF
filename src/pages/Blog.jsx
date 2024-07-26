@@ -2,8 +2,13 @@
 import { Helmet } from 'react-helmet-async';
 import Margin from '../components/Margin/Margin';
 import BlogList from '../components/BlogList/BlogList';
+import { useEffect } from 'react';
 
 const Blog = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <Helmet>
@@ -20,6 +25,7 @@ const Blog = () => {
 };
 
 export default Blog;
+
 
 
 

@@ -1,0 +1,49 @@
+.cabecera{
+    background-color: var(--naranja);
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    border-radius: 30px;
+}
+
+.container{
+    padding: 10px 10px;
+    background-color: var(--fondo2);
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.entrada{
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.entrada h1{
+    color: var(--naranja);
+}
+
+.entradaImage {
+    width: 100%;
+    max-width: 1400px;
+}
+
+.entradaImage img{
+    width: 100%;
+    display: block;
+}
+
+@media (min-width: 768px) {
+
+    .container{
+        padding: 20px 70px;
+    }
+
+    .entrada {
+        padding: 50px 80px;
+    }
+
+}

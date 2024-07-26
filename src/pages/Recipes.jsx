@@ -33,7 +33,7 @@ const Recipes = () => {
 
     const noResultsMessage = (
         <div className="no-results-message">
-            <p>No se encontraron recetas que coincidan con tu búsqueda.</p>
+            <p>No se encontraron resultados.</p>
         </div>
     );
 

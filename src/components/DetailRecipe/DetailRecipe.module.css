@@ -5,7 +5,7 @@
 }
 
 .recipeTitle {
-    padding: 30px 0 5px 45px;
+    padding: 30px 0 5px 25px;
     background-color: var(--celeste2);
     border-radius: 20px 20px 0 0;
 }
@@ -16,7 +16,7 @@
        /* Center the flex items vertically */
     flex-direction: column;
     background-color: var(--celeste2);
-    padding: 20px;
+    padding: 20px 0;
     border-radius: 0 0 20px 20px;
 }
 
@@ -71,8 +71,14 @@
 
 
 @media (min-width: 768px) {
+
+    .recipeTitle {
+        padding: 30px 0 5px 45px;
+    }
+
     .content {
         flex-direction: row;
+        padding: 20px;
     }
 
     .recipeImage {
