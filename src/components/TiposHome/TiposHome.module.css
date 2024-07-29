@@ -1,51 +1,58 @@
 
   .container {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
       background: linear-gradient(to bottom, transparent 2%, var(--naranja) 10%, var(--naranja) 90%, transparent 98%);
       color: #fff;
       margin-top: 50px;
-      padding: 80px 10px 80px 10px;
-      gap: 20px;
+      padding: 80px 20px 80px 20px;
+  }
+
+  .container2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
   }
   
-  .container div {
+  .container2 div {
       width: 100%;
       display: flex;
       justify-content: center;
-      flex-direction: column;
+      flex-direction: column;     
   }
   
-  .container div h2 {
+  .container2 div h2 {
       font-size: 1.5em;
       font-family: var(--tipografia2);
       margin-bottom: 20px; /* Añadir margen inferior para separar del botón */
   }
   
-  .container div p {
+  .container2 div p {
       font-size: 1em;
   }
 
   @media (min-width: 768px) {
-    .container {
+
+      .container2 {
         flex-direction: row;
         height: 480px;
         padding: 0 70px 0 70px;
     }
 
-    .container div {
+    .container2 div {
         flex-direction: column;
     }
 
-    .container div h2 {
+    .container2 div h2 {
         font-size: 2.8em;
         font-family: var(--tipografia2);
         line-height: 80px;
         margin-bottom: 20px; /* Añadir margen inferior para separar del botón */
     }
 
-    .container div p {
+    .container2 div p {
         line-height: 40px;
         font-size: 1.4em;
     }

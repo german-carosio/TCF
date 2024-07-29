@@ -69,7 +69,7 @@
 
 @media (min-width: 1150px) {
   .cardsContainer { 
-    height: 500px;
+    height: 410px;
     grid-template-columns: repeat(3, 1fr);
     gap: 0;
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useRecipesContext } from '../../context/RecipesContext';
 import styles from './FilterContainer.module.css';
@@ -6,6 +6,7 @@ import styles from './FilterContainer.module.css';
 const FilterContainer = ({ selectedCategory, setSelectedCategory, searchTerm }) => {
     const { categories } = useRecipesContext();
     const navigate = useNavigate();
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     const handleCategoryClick = (categoryName) => {
         setSelectedCategory(categoryName);
@@ -15,13 +16,22 @@ const FilterContainer = ({ selectedCategory, setSelectedCategory, searchTerm }) 
             const category = categories.find(category => category.name === categoryName);
             navigate(`/recipes/category/${category.url}`);
         }
+        setIsDropdownOpen(false); // Cierra el desplegable al hacer clic en una categoría
     };
 
     const displayedCategories = categories.slice(0, 4);
 
+    const toggleDropdown = () => {
+        setIsDropdownOpen(!isDropdownOpen);
+    };
+
     return (
-        <>
-            <div className={styles.filter}>
+        <div className={styles.filterContainer}>
+            <div className={styles.dropdownToggle} onClick={toggleDropdown}>
+                Categorías
+                <i className={`fas ${isDropdownOpen ? 'fa-chevron-up' : 'fa-chevron-down'}`} />
+            </div>
+            <div className={`${styles.filter} ${isDropdownOpen ? styles.show : ''}`}>
                 <button
                     className={`${styles.categoryButton} ${selectedCategory === '' && !searchTerm ? styles.active : ''}`}
                     onClick={() => handleCategoryClick('')}
@@ -38,11 +48,13 @@ const FilterContainer = ({ selectedCategory, setSelectedCategory, searchTerm }) 
                     </button>
                 ))}
             </div>
-        </>
+        </div>
     );
 };
 
 export default FilterContainer;
+
+
 
 
 

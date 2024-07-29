@@ -1,11 +1,30 @@
-.filter {
+.filterContainer {
     padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 10px;
     background: var(--celeste2);
     border-radius: 30px 30px 0 0;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.dropdownToggle {
+    display: none;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.dropdownToggle i {
+    font-size: 0.6em;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column; 
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #fff;
 }
 
 .categoryButton {
@@ -22,4 +41,36 @@
 
 .categoryButton.active {
     background-color: var(--celeste2); 
+}
+
+.show {
+    display: flex !important; /* Mostrar cuando se abra el desplegable */
+}
+
+@media (min-width: 768px) {
+    .dropdownToggle {
+        display: none;
+    }
+
+    .filter {
+        display: flex; /* Mostrar por defecto en pantallas grandes */
+        flex-direction: row;
+        justify-content: space-around;
+        background: none;
+        margin-top: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .dropdownToggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .filter {
+        display: none; /* Ocultar por defecto en móviles */
+    }
 }
