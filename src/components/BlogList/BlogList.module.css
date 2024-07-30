@@ -32,6 +32,10 @@
     max-width: 1400px;
 }
 
+.cardContent p {
+    line-height: 26px;
+}
+
 .cardImage img{
     width: 100%;
     display: block;
