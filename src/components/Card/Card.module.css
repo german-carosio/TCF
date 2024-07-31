@@ -45,7 +45,7 @@
     height: 350px;
     object-fit: cover !important;
     display: block;
-    transition: transform 0.3s ease; /* Transición suave para el zoom */
+    transition: transform 0.8s ease; /* Transición suave para el zoom */
 }
 
 .link:hover .recipeImage {
