@@ -41,8 +41,10 @@ const Recipes = () => {
         <>
             <Helmet>
                 <title>Recetas - Todo con frijol</title>
-                <meta name="description" content="Bienvenido a Todo con frijol" />
-                <meta name="keywords" content="inicio, sitio web, react" />
+                <meta name="description" content="Explora una variedad de recetas con frijoles, desde platos tradicionales hasta innovaciones culinarias." />
+                <meta name="keywords" content="recetas con frijoles, cocina saludable, alimentación, frijoles, recetas vegetarianas" />
+                <meta name="author" content="Todo con frijol" />
+                <html lang="es" />
             </Helmet>
 
             <Margin>

@@ -37,39 +37,43 @@ const DetailRecipe = () => {
     return (
         <>
             <Helmet>
-                <title>{formatTitle(recipe.title)} - {recipe.description}</title>
-                <meta name="description" content={recipe.description} />
+                <title>{formatTitle(recipe.title)} - Todo con frijol</title>
+                <meta name="description" content={recipe.title} />
+                <meta name="keywords" content={`receta, ${recipe.title.toLowerCase()}, frijoles, alimentación saludable`} />
+                <meta name="author" content="Todo con frijol" />
+                <html lang="es" />
             </Helmet>
-            
-                <FilterContainer selectedCategory={''} setSelectedCategory={() => {}} isDetailPage={true} />
-                <SearchBar onSearch={() => {}} filterRef={filterRef} /> {/* Pasa filterRef aquí */}
-                <div className={styles.recipeDetail}>
-                    <h2 className={styles.recipeTitle}>{formatTitle(recipe.title)}</h2>
-                    <div className={styles.content}>
-                        <div className={styles.imageContainer}>
-                            <img src={recipe.img} alt={recipe.title} className={styles.recipeImage} />
+
+
+            <FilterContainer selectedCategory={''} setSelectedCategory={() => { }} isDetailPage={true} />
+            <SearchBar onSearch={() => { }} filterRef={filterRef} /> {/* Pasa filterRef aquí */}
+            <div className={styles.recipeDetail}>
+                <h2 className={styles.recipeTitle}>{formatTitle(recipe.title)}</h2>
+                <div className={styles.content}>
+                    <div className={styles.imageContainer}>
+                        <img src={recipe.img} alt={recipe.title} className={styles.recipeImage} />
+                    </div>
+                    <div className={styles.infoContainer}>
+                        <div className={styles.ingredients}>
+                            <h4>Ingredientes:</h4>
+                            <ul>
+                                {recipe.ingredients.map((ingredient, index) => (
+                                    <li key={index}>{ingredient}</li>
+                                ))}
+                            </ul>
                         </div>
-                        <div className={styles.infoContainer}>
-                            <div className={styles.ingredients}>
-                                <h4>Ingredientes:</h4>
-                                <ul>
-                                    {recipe.ingredients.map((ingredient, index) => (
-                                        <li key={index}>{ingredient}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div className={styles.steps}>
-                                <h4>Pasos:</h4>
-                                <ol>
-                                    {recipe.steps.map((step, index) => (
-                                        <li key={index}>{step}</li>
-                                    ))}
-                                </ol>
-                            </div>
+                        <div className={styles.steps}>
+                            <h4>Pasos:</h4>
+                            <ol>
+                                {recipe.steps.map((step, index) => (
+                                    <li key={index}>{step}</li>
+                                ))}
+                            </ol>
                         </div>
                     </div>
                 </div>
-           
+            </div>
+
         </>
     );
 };

@@ -26,7 +26,7 @@ const TiposDetail = () => {
         fetchTipoDeFrijol();
     }, [tiposId]);
 
-    
+
     if (!tipoDeFrijol) {
         return <div>Loading...</div>; // Muestra un mensaje de carga si el tipo de frijol no está disponible
     }
@@ -36,7 +36,11 @@ const TiposDetail = () => {
             <Helmet>
                 <title>{tipoDeFrijol.title} - Todo con frijol</title>
                 <meta name="description" content={tipoDeFrijol.description} />
+                <meta name="keywords" content={`frijoles, ${tipoDeFrijol.title}, nutrientes frijoles`} />
+                <meta name="author" content="Todo con frijol" />
+                <html lang="es" />
             </Helmet>
+
             <Margin>
                 <Title txt={'Conoce la variedad de frijoles y sus nutrientes'} />
                 <h2>{tipoDeFrijol.title}</h2>
@@ -56,7 +60,7 @@ const TiposDetail = () => {
                         <li>Potasio: {tipoDeFrijol.nutrientes.potasio} mg</li>
                         <li>Zinc: {tipoDeFrijol.nutrientes.zinc} mg</li>
                     </ul>
-                    <Boton2 
+                    <Boton2
                         title="Volver"
                         url="#"
                         onClick={() => navigate(-1)}

@@ -4,10 +4,10 @@
 
 .recipeCard {
     object-fit: cover;
-    
+    overflow: hidden; /* Asegura que el zoom no se desborde del contenedor */
 }
 
-.capa{
+.capa {
     position: absolute;
     bottom: 0px;
     left: 0;
@@ -29,7 +29,7 @@
     opacity: 0; /* Inicialmente invisible */
     transition: opacity 0.3s ease; /* Transición suave para la opacidad */
     text-align: center;
-    font-size: 18px ;
+    font-size: 18px;
 }
 
 .link:hover .title {
@@ -40,17 +40,17 @@
     opacity: 1; /* Mostrar el título al hacer hover */
 }
 
-
 .recipeImage {
     width: 100%;
     height: 350px;
     object-fit: cover !important;
     display: block;
+    transition: transform 0.3s ease; /* Transición suave para el zoom */
 }
 
-
-.recipeButton:hover {
-    background-color: #0056b3;
+.link:hover .recipeImage {
+    transform: scale(1.05); /* Zoom de la imagen */
 }
+
 
 

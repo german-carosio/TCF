@@ -7,14 +7,14 @@ import Margin from '../components/Margin/Margin';
 import BeneficiosHome from '../components/BeneficiosHome/BeneficiosHome';
 
 const Home = () => {
-
   return (
     <>
-
       <Helmet>
         <title>Home - Todo con frijol</title>
-        <meta name="description" content="Bienvenido a Todo con frijol." />
-        <meta name="keywords" content="inicio, sitio web, react" />
+        <meta name="description" content="Bienvenido a Todo con frijol, tu fuente de información sobre todos los tipos de frijoles y sus beneficios." />
+        <meta name="keywords" content="frijoles, recetas con frijoles, beneficios frijoles, tipos de frijoles, alimentación saludable" />
+        <meta name="author" content="Todo con frijol" />
+        <html lang="es" />
       </Helmet>
 
       <Margin>
@@ -24,7 +24,6 @@ const Home = () => {
       <TiposHome />
       <BeneficiosHome />
     </>
-
   );
 };
 

@@ -18,31 +18,35 @@ const BeneficiosDetail = () => {
             <Helmet>
                 <title>{benefit.name} - Todo con frijol</title>
                 <meta name="description" content={`Detalles de ${benefit.name}.`} />
+                <meta name="keywords" content={`beneficios, ${benefit.name}, frijoles`} />
+                <meta name="author" content="Todo con frijol" />
+                <html lang="es" />
             </Helmet>
 
-            
-                <h2 className={styles.title}></h2>
-                <div className={styles.container}>
-                    <h3>{benefit.name}</h3>
-                    <div className={styles.grid}>
-                        {benefit.beneficios.map((item, index) => (
-                            <div key={index} className={styles.card}>
-                                <h3>{item.title}</h3>
-                                <p>{item.content}</p>
-                            </div>
-                        ))}
-                    </div>
-                    <div className={styles.btn}>
-                    <Boton2 
+
+
+            <h2 className={styles.title}></h2>
+            <div className={styles.container}>
+                <h3>{benefit.name}</h3>
+                <div className={styles.grid}>
+                    {benefit.beneficios.map((item, index) => (
+                        <div key={index} className={styles.card}>
+                            <h3>{item.title}</h3>
+                            <p>{item.content}</p>
+                        </div>
+                    ))}
+                </div>
+                <div className={styles.btn}>
+                    <Boton2
                         title="Volver"
                         url="#"
                         onClick={() => navigate(-1)}
                         textColor="#4C772D"
                         borderColor="#4C772D"
                     />
-                    </div>
                 </div>
-           
+            </div>
+
         </>
     );
 };

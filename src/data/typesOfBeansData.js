@@ -2,7 +2,7 @@ export const tiposDeFrijoles = [
     {
         id: 1,
         title: 'Frijol Negro',
-        img: '/img/tipos/negro.png',
+        img: '/img/tipos/0.jpg',
         nutrientes: {
             calorias: 341, // kcal
             proteina: 21.6, // g
@@ -19,7 +19,7 @@ export const tiposDeFrijoles = [
     {
         id: 2,
         title: 'Frijol Rojo',
-        img: '/img/tipos/rojo.png',
+        img: '/img/tipos/1.jpg',
         nutrientes: {
             calorias: 337, // kcal
             proteina: 22.5, // g
@@ -36,7 +36,7 @@ export const tiposDeFrijoles = [
     {
         id: 3,
         title: 'Frijol Pinto',
-        img: '/img/tipos/verde.png',
+        img: '/img/tipos/2.jpg',
         nutrientes: {
             calorias: 347, // kcal
             proteina: 21.4, // g
@@ -53,7 +53,7 @@ export const tiposDeFrijoles = [
     {
         id: 4,
         title: 'Garbanzos',
-        img: '/img/tipos/garbanzos.png',
+        img: '/img/tipos/3.jpg',
         nutrientes: {
             calorias: 378, // kcal
             proteina: 20.5, // g
@@ -70,7 +70,7 @@ export const tiposDeFrijoles = [
     {
         id: 5,
         title: 'Frijol Blanco',
-        img: '/img/tipos/blanco.png',
+        img: '/img/tipos/4.jpg',
         nutrientes: {
             calorias: 335, // kcal
             proteina: 22.3, // g
@@ -87,7 +87,7 @@ export const tiposDeFrijoles = [
     {
         id: 6,
         title: 'Frijol Lima',
-        img: '/img/tipos/lentejas.png',
+        img: '/img/tipos/0.jpg',
         nutrientes: {
             calorias: 338, // kcal
             proteina: 21.5, // g

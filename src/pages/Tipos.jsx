@@ -27,14 +27,17 @@ const Tipos = () => {
     <div>
       <Helmet>
         <title>Tipos - Todo con frijol</title>
-        <meta name="description" content="Tipos de frijoles." />
-        <meta name="keywords" content="tipos de frijoles, varaintes de frijoles, tipo de porotos" />
+        <meta name="description" content="Descubre los diferentes tipos de frijoles y sus beneficios." />
+        <meta name="keywords" content="tipos de frijoles, variantes de frijoles, tipo de porotos, beneficios de los frijoles" />
+        <meta name="author" content="Todo con frijol" />
+        <html lang="es" />
       </Helmet>
+
 
       <Margin>
         <Title txt={'Aprende los beneficios del consumo de frijoles'} />
         <List data={tiposDeFrijoles} url={'#'}  /* url={'/tipos/detail/'} */ />
-        
+
       </Margin>
     </div>
   );

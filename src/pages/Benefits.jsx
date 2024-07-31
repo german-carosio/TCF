@@ -11,6 +11,8 @@ const Benefits = () => {
         <title>Beneficios - Todo con frijol</title>
         <meta name="description" content="Beneficios de frijoles." />
         <meta name="keywords" content="Beneficios de frijoles, Beneficios de porotos" />
+        <meta name="author" content="Todo con frijol" />
+        <html lang="es" />
       </Helmet>
 
       <Margin>

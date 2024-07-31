@@ -10,17 +10,20 @@ const Blog = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <Helmet>
         <title>Blog - Todo con frijol</title>
         <meta name="description" content="Blog, Sigue las noticias de Todo con frijol" />
         <meta name="keywords" content="blog, blog Todo con frijol, noticias Todo con frijol" />
+        <meta name="author" content="Todo con frijol" />
+        <html lang="es" />
       </Helmet>
+
 
       <Margin>
         <BlogList />
       </Margin>
-    </div>
+    </>
   );
 };
 

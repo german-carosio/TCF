@@ -34,7 +34,11 @@ const RecipeCategory = () => {
             <Helmet>
                 <title>{category ? `${category.displayName} - Todo con frijol` : 'Categoría no encontrada'}</title>
                 <meta name="description" content={`Recetas de ${category?.displayName}`} />
+                <meta name="keywords" content={`recetas, ${category?.displayName?.toLowerCase()}, frijoles, alimentación saludable`} />
+                <meta name="author" content="Todo con frijol" />
+                <html lang="es" />
             </Helmet>
+
 
             <Margin>
                 <Title txt={'Incorpora los frijoles de maneras originales y deliciosas'} />
