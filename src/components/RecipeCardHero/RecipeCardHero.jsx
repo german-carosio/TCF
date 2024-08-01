@@ -9,24 +9,17 @@ const RecipeCardHero = ({ recipe }) => {
         return title.charAt(0).toUpperCase() + title.slice(1).toLowerCase();
     };
 
-    const { categories } = useRecipesContext();
-
-    const getCategoryUrl = (categoryName) => {
-        const category = categories.find(cat => cat.name === categoryName);
-        return category ? category.url : '';
-    };
-
     return (
         <div className={styles.recipeCard}>
             <Link to={`/recipes/detail/${recipe.id}`} className={styles.link}>
                 <img src={recipe.img} alt={recipe.title} className={styles.recipeImage} />
                 <div className={styles.txt}>
                     <div className={styles.categories}>
-                        {recipe.category.map((cat, index) => (
-                            <p key={index} className={styles.categorie}>
-                                #{cat}
+                        {recipe.category.length > 0 && (
+                            <p className={styles.categorie}>
+                                #{recipe.category[0]}
                             </p>
-                        ))}
+                        )}
                     </div>
                     <h3 className={styles.title}>{formatTitle(recipe.title)}</h3>
                     <div className={styles.types}>
@@ -36,7 +29,6 @@ const RecipeCardHero = ({ recipe }) => {
                             </p>
                         ))}
                     </div>
-
                 </div>
             </Link>
         </div>
@@ -44,6 +36,7 @@ const RecipeCardHero = ({ recipe }) => {
 };
 
 export default RecipeCardHero;
+
 
 
 

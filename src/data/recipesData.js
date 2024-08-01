@@ -2,103 +2,103 @@
 const recipes = [
     {
         id: 1,
-        title: 'FRIJOLES SALTEADOS CON HONGOS',
+        title: 'CAMOTES RELLENOS DE FRIJOLES',
         description: '',
-        ingredients: ['1 ajo picado finamente', '1/4 aceite de oliva', '1/2 taza de hongos', '1 taza de frijoles blancos', '1/4 taza de tomates picados finamente', '2 cucharadas de cebollino', '2 cucharadas de vino blanco', '2 cucharadas de mantequilla', '1 cucharada de queso parmesano'],
-        steps: ['En un sartén saltear el ajo, agregar el cebollino, los hongos y frijoles, saltear por 3min', '- Agregar el tomate y cocinar.', '-Incorporar el vino', '- Agregar la mantequilla y cocinar por 5min más.', '- En un sartén colocar aceite de oliva y cocinar el pan 3 min por casa lado.'],
+        ingredients: ['1 Camote', ' 2 tomates', ' 1/2 taza de frijoles negros', ' 1 cebolla', ' 1 ajo', ' Culantro', ' Limón', ' 1/2 taza de queso', ' Aceite de oliva', ' Jalapeño', ' Sal y pimienta'],
+        steps: ['Hornear el camote por 40min a 450 (antes de meter al horno pinchar el camote con un tenedor)', ' Sacar el camote con cuidado y partir con un cuchillo a la mitad', ' Colocar el queso, agregar tomates y ajo y hornear por 10min a 350', ' Sacar y agregar los frijoles, hornear por 10min más', ' Agregar Culantro y jalapeños'],
         category: ['acompañamientos'],
-        type: ['Frijoles blancos'],
-        img: '/img/recipes/IMG_0277.jpg'
+        type: ['Frijoles negros'],
+        img: '/img/recipes/IMG_7620.jpg'
     },
     {
         id: 2,
-        title: 'SOPA DE FRIJOLES BLANCOS',
+        title: 'CREMA DE CALABAZA Y FRIJOLES',
         description: '',
-        ingredients: ['2 Tazas de salsa de tomate natural ', '4 Tazas de caldo de vegetales', '1 Taza de frijoles blancos', '1 Pechuga de pollo ', '1 Cucharada de culantro', '1/4 Cebolla morada', '1 Cucharada de aceite', '1 Cucharadita de chile flakes', '1 Cucharada de ajo '],
-        steps: ['Saltear en una olla, ajo picado finamente, agregar el caldo de vegetales, frijoles blancos y la salsa de tomate. ', 'Agregar la cucharada de culantro, la pechuga de pollo en cubitos y hervir por 20 min. ', 'Colocar el chile flake.', 'Servir con cebolla morada, pan tostado y chile flakes.'],
+        ingredients: [' 3 Tazas de calabaza', '10 espárragos', ' 2 tazas de frijol blanco', ' 1/2 cebolla morada', ' 1 cucharada de culantro/cilantro', ' 1/4 taza de queso para derretir', ' 2 ajos', ' Sal y pimienta'],
+        steps: ['Sofreír el ajo', 'Agregar la calabaza y 3 tazas de agua, hervir hasta que esté cocinada, retirar la cáscara y licuar con 2 tazas del agua donde se cocino.', 'Saltear los espárragos con un poco de aceite durante 5min.', 'Poner a hervir durante 5 min y agregar los frijoles cocinados y el culantro, dejar hervir por 20min.', 'Servir con queso y cebolla.', 'Agregar los espárragos.'],
         category: ['sopas y cremas'],
         type: ['Frijoles blancos'],
-        img: '/img/recipes/IMG_4432.jpg'
+        img: '/img/recipes/IMG_7635.jpg'
     },
     {
         id: 3,
-        title: 'PAPAS, ESPINACA Y FRIJOLES',
+        title: 'TOMATES RELLENOS DE QUESO Y FRIJOLES',
         description: '',
-        ingredients: ['1 Ajo picado finamente', '2 Tazas de papas cocidas', '2 Tazas de espinacas', '2 Tazas de frijoles', '2 Tazas de coliflor', '2 Cucharadas de aceite de oliva', 'Sal y pimienta al gusto'],
-        steps: ['En un sartén colocar aceite y saltear el ajo. ', 'Agregar las papas previamente cocinadas y partidas a la mitad, por 5min. ', 'Agregar la coliflor y los frijoles. ', 'Agregar las espinacas y cocinar por 3 minutos ', 'Salpimentar al gusto y servir.'],
+        ingredients: ['2 Tomates', '1/2 taza de frijol negro cocido', '1/2 cebolla morada', '2 dientes de ajo', 'Zanahoria rallada', 'Culantro', '2 Cucharaditas de aceite de oliva', 'Sal y pimienta', '1/4 taza de elotitos'],
+        steps: ['Quitar la parte de arriba del tomate y hacer espacio con una cuchara para rellenar el tomate (picar lo que sacamos del tomate)', 'Colocar el queso mozzarella (o el queso para derretir que deseen) y hornear a 150 por 15min, agregar aceite de oliva sal y pimienta encima de los tomates.', 'Agregar en un bowl los frijoles, cebolla, cilantro, ajo, zanahoria rallada y salpimentar.', 'Agregar a la ensalada el tomate que quitamos para hacer el orificio.', 'Dejar reposando la ensalada mientras salen los tomates del horno.', 'Sacar los tomates del horno y rellenarnos con la ensalada.'],
         category: ['acompañamientos'],
-        type: ['Frijoles blancos'],
-        img: '/img/recipes/IMG_4252.jpg'
+        type: ['Frijoles negros'],
+        img: '/img/recipes/IMG_7426.jpg'
     },
     {
         id: 4,
-        title: 'ENSALADA DE FRIJOLES Y QUINOA',
+        title: 'SANDWICH DE FRIJOLES CON QUESO DERRETIDO',
         description: '',
-        ingredients: ['2 Tazas de quinoa', '1 Taza de tomate cherry', '4 Cucharadas de culantro finamente picado ', '½ Cebolla morada', '2 Ajos', '3 Tazas de frijoles (utilizar 3 variedades de frijoles para darle color a la ensalada y sabores únicos)', '1 Limón', '½ Taza de aceite de oliva ', '2 Cucharadas de vinagre balsámico'],
-        steps: ['En Un bowl colocar la quinoa, el tomate cherry, culantro cebolla morada, ajo y frijoles. ', 'Agregar limón, aceite de oliva y vinagre balsámico y revolver. ', 'Salpimentar, revolver y servir.'],
-        category: ['ensaladas'],
-        type: ['Frijoles blancos', 'Frijoles negros'],
-        img: '/img/recipes/IMG_4270.jpg'
+        ingredients: [' 2 rodajas de pan de masa madre', '4 cucharadas de frijoles negros molidos', '1/4 taza de queso Mozzarela o alguno que derrita, mantequilla para untar al pan.'],
+        steps: [' Unte el pan con mantequilla por el lado de afuera.', ' En el otro lado coloque abundantes frijoles molidos y queso.', ' Ponga encima la otra tapa del pan y lleve a una plancha o sartén bien caliente hasta que el pan quede doradito y el queso se derrita.', 'Esta receta es fácil, rápida y otro nivel de deliciosa.', ''],
+        category: ['almuerzos y cenas'],
+        type: ['Frijoles negros'],
+        img: '/img/recipes/IMG_3278.jpg'
     },
     {
         id: 5,
-        title: 'BOWL DE SALMÓN Y FRIJOLES',
+        title: 'CURRY DE FRIJOLES',
         description: '',
-        ingredients: ['2 Tazas de lechuga ', '1 Taza de frijoles ', '½ Tomate', '½ Taza de hongos.', '1 Filete de salmón', '5 Rodajas de pepino ', 'Servir con aderezo favorito'],
-        steps: ['Colocar todos los ingredientes por separado en un bowl', 'Servir con el aderezo por aparte.'],
-        category: ['almuerzos y cenas', 'ensaladas'],
-        type: [],
-        img: '/img/recipes/IMG_4287.jpg'
+        ingredients: ['2 tazas de Frijoles Lima cocidos', '3 cucharadas de curry', '1 cucharada de comino', '1/2 cda de cúrcuma', '1 cda de sal', '1/2 cda de jengibre en polvo', '2 tazas de leche de coco', '3 tomates pelados', '3 dientes de ajo', '4 cdas de aceite', '1/2 cebolla morada', 'arroz blanco y cilantro para servir.'],
+        steps: ['En un sartén profundo caliente el aceite, agregue la cebolla y el ajo, agregue las especias, y sofría por 2 minutos a fuego medio.', 'Aparte hierva los tomates, quitele la cascara y licúelos.', 'Agregue el tomate a la mezcla, luego la leche de coco.', 'Hierva por 10 minutos. Agregue los frijoles y mantenga en el fuego 10 minutos más.', 'Sirva con arroz blanco y cilantro.'],
+        category: ['snacks', 'postres'],
+        type: ['Frijoles blancos'],
+        img: '/img/recipes/IMG_3297.jpg'
     },
     {
         id: 6,
-        title: 'PLATO DE VEGETALES',
+        title: 'PASTA CON FRIJOLES Y ZUCCHINI',
         description: '',
-        ingredients: ['1 Taza de coliflor salteada con salsa de soya', '1 Taza de camarones cocidos con limón, ajo y culantro.', '1 Taza de frijoles ', '1 Taza de brócoli ', '1 Taza de hongos'],
-        steps: ['Colocar todos los ingredientes por separado en un plato y servir por separado '],
-        category: ['almuerzos y cenas', 'ensaladas'],
-        type: [],
-        img: '/img/recipes/IMG_4304.jpg'
+        ingredients: ['2 tazas de frijoles rosados cocidos-', '2 dientes de ajo', '2 cditas aceite de oliva', '2 cdas de cilantro', '1 taza de zuchinni en cubitos', '2 cdas de parmesano', '350 g de spaghetti'],
+        steps: ['Cocine el spaghetti al dente.', 'Aparte, en un sartén caliente el aceite y sofría el ajo hasta que esté dorado, agregue los frijoles y salteelos por 5 minutos, luego agruegue el zuchini.', 'Agregue la pasta y el queso parmesano.', 'Sazone con sal y pimienta y disfrute.'],
+        category: ['almuerzos y cenas'],
+        type: [' Frijoles rojos'],
+        img: '/img/recipes/IMG_3317.jpg'
     },
     {
         id: 7,
-        title: 'ENSALADA DE FRIJOL TRICOLOR',
+        title: 'RELLENITOS DE FRIJOLES',
         description: '',
-        ingredients: ['½ Cebolla morada ', '1 ajo', '2 Tomate', '2 Cucharadas de culantro picado ', '1 Taza de kidney beans', '1 Taza de frijoles negros', '1 Taza de frijoles blancos ', '½ chile dulce ', '1 Limón', '2 Cucharadas de aceite de oliva ', 'Sal y pimienta'],
-        steps: ['En un bowl colocar el limón, el aceite de oliva y revolver hasta tener ambos ingredientes incorporados ', 'Agregar la cebolla, el ajo, tomate, culantro y chile dulce y revolver ', 'En un bowl aparte agregar todos los frijoles y colocar encima la primera mezcla. ', 'Salpimentar y Servir como acompañamiento'],
-        category: ['ensaladas'],
-        type: ['Frijoles blancos', 'Frijoles negros', 'Frijoles kidney'],
-        img: '/img/recipes/IMG_1544.jpg'
+        ingredients: ['2 plátanos maduros', '1 cda de canela', '2cdas de harina', '1/2 de frijoles negros molidos', 'Aceite para freír.', '.'],
+        steps: ['Hierva los plátanos maduros, una vez que estén cocinados májelos y revuélvalos con la canela y la harina', 'Deje enfriar. Forme tortitas, rellene con los frijoles molidos y dóblelas como empanaditas.', 'Fría en un sartén con aceite muy caliente hasta que queden doraditas'],
+        category: ['snacks'],
+        type: ['Frijoles negros'],
+        img: '/img/recipes/IMG_3324.jpg'
     },
     {
         id: 8,
-        title: 'SOPA NEGRA',
+        title: 'PAPAS SALTEADAS CON FRIJOL',
         description: '',
-        ingredients: ['3 Tazas de frijoles con el agua de cocción', '2 Huevos duros', '½ Aguacate', '½ Cebolla blanca', '1 Tomate', '2 Cucharadas de culantro ', '½ Taza de queso fresco ', '1 Ajo ', 'Sal y pimienta'],
-        steps: ['En un sartén sofreír el ajo, cebolla y el tomate. ', 'Agregar los frijoles con el agua, previamente cocinados. ', 'Hervir por 10min a fuego medio ', 'Licuar todos los ingredientes y volver a hervir por 5min', 'Agregar los huevos duros. '],
-        category: ['sopas y cremas', 'almuerzos y cenas'],
+        ingredients: [' 2 tazas de frijoles negros cocidos', ' 1 Cucharada de cebollín', ' 5 papas pequeñas cocidas con cascara y partidas a la mitad', ' 3 cucharadas de aceite de oliva', ' 2 ajos picados finamente', ' 1 limón', ' ½ cebolla picada en julianas', ' 3 rodajas de tocino', ' ½ Taza de culantro picado finamente', 'Sal y pimienta al gusto'],
+        steps: [' Sofreír la cebolla y el ajo con el aceite de oliva', ' Agregar las papas previamente cocidas y partidas a la mitad, saltear por 7minutos hasta que estén doradas.', ' Partir el tocino fino y sofreír en otro sarten hasta que este dorado, alrededor de 5minutos', ' Colocar en un bowl las papás, agregar, el jugo del limón, el cebollín picado finamente, culantro, sal y pimienta al gusto.', ' Servir como ensalada o acompañamiento de comida.'],
+        category: ['acompañamientos'],
         type: ['Frijoles negros'],
-        img: '/img/recipes/IMG_6359.jpg'
+        img: '/img/recipes/IMG_5952.jpg'
     },
     {
         id: 9,
-        title: 'TOMATES RELLENOS',
+        title: 'ENSALADA DE FRIJOLES, QUINOA Y QUESO ',
         description: '',
-        ingredients: ['2 Tomates ', '1 Taza de frijoles blancos', '1 Taza de arroz', '½ de queso para derretir', '1 huevo', '2 cucharadas de tomate', '2 cucharadas de ajo picado ', '1 cucharada de culantro', 'sal y pimienta '],
-        steps: ['Quitar la parte de adentro de los tomates. ', 'En un bowl agregar los frijoles, el arroz, queso para derretir, huevo, dos cucharadas de tomate, dos cucharadas de ajo picado y cilantro, revolver hasta incorporar todos los ingredientes. ', 'Salpimentar', 'Hornear por 15min a 380'],
-        category: ['acompañamientos'],
-        type: ['Frijoles blancos'],
-        img: '/img/recipes/IMG_1584.jpg'
+        ingredients: ['1 taza de quinoa cocida', '1 taza de frijoles light red kidney', '½ taza de tomate cherry partidos a la mitad', '2 cucharadas de albahaca picada finamente', 'Queso mozzarella fresco', '2 ajos picados finamente', '2 limones', '4 rodajas de pepinos', 'Sal y pimienta al gusto'],
+        steps: ['Revólver, quinoa y frijoles.', ' Agregar tomate cherry, albahaca, ajo y revólver.', ' Agregar pepino y Limón.', ' Revólver y dejar reposar por 15min.', ' Servir con queso mozarrella fresca.', ' Sal Pimentar al gusto'],
+        category: ['ensaladas'],
+        type: ['Frijoles kidney'],
+        img: '/img/recipes/IMG_5962.jpg'
     },
     {
         id: 10,
-        title: 'DIP DE FRIJOLES',
+        title: 'SOPA DE FRIJOLES Y CURRY',
         description: '',
-        ingredients: ['1 Taza de frijoles molidos', '½ Taza de salsa de tomate natural', '1 ajo', '½ cebolla ', '2 cucharadas de crema', '2 cucharadas de culantro', 'Chips', 'Queso para derretir'],
-        steps: ['En un sartén colocar el aceite y sofreír la cebolla y ajo. ', 'Agregar los frijoles y revolver. ', 'Incorporar la crema y el cilantro y revolver. ', 'Agregue la salsa de tomate y sofreír por 4min. ', 'Colocar en un plato para hornear, agregar el queso para derretir en la parte superior. ', 'Hornear por 5min a 350', 'Servir con chips'],
-        category: ['dips'],
-        type: ['Frijoles negros'],
-        img: '/img/recipes/IMG_1579.jpg'
+        ingredients: ['1 Ajo', '½ Cebolla', '1 Cucharadita de Curry', '1 Cucharadita de Jengibre', '3 Cucharadas de Aceite de oliva', '3 Tomates Cocidos', '½ taza de culantro Culantro', '2 Tazas de leche de Coco', '1 TazaSpaguettis de arroz', '1 Cucharada de Chilli Flakes', '2 Tazas de frijoles blancos'],
+        steps: ['Saltear ajo, cebolla con el aceite de oliva.', 'Agregar curry y jengibre en polvo y sofreír por 1minuto.', 'Agregar los 3 tomates cocidos y licuados, sofreír por 3 minutos', 'Agregar la leche de coco y una taza de agua dejar hervir por 15 minutos', 'Agregar los frijoles y hervir por 3minutos', 'Salpimentar', '', '*Servir en un bowl con los spaguettis de arroz (previamente hidratados).', '*Agregar culantro y flakes de chilli.'],
+        category: ['sopas y cremas'],
+        type: ['Frijoles blancos'],
+        img: '/img/recipes/IMG_6002.jpg'
     },
     {
         id: 11,
@@ -1002,104 +1002,104 @@ const recipes = [
     },
     {
         id: 101,
-        title: 'CAMOTES RELLENOS DE FRIJOLES',
+        title: 'FRIJOLES SALTEADOS CON HONGOS',
         description: '',
-        ingredients: ['1 Camote', ' 2 tomates', ' 1/2 taza de frijoles negros', ' 1 cebolla', ' 1 ajo', ' Culantro', ' Limón', ' 1/2 taza de queso', ' Aceite de oliva', ' Jalapeño', ' Sal y pimienta'],
-        steps: ['Hornear el camote por 40min a 450 (antes de meter al horno pinchar el camote con un tenedor)', ' Sacar el camote con cuidado y partir con un cuchillo a la mitad', ' Colocar el queso, agregar tomates y ajo y hornear por 10min a 350', ' Sacar y agregar los frijoles, hornear por 10min más', ' Agregar Culantro y jalapeños'],
+        ingredients: ['1 ajo picado finamente', '1/4 aceite de oliva', '1/2 taza de hongos', '1 taza de frijoles blancos', '1/4 taza de tomates picados finamente', '2 cucharadas de cebollino', '2 cucharadas de vino blanco', '2 cucharadas de mantequilla', '1 cucharada de queso parmesano'],
+        steps: ['En un sartén saltear el ajo, agregar el cebollino, los hongos y frijoles, saltear por 3min', '- Agregar el tomate y cocinar.', '-Incorporar el vino', '- Agregar la mantequilla y cocinar por 5min más.', '- En un sartén colocar aceite de oliva y cocinar el pan 3 min por casa lado.'],
         category: ['acompañamientos'],
-        type: ['Frijoles negros'],
-        img: '/img/recipes/IMG_7620.jpg'
+        type: ['Frijoles blancos'],
+        img: '/img/recipes/IMG_0277.jpg'
     },
     {
         id: 102,
-        title: 'CREMA DE CALABAZA Y FRIJOLES',
+        title: 'SOPA DE FRIJOLES BLANCOS',
         description: '',
-        ingredients: [' 3 Tazas de calabaza', '10 espárragos', ' 2 tazas de frijol blanco', ' 1/2 cebolla morada', ' 1 cucharada de culantro/cilantro', ' 1/4 taza de queso para derretir', ' 2 ajos', ' Sal y pimienta'],
-        steps: ['Sofreír el ajo', 'Agregar la calabaza y 3 tazas de agua, hervir hasta que esté cocinada, retirar la cáscara y licuar con 2 tazas del agua donde se cocino.', 'Saltear los espárragos con un poco de aceite durante 5min.', 'Poner a hervir durante 5 min y agregar los frijoles cocinados y el culantro, dejar hervir por 20min.', 'Servir con queso y cebolla.', 'Agregar los espárragos.'],
+        ingredients: ['2 Tazas de salsa de tomate natural ', '4 Tazas de caldo de vegetales', '1 Taza de frijoles blancos', '1 Pechuga de pollo ', '1 Cucharada de culantro', '1/4 Cebolla morada', '1 Cucharada de aceite', '1 Cucharadita de chile flakes', '1 Cucharada de ajo '],
+        steps: ['Saltear en una olla, ajo picado finamente, agregar el caldo de vegetales, frijoles blancos y la salsa de tomate. ', 'Agregar la cucharada de culantro, la pechuga de pollo en cubitos y hervir por 20 min. ', 'Colocar el chile flake.', 'Servir con cebolla morada, pan tostado y chile flakes.'],
         category: ['sopas y cremas'],
         type: ['Frijoles blancos'],
-        img: '/img/recipes/IMG_7635.jpg'
+        img: '/img/recipes/IMG_4432.jpg'
     },
     {
         id: 103,
-        title: 'TOMATES RELLENOS DE QUESO Y FRIJOLES',
+        title: 'PAPAS, ESPINACA Y FRIJOLES',
         description: '',
-        ingredients: ['2 Tomates', '1/2 taza de frijol negro cocido', '1/2 cebolla morada', '2 dientes de ajo', 'Zanahoria rallada', 'Culantro', '2 Cucharaditas de aceite de oliva', 'Sal y pimienta', '1/4 taza de elotitos'],
-        steps: ['Quitar la parte de arriba del tomate y hacer espacio con una cuchara para rellenar el tomate (picar lo que sacamos del tomate)', 'Colocar el queso mozzarella (o el queso para derretir que deseen) y hornear a 150 por 15min, agregar aceite de oliva sal y pimienta encima de los tomates.', 'Agregar en un bowl los frijoles, cebolla, cilantro, ajo, zanahoria rallada y salpimentar.', 'Agregar a la ensalada el tomate que quitamos para hacer el orificio.', 'Dejar reposando la ensalada mientras salen los tomates del horno.', 'Sacar los tomates del horno y rellenarnos con la ensalada.'],
+        ingredients: ['1 Ajo picado finamente', '2 Tazas de papas cocidas', '2 Tazas de espinacas', '2 Tazas de frijoles', '2 Tazas de coliflor', '2 Cucharadas de aceite de oliva', 'Sal y pimienta al gusto'],
+        steps: ['En un sartén colocar aceite y saltear el ajo. ', 'Agregar las papas previamente cocinadas y partidas a la mitad, por 5min. ', 'Agregar la coliflor y los frijoles. ', 'Agregar las espinacas y cocinar por 3 minutos ', 'Salpimentar al gusto y servir.'],
         category: ['acompañamientos'],
-        type: ['Frijoles negros'],
-        img: '/img/recipes/IMG_7426.jpg'
+        type: ['Frijoles blancos'],
+        img: '/img/recipes/IMG_4252.jpg'
     },
     {
         id: 104,
-        title: 'SANDWICH DE FRIJOLES CON QUESO DERRETIDO',
+        title: 'ENSALADA DE FRIJOLES Y QUINOA',
         description: '',
-        ingredients: [' 2 rodajas de pan de masa madre', '4 cucharadas de frijoles negros molidos', '1/4 taza de queso Mozzarela o alguno que derrita, mantequilla para untar al pan.'],
-        steps: [' Unte el pan con mantequilla por el lado de afuera.', ' En el otro lado coloque abundantes frijoles molidos y queso.', ' Ponga encima la otra tapa del pan y lleve a una plancha o sartén bien caliente hasta que el pan quede doradito y el queso se derrita.', 'Esta receta es fácil, rápida y otro nivel de deliciosa.', ''],
-        category: ['almuerzos y cenas'],
-        type: ['Frijoles negros'],
-        img: '/img/recipes/IMG_3278.jpg'
+        ingredients: ['2 Tazas de quinoa', '1 Taza de tomate cherry', '4 Cucharadas de culantro finamente picado ', '½ Cebolla morada', '2 Ajos', '3 Tazas de frijoles (utilizar 3 variedades de frijoles para darle color a la ensalada y sabores únicos)', '1 Limón', '½ Taza de aceite de oliva ', '2 Cucharadas de vinagre balsámico'],
+        steps: ['En Un bowl colocar la quinoa, el tomate cherry, culantro cebolla morada, ajo y frijoles. ', 'Agregar limón, aceite de oliva y vinagre balsámico y revolver. ', 'Salpimentar, revolver y servir.'],
+        category: ['ensaladas'],
+        type: ['Frijoles blancos', 'Frijoles negros'],
+        img: '/img/recipes/IMG_4270.jpg'
     },
     {
         id: 105,
-        title: 'CURRY DE FRIJOLES',
+        title: 'BOWL DE SALMÓN Y FRIJOLES',
         description: '',
-        ingredients: ['2 tazas de Frijoles Lima cocidos', '3 cucharadas de curry', '1 cucharada de comino', '1/2 cda de cúrcuma', '1 cda de sal', '1/2 cda de jengibre en polvo', '2 tazas de leche de coco', '3 tomates pelados', '3 dientes de ajo', '4 cdas de aceite', '1/2 cebolla morada', 'arroz blanco y cilantro para servir.'],
-        steps: ['En un sartén profundo caliente el aceite, agregue la cebolla y el ajo, agregue las especias, y sofría por 2 minutos a fuego medio.', 'Aparte hierva los tomates, quitele la cascara y licúelos.', 'Agregue el tomate a la mezcla, luego la leche de coco.', 'Hierva por 10 minutos. Agregue los frijoles y mantenga en el fuego 10 minutos más.', 'Sirva con arroz blanco y cilantro.'],
-        category: ['snacks', 'postres'],
-        type: ['Frijoles blancos'],
-        img: '/img/recipes/IMG_3297.jpg'
+        ingredients: ['2 Tazas de lechuga ', '1 Taza de frijoles ', '½ Tomate', '½ Taza de hongos.', '1 Filete de salmón', '5 Rodajas de pepino ', 'Servir con aderezo favorito'],
+        steps: ['Colocar todos los ingredientes por separado en un bowl', 'Servir con el aderezo por aparte.'],
+        category: ['almuerzos y cenas', 'ensaladas'],
+        type: [],
+        img: '/img/recipes/IMG_4287.jpg'
     },
     {
         id: 106,
-        title: 'PASTA CON FRIJOLES Y ZUCCHINI',
+        title: 'PLATO DE VEGETALES',
         description: '',
-        ingredients: ['2 tazas de frijoles rosados cocidos-', '2 dientes de ajo', '2 cditas aceite de oliva', '2 cdas de cilantro', '1 taza de zuchinni en cubitos', '2 cdas de parmesano', '350 g de spaghetti'],
-        steps: ['Cocine el spaghetti al dente.', 'Aparte, en un sartén caliente el aceite y sofría el ajo hasta que esté dorado, agregue los frijoles y salteelos por 5 minutos, luego agruegue el zuchini.', 'Agregue la pasta y el queso parmesano.', 'Sazone con sal y pimienta y disfrute.'],
-        category: ['almuerzos y cenas'],
-        type: [' Frijoles rojos'],
-        img: '/img/recipes/IMG_3317.jpg'
+        ingredients: ['1 Taza de coliflor salteada con salsa de soya', '1 Taza de camarones cocidos con limón, ajo y culantro.', '1 Taza de frijoles ', '1 Taza de brócoli ', '1 Taza de hongos'],
+        steps: ['Colocar todos los ingredientes por separado en un plato y servir por separado '],
+        category: ['almuerzos y cenas', 'ensaladas'],
+        type: [],
+        img: '/img/recipes/IMG_4304.jpg'
     },
     {
         id: 107,
-        title: 'RELLENITOS DE FRIJOLES',
+        title: 'ENSALADA DE FRIJOL TRICOLOR',
         description: '',
-        ingredients: ['2 plátanos maduros', '1 cda de canela', '2cdas de harina', '1/2 de frijoles negros molidos', 'Aceite para freír.', '.'],
-        steps: ['Hierva los plátanos maduros, una vez que estén cocinados májelos y revuélvalos con la canela y la harina', 'Deje enfriar. Forme tortitas, rellene con los frijoles molidos y dóblelas como empanaditas.', 'Fría en un sartén con aceite muy caliente hasta que queden doraditas'],
-        category: ['snacks'],
-        type: ['Frijoles negros'],
-        img: '/img/recipes/IMG_3324.jpg'
+        ingredients: ['½ Cebolla morada ', '1 ajo', '2 Tomate', '2 Cucharadas de culantro picado ', '1 Taza de kidney beans', '1 Taza de frijoles negros', '1 Taza de frijoles blancos ', '½ chile dulce ', '1 Limón', '2 Cucharadas de aceite de oliva ', 'Sal y pimienta'],
+        steps: ['En un bowl colocar el limón, el aceite de oliva y revolver hasta tener ambos ingredientes incorporados ', 'Agregar la cebolla, el ajo, tomate, culantro y chile dulce y revolver ', 'En un bowl aparte agregar todos los frijoles y colocar encima la primera mezcla. ', 'Salpimentar y Servir como acompañamiento'],
+        category: ['ensaladas'],
+        type: ['Frijoles blancos', 'Frijoles negros', 'Frijoles kidney'],
+        img: '/img/recipes/IMG_1544.jpg'
     },
     {
         id: 108,
-        title: 'PAPAS SALTEADAS CON FRIJOL',
+        title: 'SOPA NEGRA',
         description: '',
-        ingredients: [' 2 tazas de frijoles negros cocidos', ' 1 Cucharada de cebollín', ' 5 papas pequeñas cocidas con cascara y partidas a la mitad', ' 3 cucharadas de aceite de oliva', ' 2 ajos picados finamente', ' 1 limón', ' ½ cebolla picada en julianas', ' 3 rodajas de tocino', ' ½ Taza de culantro picado finamente', 'Sal y pimienta al gusto'],
-        steps: [' Sofreír la cebolla y el ajo con el aceite de oliva', ' Agregar las papas previamente cocidas y partidas a la mitad, saltear por 7minutos hasta que estén doradas.', ' Partir el tocino fino y sofreír en otro sarten hasta que este dorado, alrededor de 5minutos', ' Colocar en un bowl las papás, agregar, el jugo del limón, el cebollín picado finamente, culantro, sal y pimienta al gusto.', ' Servir como ensalada o acompañamiento de comida.'],
-        category: ['acompañamientos'],
+        ingredients: ['3 Tazas de frijoles con el agua de cocción', '2 Huevos duros', '½ Aguacate', '½ Cebolla blanca', '1 Tomate', '2 Cucharadas de culantro ', '½ Taza de queso fresco ', '1 Ajo ', 'Sal y pimienta'],
+        steps: ['En un sartén sofreír el ajo, cebolla y el tomate. ', 'Agregar los frijoles con el agua, previamente cocinados. ', 'Hervir por 10min a fuego medio ', 'Licuar todos los ingredientes y volver a hervir por 5min', 'Agregar los huevos duros. '],
+        category: ['sopas y cremas', 'almuerzos y cenas'],
         type: ['Frijoles negros'],
-        img: '/img/recipes/IMG_5952.jpg'
+        img: '/img/recipes/IMG_6359.jpg'
     },
     {
         id: 109,
-        title: 'ENSALADA DE FRIJOLES, QUINOA Y QUESO ',
+        title: 'TOMATES RELLENOS',
         description: '',
-        ingredients: ['1 taza de quinoa cocida', '1 taza de frijoles light red kidney', '½ taza de tomate cherry partidos a la mitad', '2 cucharadas de albahaca picada finamente', 'Queso mozzarella fresco', '2 ajos picados finamente', '2 limones', '4 rodajas de pepinos', 'Sal y pimienta al gusto'],
-        steps: ['Revólver, quinoa y frijoles.', ' Agregar tomate cherry, albahaca, ajo y revólver.', ' Agregar pepino y Limón.', ' Revólver y dejar reposar por 15min.', ' Servir con queso mozarrella fresca.', ' Sal Pimentar al gusto'],
-        category: ['ensaladas'],
-        type: ['Frijoles kidney'],
-        img: '/img/recipes/IMG_5962.jpg'
+        ingredients: ['2 Tomates ', '1 Taza de frijoles blancos', '1 Taza de arroz', '½ de queso para derretir', '1 huevo', '2 cucharadas de tomate', '2 cucharadas de ajo picado ', '1 cucharada de culantro', 'sal y pimienta '],
+        steps: ['Quitar la parte de adentro de los tomates. ', 'En un bowl agregar los frijoles, el arroz, queso para derretir, huevo, dos cucharadas de tomate, dos cucharadas de ajo picado y cilantro, revolver hasta incorporar todos los ingredientes. ', 'Salpimentar', 'Hornear por 15min a 380'],
+        category: ['acompañamientos'],
+        type: ['Frijoles blancos'],
+        img: '/img/recipes/IMG_1584.jpg'
     },
     {
         id: 110,
-        title: 'SOPA DE FRIJOLES Y CURRY',
+        title: 'DIP DE FRIJOLES',
         description: '',
-        ingredients: ['1 Ajo', '½ Cebolla', '1 Cucharadita de Curry', '1 Cucharadita de Jengibre', '3 Cucharadas de Aceite de oliva', '3 Tomates Cocidos', '½ taza de culantro Culantro', '2 Tazas de leche de Coco', '1 TazaSpaguettis de arroz', '1 Cucharada de Chilli Flakes', '2 Tazas de frijoles blancos'],
-        steps: ['Saltear ajo, cebolla con el aceite de oliva.', 'Agregar curry y jengibre en polvo y sofreír por 1minuto.', 'Agregar los 3 tomates cocidos y licuados, sofreír por 3 minutos', 'Agregar la leche de coco y una taza de agua dejar hervir por 15 minutos', 'Agregar los frijoles y hervir por 3minutos', 'Salpimentar', '', '*Servir en un bowl con los spaguettis de arroz (previamente hidratados).', '*Agregar culantro y flakes de chilli.'],
-        category: ['sopas y cremas'],
-        type: ['Frijoles blancos'],
-        img: '/img/recipes/IMG_6002.jpg'
-    }
+        ingredients: ['1 Taza de frijoles molidos', '½ Taza de salsa de tomate natural', '1 ajo', '½ cebolla ', '2 cucharadas de crema', '2 cucharadas de culantro', 'Chips', 'Queso para derretir'],
+        steps: ['En un sartén colocar el aceite y sofreír la cebolla y ajo. ', 'Agregar los frijoles y revolver. ', 'Incorporar la crema y el cilantro y revolver. ', 'Agregue la salsa de tomate y sofreír por 4min. ', 'Colocar en un plato para hornear, agregar el queso para derretir en la parte superior. ', 'Hornear por 5min a 350', 'Servir con chips'],
+        category: ['dips'],
+        type: ['Frijoles negros'],
+        img: '/img/recipes/IMG_1579.jpg'
+    },
 ];
 
 

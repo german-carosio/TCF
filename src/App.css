@@ -16,26 +16,26 @@ body {
   background-repeat: no-repeat;
 }
 
-a, li {
+a, li { /* links y listas*/
   text-decoration: none;
   list-style: none;
-  font-size: 1em;
+  font-size: 1em; /*16px*/
 }
 
-p, input, button {
-  font-size: 1em;
+p, input, button { /*parrafos, inputs y botones*/
+  font-size: 1em; /*16px*/
 }
 
-h1 {
-  font-size: 1.3em;
+h1 { /*Titular 1*/
+  font-size: 1.5em; /*24px*/
 }
 
-h2 {
-  font-size: 1.2em;
+h2 { /*Titular 2*/
+  font-size: 1.25em; /*20px*/
 }
 
-h3 {
-  font-size: 1.1em;
+h3 { /*Titular 3*/
+  font-size: 1.125em; /*18px*/
 }
 
 
@@ -45,7 +45,7 @@ h3 {
   height: 500px;
   text-align: center;
   padding-top: 30px;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 

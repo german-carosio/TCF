@@ -2,7 +2,7 @@ export const tiposDeFrijoles = [
     {
         id: 1,
         title: 'Frijol Negro',
-        img: '/img/tipos/0.jpg',
+        img: '/img/tipos/1.jpg',
         nutrientes: {
             calorias: 341, // kcal
             proteina: 21.6, // g
@@ -19,7 +19,7 @@ export const tiposDeFrijoles = [
     {
         id: 2,
         title: 'Frijol Rojo',
-        img: '/img/tipos/1.jpg',
+        img: '/img/tipos/2.jpg',
         nutrientes: {
             calorias: 337, // kcal
             proteina: 22.5, // g
@@ -36,7 +36,7 @@ export const tiposDeFrijoles = [
     {
         id: 3,
         title: 'Frijol Pinto',
-        img: '/img/tipos/2.jpg',
+        img: '/img/tipos/1.jpg',
         nutrientes: {
             calorias: 347, // kcal
             proteina: 21.4, // g
@@ -53,7 +53,7 @@ export const tiposDeFrijoles = [
     {
         id: 4,
         title: 'Garbanzos',
-        img: '/img/tipos/3.jpg',
+        img: '/img/tipos/2.jpg',
         nutrientes: {
             calorias: 378, // kcal
             proteina: 20.5, // g
@@ -70,7 +70,7 @@ export const tiposDeFrijoles = [
     {
         id: 5,
         title: 'Frijol Blanco',
-        img: '/img/tipos/4.jpg',
+        img: '/img/tipos/1.jpg',
         nutrientes: {
             calorias: 335, // kcal
             proteina: 22.3, // g
@@ -87,7 +87,7 @@ export const tiposDeFrijoles = [
     {
         id: 6,
         title: 'Frijol Lima',
-        img: '/img/tipos/0.jpg',
+        img: '/img/tipos/2.jpg',
         nutrientes: {
             calorias: 338, // kcal
             proteina: 21.5, // g
@@ -104,7 +104,7 @@ export const tiposDeFrijoles = [
     {
         id: 7,
         title: 'Frijol Cañón',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s',
+        img: '/img/tipos/1.jpg',
         nutrientes: {
             calorias: 339, // kcal
             proteina: 21.9, // g
@@ -121,7 +121,7 @@ export const tiposDeFrijoles = [
     {
         id: 8,
         title: 'Frijol Fava',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s',
+        img: '/img/tipos/2.jpg',
         nutrientes: {
             calorias: 341, // kcal
             proteina: 26.1, // g
@@ -138,7 +138,7 @@ export const tiposDeFrijoles = [
     {
         id: 9,
         title: 'Lenteja Roja',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9cSGzVkaZvJD5722MU5A-JJt_T5JMZzotcw&s',
+        img: '/img/tipos/1.jpg',
         nutrientes: {
             calorias: 352, // kcal
             proteina: 24.6, // g

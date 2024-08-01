@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: space-around;
     order: 0;
-    margin-bottom: 50px;
+    margin-bottom: 50px
 }
 
 .lado1 {
@@ -15,6 +15,8 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .lado1 h1 {
@@ -38,8 +40,14 @@
 
 .lado2 img {
     width: 100%;
-   /*  border: solid red; */
 }
+
+@media (min-width: 580px) {
+    .container{
+        height: max-content;
+    }
+}
+
 
 @media (min-width: 768px) {
     .container {
@@ -47,11 +55,11 @@
         height: 400px;
     }
 
-    .lado1{
+    .lado1 {
         order: 1;
         justify-content: center;
-    } 
-    
+    }
+
     .lado2 {
         order: 2;
     }
@@ -61,7 +69,8 @@
     }
 
     .lado2 img {
-        width: 80%;
-       /*  border: solid red; */
+
+        width: 85%;
+        object-fit: cover; 
     }
 }

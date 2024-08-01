@@ -3,7 +3,7 @@
     margin: 0 auto 50px auto;
     overflow: auto; /* Permite el desplazamiento dentro del contenedor */
     border-radius: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .recipesGrid {

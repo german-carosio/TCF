@@ -24,13 +24,15 @@
   }
   
   .container2 div h2 {
-      font-size: 1.5em;
+      font-size: 2.5em;
       font-family: var(--tipografia2);
       margin-bottom: 20px; /* Añadir margen inferior para separar del botón */
+      line-height: 60px;
   }
   
   .container2 div p {
       font-size: 1em;
+      line-height: 30px;
   }
 
   @media (min-width: 768px) {
@@ -46,15 +48,14 @@
     }
 
     .container2 div h2 {
-        font-size: 2.8em;
+        font-size: 2.5em;
         font-family: var(--tipografia2);
         line-height: 80px;
         margin-bottom: 20px; /* Añadir margen inferior para separar del botón */
     }
 
     .container2 div p {
-        line-height: 40px;
-        font-size: 1.4em;
+        font-size: 1.125em;
     }
   }
   

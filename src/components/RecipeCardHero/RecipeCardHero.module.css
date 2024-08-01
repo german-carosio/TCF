@@ -1,7 +1,9 @@
 .recipeCard{
     border-radius: 30px;
     background-color: rgba(255,255,255, 0.6);
-    transition: all 0.3s;
+    width: 290px;
+    transition: all 0.5s;
+    margin: 0 auto;
 }
 
 .recipeCard:hover {
@@ -20,15 +22,16 @@
 
 
 .txt {
-    padding: 10px 10px 40px 10px;
+    padding: 10px 10px 15px 10px;
     display: flex;
     flex-direction: column;
 }
 
 .categories {
     display: flex;
+    flex-wrap: wrap;
     color: var(--text1);
-    gap: 8px;
+    gap: 2px;
 }
 
 .categorie a {
@@ -46,6 +49,7 @@
     margin-top: 10px;
     display: flex;
     gap: 5px;
+    flex-wrap: wrap;
 }
 
 .type{
@@ -55,3 +59,16 @@
     padding: 6px 10px;
     border-radius: 50px;
 }
+
+@media (min-width: 768px) {
+    .recipeCard{
+        width: 230px;
+    }
+}
+
+@media (min-width: 1250px) {
+    .recipeCard{
+        width: 260px;
+    }
+}
+

@@ -35,7 +35,7 @@ const Tipos = () => {
 
 
       <Margin>
-        <Title txt={'Aprende los beneficios del consumo de frijoles'} />
+        <Title txt={'Conoce la variedad de frijoles y sus nutrientes'} />
         <List data={tiposDeFrijoles} url={'#'}  /* url={'/tipos/detail/'} */ />
 
       </Margin>
