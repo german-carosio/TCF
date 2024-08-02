@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: space-around;
     order: 0;
-    margin-bottom: 50px
+    margin-bottom: 50px;
 }
 
 .lado1 {
@@ -36,6 +36,10 @@
     order: 1;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .lado2 img {
@@ -70,7 +74,7 @@
 
     .lado2 img {
 
-        width: 85%;
+        width: 95%;
         object-fit: cover; 
     }
 }

@@ -1,60 +1,63 @@
 
 .container {
-      color: var(--verde);
-      background: linear-gradient(to bottom, transparent 2%, var(--celeste) 10%, var(--celeste) 90%, transparent 98%);
-      margin-top: 30px;
-      padding: 50px 20px 50px 20px;
+    background: linear-gradient(to bottom, transparent 2%, var(--celeste) 10%, var(--celeste) 90%, transparent 98%);
+    color: var(--verde);
+    margin-top: 20px;
+    padding: 80px 20px 80px 20px;
 }
 
 .container2{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    height: 100%;
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.container2 div {
+.lado1, .lado2 {
     width: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column;     
 }
 
-.container2 div h2 {
-    font-size: 1.5em;
-      font-family: var(--tipografia2);
-      margin-bottom: 20px; /* Añadir margen inferior para separar del botón */
+.lado1 h2 {
+    font-size: 2em;
+    line-height: 60px;
+    margin-bottom: 20px; /* Añadir margen inferior para separar del botón */
 }
 
-.container2 div p {
+.lado2 p {
     font-size: 1em;
+    line-height: 30px;
 }
 
 
 @media (min-width: 768px) {
-    
+
+    .container{
+        margin-top: 50px;
+    }
     .container2 {
-        flex-direction: row;
-        height: 480px;
-        padding: 0 70px 0 70px;
-    }
-
-    .container2 div {
-        flex-direction: column;
-    }
-
-    .container2 div h2 {
-        font-size: 2.8em;
-        font-family: var(--tipografia2);
-        line-height: 80px;
-        margin-bottom: 20px; /* Añadir margen inferior para separar del botón */
-    }
-
-    .container2 div p {
-        line-height: 40px;
-        font-size: 1.4em;
-    }
+      flex-direction: row;
+      height: 300px;
+      padding: 0 70px 0 70px;
   }
+
+  .lado1 {
+      flex-direction: column;
+      padding-left: 20px;
+  }
+
+  .lado1 h2 {
+      font-size: 2.5em;
+      line-height: 60px;
+  }
+
+  .lado2 p {
+      font-size: 1.125em;
+  }
+}

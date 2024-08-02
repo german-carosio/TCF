@@ -1,7 +1,7 @@
 .recipeCard{
     border-radius: 30px;
     background-color: rgba(255,255,255, 0.6);
-    width: 290px;
+    width: 270px;
     transition: all 0.5s;
     margin: 0 auto;
 }
@@ -62,7 +62,7 @@
 
 @media (min-width: 768px) {
     .recipeCard{
-        width: 230px;
+        width: 300px;
     }
 }
 
