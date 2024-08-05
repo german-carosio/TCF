@@ -15,42 +15,58 @@
     background: linear-gradient(transparent 20%, white 80%);
     width: 100%;
     height: 300px;
-    opacity: 0; /* Inicialmente invisible */
-    transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+    opacity: 0;
+    /* Inicialmente invisible */
+    transition: opacity 0.3s ease;
+    /* Transición suave para la opacidad */
 }
 
 .title {
-    position: absolute;
-    bottom: 30px;
-    left: 0;
-    z-index: 50;
     width: 100%;
-    color: var(--verde);
-    opacity: 0; /* Inicialmente invisible */
-    transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+    transition: opacity 0.3s ease;
     text-align: center;
     font-size: 18px;
+    padding: 10px 0;
+    color: var(--text1);
 }
 
-.link:hover .title {
-    opacity: 1; /* Mostrar el título al hacer hover */
-}
-
-.link:hover .capa {
-    opacity: 1; /* Mostrar el título al hacer hover */
-}
 
 .recipeImage {
     width: 100%;
     height: 350px;
     object-fit: cover !important;
     display: block;
-    transition: transform 0.8s ease; /* Transición suave para el zoom */
+    transition: transform 0.8s ease;/* Transición suave para el zoom */
+    border-radius: 30px;
 }
 
 .link:hover .recipeImage {
-    transform: scale(1.05); /* Zoom de la imagen */
+    transform: scale(1.05);
+    /* Zoom de la imagen */
 }
 
+@media (min-width: 768px) {
+    .title {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        z-index: 50;
+        opacity: 0;
+        padding: 0;
+        color: var(--verde);
+    }
 
+    .link:hover .title {
+        opacity: 1;
+        /* Mostrar el título al hacer hover */
+    }
 
+    .link:hover .capa {
+        opacity: 1;
+        /* Mostrar el título al hacer hover */
+    }
+
+    .recipeImage {
+        border-radius: 0;
+    }
+}
