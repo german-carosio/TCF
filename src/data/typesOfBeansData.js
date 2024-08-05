@@ -104,7 +104,7 @@ export const tiposDeFrijoles = [
     {
         id: 7,
         title: 'Frijol Cañón',
-        img: '/img/tipos/3.png',
+        img: '/img/tipos/2.png',
         nutrientes: {
             calorias: 339, // kcal
             proteina: 21.9, // g
@@ -121,7 +121,7 @@ export const tiposDeFrijoles = [
     {
         id: 8,
         title: 'Frijol Fava',
-        img: '/img/tipos/2.png',
+        img: '/img/tipos/3.png',
         nutrientes: {
             calorias: 341, // kcal
             proteina: 26.1, // g

@@ -90,7 +90,7 @@ const recipes = [
         type: ['Frijoles kidney'],
         img: '/img/recipes/IMG_5962.jpg'
     },
-    {
+    /* {
         id: 10,
         title: 'SOPA DE FRIJOLES Y CURRY',
         description: '',
@@ -99,7 +99,7 @@ const recipes = [
         category: ['sopas y cremas'],
         type: ['Frijoles blancos'],
         img: '/img/recipes/IMG_6002.jpg'
-    },
+    }, */
     {
         id: 11,
         title: 'DIP DE FRIJOLES NEGROS Y JALAPEÑOS',
@@ -540,7 +540,7 @@ const recipes = [
         type: ['Frijoles blancos'],
         img: '/img/recipes/IMG_5388.jpg'
     },
-    {
+  /*   {
         id: 55,
         title: 'COLIFLOR ASADA Y FRIJOLES NEGROS',
         description: '',
@@ -549,7 +549,7 @@ const recipes = [
         category: ['acompañamientos'],
         type: ['Frijoles blancos'],
         img: '/img/recipes/IMG_5232.jpg'
-    },
+    }, */
     {
         id: 56,
         title: 'CEVICHE DE FRIJOLES',
@@ -800,7 +800,7 @@ const recipes = [
         type: ['Frijoles negros'],
         img: '/img/recipes/IMG_1439.jpg'
     },
-    {
+    /* {
         id: 81,
         title: 'TOSTADA DE PINTO CON HUEVO',
         description: '',
@@ -809,7 +809,7 @@ const recipes = [
         category: ['desayunos', 'snacks'],
         type: ['Frijoles negros'],
         img: '/img/recipes/IMG_1423.jpg'
-    },
+    }, */
     {
         id: 82,
         title: 'TOSTADA DE FRIJOLES CON PESTO Y TOMATE',
