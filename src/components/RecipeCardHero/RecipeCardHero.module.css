@@ -4,6 +4,7 @@
     width: 270px;
     transition: all 0.5s;
     margin: 0 auto;
+    height: 352px;
 }
 
 .recipeCard:hover {

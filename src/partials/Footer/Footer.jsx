@@ -5,7 +5,10 @@ const Footer = () => {
     return (
         <footer className={styles.container}>
             <section className={styles.container2}>
+                <a href="https://usdrybeans.com/" target="_blank">
                 <img src="/img/web/us dry bean.svg" alt="us dry bean" />
+                </a>
+                
                 <div className={styles.txt}>
                     <p>Todo con frijol www.todoconfrijol.com <br />
                         Copyright © 2024 Todo con frijol US Dry Bean Council</p>

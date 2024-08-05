@@ -1,5 +1,5 @@
 .cabecera{
-    background-color: var(--naranja);
+    background-color: var(--blog);
     color: #fff;
     text-align: center;
     padding: 50px 0;
@@ -19,10 +19,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 
-.entrada h1{
+.entrada .txt {
+    text-align: center;
+    line-height: 30px;
+}
+
+.entrada h2{
     color: var(--naranja);
 }
 
@@ -34,6 +39,7 @@
 .entradaImage img{
     width: 100%;
     display: block;
+    margin-top: 20px;
 }
 
 
@@ -48,7 +54,7 @@
     }
 
     .entrada {
-        padding: 50px 80px;
+        padding: 50px 100px;
     }
 
 }

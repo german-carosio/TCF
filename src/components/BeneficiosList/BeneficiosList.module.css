@@ -67,11 +67,12 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 1000px) {
   .cardsContainer { 
-    height: 410px;
+    height: 450px;
     grid-template-columns: repeat(3, 1fr);
     gap: 0;
 }
+
 }
 

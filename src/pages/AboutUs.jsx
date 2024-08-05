@@ -18,7 +18,11 @@ const AboutUs = () => {
 
       <Margin>
         <div className={styles.container}>
-          <img src="/img/web/nosotros.png" alt="" />
+          <div className={styles.img}>
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
           <div className={styles.txt}>
             <h1 className={styles.title}>Familia Todo con frijol</h1>
             <p>El US Dry Bean Council (USDBC, por sus siglas en inglés) es una organización privada que representa agricultores, distribuidores y compañías que producen, manejan, exportan y procesan frijoles cultivados en los Estados Unidos.

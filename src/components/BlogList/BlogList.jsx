@@ -11,25 +11,32 @@ const BlogList = () => {
         <h1>Blog | Sigue las noticias de Todo con frijol</h1>
       </div>
       <div className={styles.cardContainer}>
-        {blogRoutes.map((route, index) => (
-          <div key={index} className={styles.card}>
-            <p className={styles.cardDate}>{route.date}</p>
-            <h2 className={styles.title}>{route.title}</h2>
-            <div className={styles.cardImage}>
-              <img src={route.image} alt={route.title} />
+        {blogRoutes.length === 0 ? (
+          <p className={styles.sinEntradas}>No hay entradas nuevas.</p>
+        ) : (
+          blogRoutes.map((route, index) => (
+            <div key={index} className={styles.card}>
+              <div className={styles.txt}>
+                <p className={styles.cardDate}>{route.date}</p>
+                <h2 className={styles.title}>{route.title}</h2>
+              </div>
+              <div className={styles.cardImage}>
+                <img src={route.image} alt={route.title} />
+              </div>
+              <div className={styles.cardContent}>
+                <p>{route.summary}</p>
+              </div>
+              <Boton title={'ver más'} url={route.path} />
             </div>
-            <div className={styles.cardContent}>
-              <p>{route.summary}</p>
-            </div>
-            <Boton title={'ver más'} url={route.path} />
-          </div>
-        ))}
+          ))
+        )}
       </div>
     </div>
   );
 };
 
 export default BlogList;
+
 
 
 
