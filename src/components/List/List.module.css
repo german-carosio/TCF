@@ -6,6 +6,12 @@
     margin-top: 20px;
 }
 
+.recipeList h4{
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
 .recipesGrid {
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Una columna en pantallas pequeñas */

@@ -59,6 +59,12 @@
         height: 400px;
     }
 
+    .lado2 img {
+
+        width: 50%;
+        object-fit: cover; 
+    }
+
     .lado1 {
         order: 1;
         justify-content: center;

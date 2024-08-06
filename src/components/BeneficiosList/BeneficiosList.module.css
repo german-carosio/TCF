@@ -57,21 +57,25 @@
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .cardsContainer {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
+      height: 80vh;
+      align-items: center;
   }
   .card {
-      width: 350px;
+      width:280px;
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .cardsContainer { 
-    height: 450px;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0;
+    height: 70vh;
+  
+}
+
+.card {
+  width:350px;
 }
 
 }

@@ -8,6 +8,16 @@
 }
 
 
+@media (min-width: 700px) {
+
+    .recipesGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+    }
+    
+}
+
+
 @media (min-width: 1100px) {
 
     .recipesGrid {
