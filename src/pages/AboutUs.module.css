@@ -21,7 +21,7 @@
 
 
 .img1{
-    background-image: url('https://images.unsplash.com/photo-1506620780696-e5cb6c54524e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('/img/about/platos.jpg');
     background-size: cover;
 }
 
@@ -107,7 +107,7 @@
         top: 0;
         right: 0;
         z-index: 100;
-        background-image: url('https://images.unsplash.com/photo-1506620780696-e5cb6c54524e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-image: url('/img/about/platos.jpg');
         background-size: cover;
     }
     
@@ -118,7 +118,7 @@
         top: 20%;
         left: 0;
         z-index: 99;
-        background-image: url('https://plus.unsplash.com/premium_photo-1661840416232-cda292ee85d5?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-image: url('/img/about/campo.jpg');
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -130,8 +130,9 @@
         bottom: 0;
         right: 0;
         z-index: 100;
-        background-image: url('https://images.unsplash.com/photo-1564894809611-1742fc40ed80?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-        background-size: contain;
+        background-image: url('/img/about/receta.jpg');
+        background-size: cover;
+        background-position: 25% 75%;
     }
     
     .icon{
