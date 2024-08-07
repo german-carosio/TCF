@@ -17,6 +17,7 @@ const AboutUs = () => {
 
 
       <Margin>
+      
         <section className={styles.container}>
 
           <div className={styles.images}>
