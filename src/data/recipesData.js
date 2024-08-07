@@ -795,7 +795,7 @@ const recipes = [
         title: 'TOSTADA DE FRIJOLES CON QUESO Y TOMATE',
         description: '',
         ingredients: ['2 Rodajas de pan', '½ Taza de frijoles molidos', '¼ Queso para derretir', '10 Tomates Cherry', '2 Hojas de albahaca', '½ Aguacate', 'Aceite de oliva '],
-        steps: ['', 'En una rodaja de pan colocar el frijol negro y el queso derretido, hornear por 3min. ', 'Agregar las rodajas de aguacate. ', 'Colocar los tomate Cherry encima, hojitas de albahaca. ', 'Agregar aceite de oliva y sal y pimienta'],
+        steps: ['En una rodaja de pan colocar el frijol negro y el queso derretido, hornear por 3min. ', 'Agregar las rodajas de aguacate. ', 'Colocar los tomate Cherry encima, hojitas de albahaca. ', 'Agregar aceite de oliva y sal y pimienta'],
         category: ['desayunos', 'snacks'],
         type: ['Frijoles negros'],
         img: '/img/recipes/IMG_1439.jpg'
