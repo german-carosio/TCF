@@ -36,7 +36,7 @@
     height: 350px;
     object-fit: cover !important;
     display: block;
-    transition: transform 0.8s ease;/* Transición suave para el zoom */
+    transition: transform 0.5s ease;/* Transición suave para el zoom */
     border-radius: 30px;
 }
 
@@ -48,7 +48,7 @@
 @media (min-width: 768px) {
     .title {
         position: absolute;
-        bottom: 30px;
+        bottom: 20px;
         left: 0;
         z-index: 50;
         opacity: 0;

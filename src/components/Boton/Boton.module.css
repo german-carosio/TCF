@@ -5,4 +5,9 @@
     background: var(--verde);
     color: #fff;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #304b1e;
 }
