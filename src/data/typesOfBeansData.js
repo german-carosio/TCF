@@ -69,6 +69,7 @@ export const tiposDeFrijoles = [
     },
     
     
+    
 ];
 
 export const getTiposDeFrijoles = async () => {

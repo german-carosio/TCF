@@ -59,11 +59,11 @@ const Navbar = () => {
                             Blog
                         </Link>
                     </li>
-                    <li className={`${styles.menuItem} ${activeLink === '/contact' ? styles.activeMenuItem : ''}`}>
+                    {/* <li className={`${styles.menuItem} ${activeLink === '/contact' ? styles.activeMenuItem : ''}`}>
                         <Link to="/contact" className={styles.menuLink} onClick={() => handleNavLinkClick('/contact')}>
                             Contacto
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
             </nav>
         </header>
