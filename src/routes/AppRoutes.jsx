@@ -4,7 +4,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './Layout';
 import blogRoutes from '../data/blogRoutes';
 import ScrollToTop from '../components/ScrollToTop/ScrollToTop';
-import ReactGA from 'react-ga4'; //Google Analytics
+/* import ReactGA from 'react-ga4'; */ //Google Analytics
 
 const Home = lazy(() => import('../pages/Home'));
 const Recipes = lazy(() => import('../pages/Recipes'));
@@ -19,17 +19,17 @@ const Blog = lazy(() => import('../pages/Blog'));
 const Contact = lazy(() => import('../pages/Contact'));
 const PageNotFound = lazy(() => import('../pages/PageNotFound'));
 
-function usePageTracking() {
+/* function usePageTracking() {
   const location = useLocation();
 
   useEffect(() => {
       ReactGA.send({ hitType: 'pageview', page: location.pathname });
   }, [location]);
-}
+} */
 
 const AppRoutes = () => {
 
-  usePageTracking();  // Llama al hook para registrar vistas de página
+ /*  usePageTracking();  */ // Llama al hook para registrar vistas de página
 
   return (
     <Suspense fallback={<div>Loading...</div>}>

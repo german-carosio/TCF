@@ -540,16 +540,16 @@ const recipes = [
         type: ['Frijoles blancos'],
         img: '/img/recipes/IMG_5388.jpg'
     },
-  /*   {
-        id: 55,
-        title: 'COLIFLOR ASADA Y FRIJOLES NEGROS',
-        description: '',
-        ingredients: ['1 Coliflor partida en rodajas.', '4 Cucharadas de aceite de oliva', '½ Cebolla morada', '2 Ajo picados finamente', '1 Cucharada de culantro', '1 Cucharada de Perejil', '2 cucharadas de cebollín picado finamente', 'El jugo de 1 limón', '5 Tomates cherr', '1 Taza de frijoles ', 'Sal y pimienta al gusto '],
-        steps: ['Colocar en un bowl el aceite de oliva, el ajo picado finamente, perejil, culantro, el jugo de un limón y revolver; dejar reposar por 5min antes de utilizar', 'En un recipiente para hornear la coliflor y marinar con el aderezo preparado anteriormente.', 'Hornear la coliflor por 15min a 350 F', 'Colocar en un recipiente para servir y agregar encima la cebolla picada finamente, el cebollín y el frijol. ', 'Agregar unas gotas de limón encima. '],
-        category: ['acompañamientos'],
-        type: ['Frijoles blancos'],
-        img: '/img/recipes/IMG_5232.jpg'
-    }, */
+    /*   {
+          id: 55,
+          title: 'COLIFLOR ASADA Y FRIJOLES NEGROS',
+          description: '',
+          ingredients: ['1 Coliflor partida en rodajas.', '4 Cucharadas de aceite de oliva', '½ Cebolla morada', '2 Ajo picados finamente', '1 Cucharada de culantro', '1 Cucharada de Perejil', '2 cucharadas de cebollín picado finamente', 'El jugo de 1 limón', '5 Tomates cherr', '1 Taza de frijoles ', 'Sal y pimienta al gusto '],
+          steps: ['Colocar en un bowl el aceite de oliva, el ajo picado finamente, perejil, culantro, el jugo de un limón y revolver; dejar reposar por 5min antes de utilizar', 'En un recipiente para hornear la coliflor y marinar con el aderezo preparado anteriormente.', 'Hornear la coliflor por 15min a 350 F', 'Colocar en un recipiente para servir y agregar encima la cebolla picada finamente, el cebollín y el frijol. ', 'Agregar unas gotas de limón encima. '],
+          category: ['acompañamientos'],
+          type: ['Frijoles blancos'],
+          img: '/img/recipes/IMG_5232.jpg'
+      }, */
     {
         id: 56,
         title: 'CEVICHE DE FRIJOLES',
@@ -1099,6 +1099,106 @@ const recipes = [
         category: ['dips'],
         type: ['Frijoles negros'],
         img: '/img/recipes/IMG_1579.jpg'
+    },
+    {
+        id: 111,
+        title: 'Dumplings rellenos con frijoles',
+        description: '',
+        ingredients: [
+            'Relleno:',
+            '1/2 kilo de carne molida de cerdo',
+            '2 cucharadas de jengibre rallado',
+            '1/4 de cebollin',
+            ' 1/4 de cebolla picada',
+            '1/4 de zanahoria picada',
+            '2 cucharadas de salsa de soya',
+            '1 cucharada de aceite de ajonjolí',
+            '1 ajo picado finamente',
+            '1 cucharada de culantro',
+            '',
+            'Masa:',
+            '2 tazas de harina',
+            '3/4 de agua',
+            '1 cucharadita de sal',
+
+        ],
+        steps: [
+            'Masa:',
+            'En un bowl colocar la harina, agua y la sal, revolver y dejar reposar por 15min.',
+            'Hacer bolitas y con un rodillo aplastar para hacer círculos de masa. ',
+            '',
+            'Carne:',
+            'En un bowl colocar todos los ingredientes y revolver.',
+            '',
+            'Dumplings:',
+            'Colocar un poco de la mezcla de carne dentro de la masa circular y cerrar los dumplings.',
+            'En un sarten caliente, colocar los dumplings con un poco de aceite, cocinar por 5min hasta que este dorada la parte de abajo de cada dumpling.',
+            'Colocar ½ Taza de agua, poner a fuego bajo y tapar.',
+           ' Cocinar por 15min.',
+           ' Servir con salsa de soya.',            
+            ],
+        category: ['Almuerzos y cenas'],
+        type: ['Frijoles'],
+        img: '/img/recipes/IMG_5238.jpg'
+    },
+
+    {
+        id: 112,
+        title: 'ENSALADA DE QUINOA Y FRIJOLES',
+        description: '',
+        ingredients: [
+            'Aderezo:',
+            '½ Taza de jugo de naranja',
+            '2 Cucharadas de aceite de oliva',
+            '2 Cucharadas de aceite de ajonjolí',
+            '1 Cucharada de mostaza dijon',
+            '',
+            'Ensalada:',
+            '1 Taza de tomates cherry',
+            '½ Taza de palmito',
+            '4 Rodajas de berenjena asada',
+            '½ Taza de elotitos',
+            '½ Taza de cebollín',
+            '1 Taza de frijoles',
+            'Sal y pimienta al gusto'
+        ],
+        steps: [
+            'En un bowl colocar el jugo de naranja y poco a poco ir agregando el aceite de oliva.',
+            'Incorporar el aceite de ajonjolí y la mostaza, dejar en un recipiente el aderezo.',
+            'En un bowl colocar todos los ingredientes de la ensalada, salpimentar.',
+            'Servir el aderezo aparte de la ensalada.'
+        ],
+        category: ['Ensaladas'],
+        type: ['Quinoa', 'Frijoles'],
+        img: '/img/recipes/IMG_5344.jpg'
+    },
+    
+    {
+        id: 113,
+    title: 'FRIJOLES BLANCOS CON CARNE DE CERDO Y SALSA BLANCA',
+    description: '',
+    ingredients: [
+        '2 Cucharadas de aceite de oliva',
+        '1 Ajo picado finamente',
+        '½ Cebolla picada finamente',
+        '5 Hongos en rodajas',
+        '2 Cucharadas de crema',
+        '2 Tazas de frijol blanco',
+        '1 Cucharada de mantequilla',
+        '3 Tazas de caldo de vegetales',
+        '1 Hojita de comino',
+        '1 Taza de carne de cerdo mechada'
+    ],
+    steps: [
+        'En un sartén colocar el aceite de oliva, saltear la cebolla y el ajo.',
+        'Agregar los hongos y cocinar por 3 minutos, luego agregar la crema y revolver.',
+        'Incorporar los frijoles y la mantequilla.',
+        'Agregar el caldo y dejar hervir por 5 minutos.',
+        'Agregar el comino y servir.'
+    ],
+    category: ['Almuerzos y cenas'],
+    type: ['Frijoles blancos'],
+    img: '/img/recipes/IMG_5260.jpg'
     },
 ];
 
