@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: space-around;
     order: 0;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .lado1 {
@@ -57,6 +57,7 @@
     .container {
         flex-direction: row;
         height: 400px;
+        margin-bottom: 60px;
     }
 
     .lado2 img {

@@ -17,10 +17,15 @@
     width: 100%;
 }
 
-.img{
-    width: 100px;
-    border-radius: 100%;
+.img {
+  width: 100px;
+  /* Asegúrate de que la altura coincida con el ancho para mantener la forma circular */
+  border-radius: 50%; /* Usa 50% para que sea un círculo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ajusta los valores según el efecto deseado */
+  object-fit: cover; /* Asegúrate de que la imagen cubra el contenedor sin distorsionarse */
 }
+
+
 
 
 .tableContainer {

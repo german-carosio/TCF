@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
-    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 
@@ -23,6 +23,7 @@
     .recipesGrid {
         grid-template-columns: repeat(4, 1fr);
         gap: 0;
+        margin-bottom: 60px;
     }
     
 }

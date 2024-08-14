@@ -2,7 +2,6 @@
 .container {
     background: linear-gradient(to bottom, transparent 2%, var(--celeste) 10%, var(--celeste) 90%, transparent 98%);
     color: var(--verde);
-    margin-top: 20px;
     padding: 80px 20px 80px 20px;
 }
 
@@ -38,9 +37,9 @@
 
 @media (min-width: 768px) {
 
-    .container{
+    /* .container{
         margin-top: 50px;
-    }
+    } */
     .container2 {
       flex-direction: row;
       height: 300px;

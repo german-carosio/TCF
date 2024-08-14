@@ -2,8 +2,8 @@
   .container {
       background: linear-gradient(to bottom, transparent 2%, var(--naranja) 10%, var(--naranja) 90%, transparent 98%);
       color: #fff;
-      margin-top: 20px;
       padding: 80px 20px 80px 20px;
+      margin-bottom: 40px;
   }
 
   .container2{
@@ -39,7 +39,7 @@
   @media (min-width: 768px) {
 
     .container{
-        margin-top: 50px;
+        margin-bottom: 60px;
     }
   
       .container2 {
