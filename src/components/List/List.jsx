@@ -35,7 +35,7 @@ const List = ({ data, url }) => {
                 next={fetchMoreData}
                 hasMore={hasMore}
                 loader={<h4>Loading...</h4>}
-                endMessage={<p>... ...</p>}
+                endMessage={<p>{/* mensaje que indica que no hay mas resultados */}</p>}
             >
                 <div className={styles.recipesGrid}>
                     {items.map(item => (

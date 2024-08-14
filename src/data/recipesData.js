@@ -1085,7 +1085,7 @@ const recipes = [
         title: 'TOMATES RELLENOS',
         description: '',
         ingredients: ['2 Tomates ', '1 Taza de frijoles blancos', '1 Taza de arroz', '½ de queso para derretir', '1 huevo', '2 cucharadas de tomate', '2 cucharadas de ajo picado ', '1 cucharada de culantro', 'sal y pimienta '],
-        steps: ['Quitar la parte de adentro de los tomates. ', 'En un bowl agregar los frijoles, el arroz, queso para derretir, huevo, dos cucharadas de tomate, dos cucharadas de ajo picado y cilantro, revolver hasta incorporar todos los ingredientes. ', 'Salpimentar', 'Hornear por 15min a 380'],
+        steps: ['Quitar la parte de adentro de los tomates. ', 'En un bowl agregar los frijoles, el arroz, queso para derretir, huevo, dos cucharadas de tomate, dos cucharadas de ajo picado y cilantro, revolver hasta incorporar todos los ingredientes. ', 'Salpimentar', 'Hornear por 15min a 380°'],
         category: ['acompañamientos'],
         type: ['Frijoles blancos'],
         img: '/img/recipes/IMG_1584.jpg'
@@ -1095,7 +1095,7 @@ const recipes = [
         title: 'DIP DE FRIJOLES',
         description: '',
         ingredients: ['1 Taza de frijoles molidos', '½ Taza de salsa de tomate natural', '1 ajo', '½ cebolla ', '2 cucharadas de crema', '2 cucharadas de culantro', 'Chips', 'Queso para derretir'],
-        steps: ['En un sartén colocar el aceite y sofreír la cebolla y ajo. ', 'Agregar los frijoles y revolver. ', 'Incorporar la crema y el cilantro y revolver. ', 'Agregue la salsa de tomate y sofreír por 4min. ', 'Colocar en un plato para hornear, agregar el queso para derretir en la parte superior. ', 'Hornear por 5min a 350', 'Servir con chips'],
+        steps: ['En un sartén colocar el aceite y sofreír la cebolla y ajo. ', 'Agregar los frijoles y revolver. ', 'Incorporar la crema y el cilantro y revolver. ', 'Agregue la salsa de tomate y sofreír por 4min. ', 'Colocar en un plato para hornear, agregar el queso para derretir en la parte superior. ', 'Hornear por 5min a 350°', 'Servir con chips'],
         category: ['dips'],
         type: ['Frijoles negros'],
         img: '/img/recipes/IMG_1579.jpg'

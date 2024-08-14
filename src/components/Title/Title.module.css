@@ -1,4 +1,11 @@
 .title {
     margin: 0 0 40px 0;
     color: #FF5733; /* Naranja para el título */
+    font-size: 1.30em;
+  }
+
+  @media (min-width: 768px) {
+    .title{
+      font-size: 1.5em;
+    }
   }
