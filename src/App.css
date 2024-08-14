@@ -36,7 +36,9 @@ h3 { /*Titular 3*/
   font-size: 1.1em; /*18px*/
 }
 
-
+.title-DetailRecipe {
+  padding: 20px 0 30px 0;
+}
 
 /*Mensaje sin resultados busqueda*/
 .no-results-message {

@@ -11,7 +11,7 @@ const RecipeDetail = () => {
             <Margin>
                 <Title txt={'Incorpora los frijoles de maneras originales y deliciosas'} />
                 <DetailRecipe /> {/* Renderiza el componente DetailRecipe */}
-                <h2>Prueba otras recetas</h2>
+                <h2 className='title-DetailRecipe'>Prueba otras recetas</h2>
                 <RecipesHome />
             </Margin>
         </>
