@@ -4,10 +4,10 @@ import AppRoutes from './routes/AppRoutes';  // Importamos las rutas de la aplic
 import { RecipesProvider } from './context/RecipesContext';
 import './App.css';  // Importamos los estilos globales
 import { NavProvider } from './context/NavContext'; // Importa el proveedor del contexto
-/* import ReactGA from 'react-ga4';  */ // Importa ReactGA
+import ReactGA from 'react-ga4';  // Importa ReactGA
 
 // Inicializa Google Analytics
-/* ReactGA.initialize('G-Y2X7QJWHNN'); */  // Reemplaza con tu ID de medición
+ReactGA.initialize('G-Y2X7QJWHNN');  // Reemplaza con tu ID de medición
 
 // Componente principal de la aplicación
 function App() {
