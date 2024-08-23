@@ -26,13 +26,14 @@
     padding: 10px 10px 15px 10px;
     display: flex;
     flex-direction: column;
+    gap: 4px;
 }
 
 .categories {
     display: flex;
     flex-wrap: wrap;
     color: var(--text1);
-    gap: 2px;
+    padding-bottom: 2px;
 }
 
 .categorie a {

@@ -55,7 +55,7 @@ const TiposDetail = () => {
                                 <tr>
                                     <th></th>
                                     <th>Result per 100gm</th>
-                                    <th>Result per serving size 1/4 cup (49g)</th>
+                                    <th>Result per serving <br /> size 1/4 cup (49g)</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -164,7 +164,9 @@ const TiposDetail = () => {
                         onClick={() => navigate(-1)}
                         textColor="#4C772D"
                         borderColor="#4C772D"
+                        hoverColor="var(--about)"
                     />
+
 
                 </section>
 

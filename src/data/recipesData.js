@@ -1115,6 +1115,7 @@ const recipes = [
             '1 cucharada de aceite de ajonjolí',
             '1 ajo picado finamente',
             '1 cucharada de culantro',
+            '1 taza de frijoles',
             '',
             'Masa:',
             '2 tazas de harina',

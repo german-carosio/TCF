@@ -1,6 +1,6 @@
 // src/routes/AppRoutes.jsx
 import React, { lazy, Suspense, useEffect } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import Layout from './Layout';
 import blogRoutes from '../data/blogRoutes';
 import ScrollToTop from '../components/ScrollToTop/ScrollToTop';
@@ -50,6 +50,13 @@ const AppRoutes = () => {
             <Route key={index} path={route.path} element={<route.component />} />
           ))}
           <Route path="contact" element={<Contact />} />
+
+          {/* Redirección de "/recipe/*" a "/recipes" */}
+          <Route path="recipe/*" element={<Navigate to="/recipes" replace />} />
+          <Route path="category/*" element={<Navigate to="/" replace />} />
+          <Route path="recetas-faciles-con-frijoles" element={<Navigate to="/recipes" replace />} />
+
+
           <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
