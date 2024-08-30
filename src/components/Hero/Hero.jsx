@@ -18,7 +18,7 @@ const Hero = () => {
       </div>
 
       <div className={styles.lado2}>
-        <img src="/img/web/imgHero.svg" alt="imagen frijoles hero" />
+        <img src="/img/web/frijol-hero.png" alt="imagen frijoles hero" />
       </div>
 
     </section>
