@@ -3,7 +3,7 @@ export const tiposDeFrijoles = [
     {
         id: 1,
         title: 'Red Kidney Beans',
-        img: '/img/tipos/RedKidney.jpg',
+        img: '/img/tipos/Red Kidney.png',
     
         Calorias100: '260',
         GrasaTotal100: '1.83 gm',
@@ -49,7 +49,7 @@ export const tiposDeFrijoles = [
     {
         id: 2,
         title: 'Pink Beans',
-        img: '/img/tipos/PinkBeans.jpg',
+        img: '/img/tipos/Pink Beans.png',
     
         Calorias100: '236',
         GrasaTotal100: '1.80 gm',
@@ -95,7 +95,7 @@ export const tiposDeFrijoles = [
     {
         id: 3,
         title: 'Navy Beans',
-        img: '/img/tipos/NavyBeans.jpg',
+        img: '/img/tipos/Navy Beans.png',
     
         Calorias100: '237',
         GrasaTotal100: '2.18 gm',
@@ -141,7 +141,7 @@ export const tiposDeFrijoles = [
     {
         id: 4,
         title: 'Great Northern Beans',
-        img: '/img/tipos/Greath Northern.jpg',
+        img: '/img/tipos/Greath northern beans.png',
     
         Calorias100: '224',
         GrasaTotal100: '1.85 gm',
@@ -187,7 +187,7 @@ export const tiposDeFrijoles = [
     {
         id: 5,
         title: 'Light Red Kidney',
-        img: '/img/tipos/LightRedKidney.jpg',
+        img: '/img/tipos/Light Red Kidney.png',
     
         Calorias100: '242',
         GrasaTotal100: '1.78 gm',
@@ -233,7 +233,7 @@ export const tiposDeFrijoles = [
     {
         id: 6,
         title: 'Mayacoba beans',
-        img: '/img/tipos/Mayacoba.jpg',
+        img: '/img/tipos/Mayacoba Beans.png',
     
         Calorias100: '251',
         GrasaTotal100: '2.33 gm',
@@ -280,7 +280,7 @@ export const tiposDeFrijoles = [
     {
         id: 7,
         title: 'Pinto beans',
-        img: '/img/tipos/PintoBeans.jpg',
+        img: '/img/tipos/Pinto Beans.png',
     
         Calorias100: '225',
         GrasaTotal100: '1.72 gm',
@@ -324,10 +324,10 @@ export const tiposDeFrijoles = [
     },
     
 
-    {
+   /*  {
         id: 8,
         title: 'Garbanzos',
-        img: '/img/tipos/Garbanzos.jpg',
+        img: '/img/tipos/Garbanzos.png',
     
         Calorias100: '291',
         GrasaTotal100: '5.22 gm',
@@ -368,12 +368,12 @@ export const tiposDeFrijoles = [
         Calcio49: '22 mg',
         Hierro49: '2.49 mg',
         Potasio49: '553 mg',
-    },
+    }, */
     
     {
         id: 9,
         title: 'Baby Lima',
-        img: '/img/tipos/White Kidney.jpg',
+        img: '/img/tipos/White Kidney.png',
     
         Calorias100: '309',
         GrasaTotal100: '2.08 gm',
@@ -420,7 +420,7 @@ export const tiposDeFrijoles = [
     {
         id: 10,
         title: 'Small red beans',
-        img: '/img/tipos/SmallRed.jpg',
+        img: '/img/tipos/Small Red.png',
     
         Calorias100: '225',
         GrasaTotal100: '1.67 gm',
@@ -467,7 +467,7 @@ export const tiposDeFrijoles = [
     {
         id: 11,
         title: 'Black beans',
-        img: '/img/tipos/BlackBeans.jpg',
+        img: '/img/tipos/Negros.png',
     
         Calorias100: '239',
         GrasaTotal100: '2.03 gm',
@@ -513,7 +513,7 @@ export const tiposDeFrijoles = [
     {
         id: 12,
         title: 'Black eyed beans',
-        img: '/img/tipos/BlackEyedBeans.jpg',
+        img: '/img/tipos/Black eyed Beans.png',
     
         Calorias100: '299',
         GrasaTotal100: '2.51 gm',
@@ -559,7 +559,7 @@ export const tiposDeFrijoles = [
     {
         id: 13,
         title: 'Cranberry beans',
-        img: '/img/tipos/CranberryBeans.jpg',
+        img: '/img/tipos/Cranberry beans.png',
     
         Calorias100: '236',
         GrasaTotal100: '1.64 gm',

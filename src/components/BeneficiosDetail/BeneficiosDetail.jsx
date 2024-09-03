@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import beneficiosData from '../../data/beneficiosData';
+import beneficiosData from '../../data/BeneficiosData';
 import styles from './BeneficiosDetail.module.css';
 import Boton2 from '../Boton2/Boton2';
 

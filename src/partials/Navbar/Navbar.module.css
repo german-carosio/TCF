@@ -57,6 +57,7 @@
   color: var(--verde);
   border-radius: 50px;
   transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: bold;
 }
 
 .activeMenuItem .menuLink {

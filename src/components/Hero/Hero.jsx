@@ -1,6 +1,6 @@
-import React from 'react'
-import styles from './Hero.module.css'
-import Boton from '../Boton/Boton'
+import React from 'react';
+import styles from './Hero.module.css';
+import Boton from '../Boton/Boton';
 
 const Hero = () => {
   return (
@@ -11,18 +11,19 @@ const Hero = () => {
           <div className={styles.boton}>
             <Boton title="Ver recetas" url="/recipes" />
           </div>
-
         </div>
-
-
       </div>
 
       <div className={styles.lado2}>
-        <img src="/img/web/frijol-hero.png" alt="imagen frijoles hero" />
+        {/* Añade loading="lazy" a la imagen */}
+        <img
+          src="/img/web/frijol-hero.png"
+          alt="imagen frijoles hero"
+          loading="lazy"
+        />
       </div>
-
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

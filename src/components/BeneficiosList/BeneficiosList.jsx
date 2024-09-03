@@ -1,6 +1,6 @@
 // components/BeneficiosList.jsx
 import React from 'react';
-import beneficiosData from '../../data/beneficiosData';
+import beneficiosData from '../../data/BeneficiosData';
 import styles from './BeneficiosList.module.css';
 import Boton from '../Boton/Boton';
 

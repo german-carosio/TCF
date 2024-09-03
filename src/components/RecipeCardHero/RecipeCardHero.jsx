@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './RecipeCardHero.module.css';
-import { useRecipesContext } from '../../context/RecipesContext';
 
 const RecipeCardHero = ({ recipe }) => {
     // Función para formatear el título
@@ -12,7 +11,13 @@ const RecipeCardHero = ({ recipe }) => {
     return (
         <div className={styles.recipeCard}>
             <Link to={`/recipes/detail/${recipe.id}`} className={styles.link}>
-                <img src={recipe.img} alt={recipe.title} className={styles.recipeImage} />
+                {/* Implementación de lazy loading en la imagen */}
+                <img
+                    src={recipe.img}
+                    alt={recipe.title}
+                    className={styles.recipeImage}
+                    loading="lazy"
+                />
                 <div className={styles.txt}>
                     <div className={styles.categories}>
                         {recipe.category.length > 0 && (

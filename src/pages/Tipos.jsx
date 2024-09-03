@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Margin from '../components/Margin/Margin';
-import List from '../components/List/List';
+import ListType from '../components/ListType/ListType';
 import { getTiposDeFrijoles } from '../data/typesOfBeansData';
 import Title from '../components/Title/Title';
 
@@ -36,7 +36,7 @@ const Tipos = () => {
 
       <Margin>
         <Title txt={'Conoce la variedad de frijoles y sus nutrientes'} />
-        <List data={tiposDeFrijoles} url={'/tipos/detail/'} />
+        <ListType data={tiposDeFrijoles} url={'/tipos/detail/'} />
 
       </Margin>
     </div>
