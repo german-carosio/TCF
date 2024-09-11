@@ -10,9 +10,9 @@ const BlogPost1 = () => {
   return (
     <>
       <Helmet>
-        <title>Frijoles & proteina - Todo con frijol</title>
-        <meta name="description" content="Descripción de la entrada 1." />
-        <meta name="keywords" content="blog, entrada 1, todo con frijol" />
+      <title>Emprendimiento Frijol 2024 - Concurso y Premios | Todo con Frijol</title>
+        <meta name="description" content="Participa en la quinta edición del concurso Emprendimiento Frijol. Descubre cómo puedes ganar premios que potenciarán tu negocio en 2024. Conoce los requisitos y la fecha límite para participar." />
+        <meta name="keywords" content="concurso frijol, emprendimiento frijol 2024, premios emprendedores, concurso de negocios, Todo con Frijol" />
       </Helmet>
       <Margin>
         <div className={styles.cabecera}>
