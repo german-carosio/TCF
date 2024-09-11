@@ -19,37 +19,75 @@ const BlogPost1 = () => {
           <h1>Blog | Sigue las noticias de Todo con frijol</h1>
         </div>
 
-        <section className={styles.container}>
+        <article className={styles.container}>
           <div className={styles.entrada}>
             <div className={styles.txt}>
-              <p>2 de octubre 2023</p>
-              <h2>Frijoles & proteina</h2>
+              <p>11 de septiembre 2024</p>
+              <h2>Emprendimiento Frijol - 2024</h2>
             </div>
 
             <div className={styles.entradaImage}>
-              <img src="/img/blog/img1.png" alt="" />
+              <img src="/img/blog/blog1/EMPRENDIMIENTO FRIJOL-34.jpg" alt="emprendimiento frijol" />
             </div>
 
             <div className={styles.contenido}>
-              <p>Los frijoles son una excelente fuente de proteína vegetal, contienen el doble (o más) proteína que otros granos.  Por ejemplo, 100 calorías de frijoles contienen 7 gramos de proteína, que es parecido a comer 1 huevo o 1 taza de leche.  Cien calorías de arroz o tortillas de maíz contienen apenas dos gramos de proteína. <br /><br />
-                ¿Sabías que el arroz y los frijoles combinados son una fuente completa de proteína? Y ¿qué significa esto exactamente? Las proteínas vegetales contienen todos los aminoácidos, que son los componentes de las proteínas. Pero, contienen cantidades relativamente bajas de algunos de ellos. Los frijoles son altos en aminoácidos de los que el arroz solo tiene pocos, y viceversa. Entonces, los frijoles y el arroz – u otros granos –  ¡son complementarios! Para proveer la cantidad correcta de todos los aminoácidos no es necesario comerlos en el mismo plato, solo tener una dieta balanceada durante el día y la semana. <br /> <br />
-                Un beneficio de los frijoles es que – a diferencia de las proteínas animales – también son ricos en fibra.  Ser ricos tanto en fibra como en proteína ayuda a mejorar tu saciedad. <br /> <br />
-                En estos días les vamos a compartir una receta alta en proteína, acá les compartiremos la información nutricional de la receta.</p> <br />
+            <p className={styles.atencion}>¡Atención emprendedores!</p>
+              <p>Este año lanzamos la quinta edición de nuestro concurso <strong>Emprendimiento Frijol</strong>. Nos emociona ver la creatividad de los concursantes en torno a este súper alimento que tanto amamos por su versatilidad y sabor.</p>
+              <p>Los ganadores de las últimas cuatro ediciones han sido de Guatemala, Costa Rica y El Salvador.</p>
+              <p>Creamos <strong>Emprendimiento Frijol</strong> con la visión de impulsar a emprendedores que trabajan con frijoles. En 2020 lanzamos la primera edición de nuestro concurso, donde Johanna, con su proyecto <strong>FRAN Artesanal</strong>, fue la ganadora. Fuimos testigos de primera mano de cómo su negocio creció gracias al concurso y al premio, y eso mismo queremos hacer por su emprendimiento.</p>
+              <p>En 2020 lanzamos la primera edición de nuestro concurso, donde Johanna, con su proyecto FRAN Artesanal, fue la ganadora. Fuimos testigos de primera mano de cómo su negocio creció gracias al concurso y al premio, y eso mismo queremos hacer por su emprendimiento.</p>
+              
+              <img src="/img/blog/blog1/EMPRENDIMIENTO FRIJOL-35.jpg" alt="emprendimiento frijol" /> <br /> <br />
+              
+              <h3>¿Quiénes pueden participar?</h3>
+              <p>Emprendedores que vendan un producto que contenga frijoles, incluyendo restaurantes con platillos que utilicen frijoles como ingrediente principal.</p>
 
-              <h2>Smoothie de proteína </h2> <br />
+              <h3>Requisitos para participar:</h3>
+              <ul>
+                <li>Envíanos toda la información de tu producto o servicio con frijoles, incluyendo una descripción y fotografía.</li>
+                <li>Ventaja competitiva de tu producto.</li>
+                <li>Una breve explicación de por qué usas frijoles y qué te llevó a utilizarlos en tu producto o platillo.</li>
+                <li>* Si tu negocio es un restaurante, puedes incluir un platillo de tu menú donde los frijoles sean protagonistas.</li>
+              </ul>
 
-              <p>Los frijoles son una excelente fuente de proteína para agregar a tu batido. Además de agregar proteína, le añade una textura cremosa.   Una ventaja de este batido, es que al ser los frijoles un ingrediente alto en proteína y fibra, ayuda muchísimo a la saciedad....</p>
+              <p>No olvides incluir tu información personal:</p>
+              <ul>
+                <li>Nombre Completo</li>
+                <li>País de residencia</li>
+                <li>Usuario de redes sociales (del negocio)</li>
+                <li>Correo de contacto</li>
+              </ul>
+
+              <p>Envíanos la información al correo: <strong>concursotodoconfrijol@gmail.com</strong></p>
+
+              <p>Un solo ganador recibirá un premio que le hará ganar herramientas que potencien su negocio: </p>
+
+
+              <h3>Premio:</h3>
+              <ul>
+                <li><i className="fas fa-camera"></i> <strong>1 sesión de fotos y video</strong></li>
+                <li><i className="fas fa-bullhorn"></i> <strong>1 gira de relaciones públicas</strong>, para que los principales medios de comunicación de tu país den visibilidad al negocio ganador del concurso</li>
+                <li><i className="fas fa-chart-line"></i> <strong>1 asesoría de estrategia de negocios</strong></li>
+                <li><i className="fas fa-share-alt"></i> <strong>1 asesoría de manejo de redes sociales</strong></li>
+              </ul>
+
+              <p><strong>Países participantes:</strong> Costa Rica, Guatemala, El Salvador, Honduras, República Dominicana y Panamá.</p>
+              <p>Recibiremos propuestas hasta el <strong>30 de septiembre de 2024</strong> y el ganador se anunciará la primera semana de octubre. <br /> Aplican restricciones.</p>
+
+
+                <img src="/img/blog/blog1/EMPRENDIMIENTO FRIJOL-36.jpg" alt="emprendimiento frijol" />
             </div>
             <Boton2
-              title="Volver"
-              url="#"
-              onClick={() => navigate(-1)}
-              textColor="#4C772D"
-              borderColor="#4C772D"
-            />
+                        title="Volver"
+                        url="#"
+                        onClick={() => navigate(-1)}
+                        textColor="#4C772D"
+                        borderColor="#4C772D"
+                        hoverColor="var(--verde)"
+                    />
           </div>
 
-        </section>
+        </article>
 
       </Margin>
     </>

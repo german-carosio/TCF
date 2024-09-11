@@ -6,6 +6,9 @@
     border-radius: 30px;
 }
 
+.cabecera h1 {
+    font-size: 1.30em;
+}
 
 
 .cardContainer{
@@ -55,6 +58,10 @@
 }
 
 @media (min-width: 768px) {
+
+    .cabecera h1 {
+        font-size:  1.5em;
+    }
 
     .cardContainer{
         padding: 20px 70px;

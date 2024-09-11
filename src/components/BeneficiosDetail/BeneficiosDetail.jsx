@@ -43,7 +43,7 @@ const BeneficiosDetail = () => {
                         onClick={() => navigate(-1)}
                         textColor="#4C772D"
                         borderColor="#4C772D"
-                        hoverColor="var(--about)"
+                        hoverColor="var(--verde)"
                     />
                 </div>
             </div>
