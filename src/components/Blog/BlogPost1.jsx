@@ -22,7 +22,7 @@ const BlogPost1 = () => {
         <article className={styles.container}>
           <div className={styles.entrada}>
             <div className={styles.txt}>
-              <p>11 de septiembre 2024</p>
+              <p className={styles.cardDate}>11 de septiembre 2024</p>
               <h2>Emprendimiento Frijol - 2024</h2>
             </div>
 
