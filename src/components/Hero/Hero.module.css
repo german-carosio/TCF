@@ -17,6 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
 }
 
 .lado1 h1 {
@@ -71,6 +72,7 @@
         justify-content: center;
         align-items: end;
         padding-right: 20px;
+        margin: 0;
     }
 
     .lado2 {

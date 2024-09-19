@@ -5,6 +5,7 @@
     transition: all 0.5s;
     margin: 0 auto;
     height: 352px;
+    box-shadow: 6px 1px 8px rgba(0, 0, 0, 0.06); /* Sombra más hacia la derecha con un poco de sombra en la parte inferior */
 }
 
 .recipeCard:hover {

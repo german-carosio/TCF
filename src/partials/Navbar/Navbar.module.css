@@ -10,7 +10,8 @@
   align-items: center;
   margin: 0 auto;
   color: var(--verde);
-  background: linear-gradient(var(--fondoHeader) 80%, transparent);
+  /* background: linear-gradient(var(--fondoHeader) 80%, transparent); */
+  background: linear-gradient(#fff 80%, transparent);
 }
 
 .nav {
@@ -40,7 +41,7 @@
   padding: 100px 0 0 0;
   height: calc(100vh - 60px);
   transition: 0.5s;
-  background-color: var(--fondoHeader);
+  background-color: #fff;
 }
 
 .menuVisible {

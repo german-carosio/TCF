@@ -9,9 +9,10 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  background-image: url('/img/web/fondito.png');
+  background-image: url('/img/web/fondito2.svg');
   background-size: cover;
   background-repeat: no-repeat;
+  
 }
 
 a, li { /* links y listas*/
