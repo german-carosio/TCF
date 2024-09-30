@@ -1201,6 +1201,76 @@ const recipes = [
     type: ['Frijoles blancos'],
     img: '/img/recipes/IMG_5260.jpg'
     },
+
+    {
+        id: 114,
+        title: 'TOMATES CON FRIJOLES',
+        description: '',
+        ingredients: [
+          '2 Tomates',
+          '1 Ajo',
+          '1 Taza de frijoles blancos',
+          '5 Tomates cherry',
+          '3 Cucharadas de aceite de oliva',
+          'Hojitas de albahaca',
+          'Sal y pimienta al gusto'
+        ],
+        steps: [
+          'Rallar los tomates y el ajo.',
+          'Agregar el aceite de oliva y revolver.',
+          'Colocar los frijoles blancos y revolver.',
+          'Salpimentar al gusto.'
+        ],
+        category: ['Ensaladas'],
+        type: ['Frijoles blancos'],
+        img: '/img/recipes/IMG_5967.jpg'
+      },
+      {
+        id: 115,
+        title: 'ENSALADA DE EDAMAMES Y FRIJOLES',
+        description: '',
+        ingredients: [
+          '1 Taza de frijoles cocinados',
+          '1 Taza de edamames cocinados',
+          '1 Taza de tomate',
+          '2 Cucharadas de cebollin',
+          '1 Cucharada de salsa de soya',
+          '1 Limón',
+          '1 Ajo picado'
+        ],
+        steps: [
+          'Colocar en un bowl los frijoles, edamames previamente cocinados, tomate picado en cuadritos y cebollin, revolver.',
+          'Agregar la salsa de soya, el limón y salpimentar.',
+          'Dejar reposar por 30 minutos antes de servir.'
+        ],
+        category: ['Ensaladas'],
+        type: ['Frijoles', 'Edamames'],
+        img: '/img/recipes/IMG_5708 2.jpg'
+      },
+      {
+        id: 116,
+        title: 'VEGETALES ASADOS CON FRIJOLES Y LENTEJAS',
+        description: '',
+        ingredients: [
+          '1 Berenjena',
+          '1 Tomate',
+          '1 Chile morrón',
+          '½ Cebolla morada',
+          '2 Cucharadas de culantro',
+          '¼ de taza de aceite de oliva',
+          '4 Limones'
+        ],
+        steps: [
+          'Colocar la berenjena, el tomate y el chile morrón a 400°F en la freidora de aire por 25 minutos.',
+          'Sacar los vegetales y picarlos finamente.',
+          'En un bowl colocar el chile morrón, la cebolla, el tomate, el culantro, los frijoles y lentejas.',
+          'Agregar el aceite de oliva, limón y sal.',
+          'Revolver y servir 10 minutos después.'
+        ],
+        category: ['Almuerzos y cenas'],
+        type: ['Frijoles', 'Lentejas', 'Vegetales'],
+        img: '/img/recipes/IMG_6589.jpg'
+      }
 ];
 
 
